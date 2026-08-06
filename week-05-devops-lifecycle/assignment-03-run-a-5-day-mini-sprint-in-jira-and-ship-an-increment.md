@@ -177,7 +177,7 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`https://www.linkedin.com/posts/maneettaantony_devops-agile-aws_activity-XXXXXXXXXX/`
+`https://lnkd.in/p/gF2wcPFW`
 
 ---
 
