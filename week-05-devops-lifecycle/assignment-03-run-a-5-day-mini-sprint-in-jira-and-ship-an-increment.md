@@ -175,9 +175,7 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-[LinkedIn Post](https://lnkd.in/p/gF2wcPFW)
+[Linked In Post](https://lnkd.in/p/gF2wcPFW)
 
 ---
 
@@ -187,7 +185,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Live Artifacts & Evidence
+## Live Artifacts & Evidence
 
 - **Live EC2 Site:** http://98.81.191.216/
 - **GitHub Repository:** https://lnkd.in/gZAM793R
@@ -216,10 +214,9 @@ Paste your LinkedIn post URL here:
 - [x] Task 6: Day 5 demo, retrospective, and Burndown evidence completed (Screenshots 15–17, video URL)
 - [x] Daily Scrum comments posted for Days 1–5
 - [x] LinkedIn post published with the GitHub URL, EC2 URL, required delivery details, and proof image
-- [x] LinkedIn Post URL and LinkedIn Screenshot 1 included (linkedin-post.png)
+- [x] LinkedIn Post URL and LinkedIn Screenshot 1 included
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed
-- [x] All 17 assignment screenshots + LinkedIn screenshot added
 
 ---
 
