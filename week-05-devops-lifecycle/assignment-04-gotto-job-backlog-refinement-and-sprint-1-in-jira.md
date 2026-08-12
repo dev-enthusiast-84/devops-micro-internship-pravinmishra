@@ -26,9 +26,15 @@ Add your screenshot here.
 
 ### Notes
 
-Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
+**Mode:** Solo Mode — Playing all four Scrum roles myself.
 
-Write your answer here.
+**PO (Product Owner):** I'm the one deciding what matters most and what gets built first. In Solo Mode, this means I ranked the backlog by real user value and business impact—which stories solve the biggest pain points for someone using the product. I prioritized based on what would make the most difference.
+
+**SM (Scrum Master):** I kept myself disciplined on the process. That meant respecting the 90-minute timebox, running through sprint planning and retro properly, and not skipping the ceremony parts. It's easy to cut corners when you're working solo, but the framework keeps the work structured and honest.
+
+**Dev Lead:** I'm responsible for taking a story all the way from design to code. I picked a UI story and built it end-to-end—no backend changes, just something visible and shippable in the timebox.
+
+**DevOps Lead:** I made sure what got built actually ships. That means committing the code, deploying it to the live environment, and verifying it's working. Shipping isn't done until it's live and verified.
 
 ---
 
