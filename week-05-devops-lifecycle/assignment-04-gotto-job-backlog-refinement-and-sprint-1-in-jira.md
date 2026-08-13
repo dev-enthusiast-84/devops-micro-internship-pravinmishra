@@ -228,7 +228,7 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 - [x] Task 7: Burndown Chart opened (Screenshot 9)
 - [x] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12a–12b)
 - [x] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
-- [ ] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
+- [x] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed
 
