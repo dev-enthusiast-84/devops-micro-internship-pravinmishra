@@ -199,7 +199,7 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 #### LinkedIn Post URL
 
-`https://www.linkedin.com/feed/update/urn:li:activity:7230612345678901234/`
+[https://lnkd.in/p/g2Cd8Qq5](https://lnkd.in/p/g2Cd8Qq5)
 
 ---
 
