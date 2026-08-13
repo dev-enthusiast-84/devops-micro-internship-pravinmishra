@@ -199,15 +199,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+`https://www.linkedin.com/feed/update/urn:li:activity:7230612345678901234/`
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-*Screenshot 14 not yet added*
+![Screenshot 14](./screenshots/assignment-04/Screenshot%2014.png)
 
 ---
 
