@@ -110,7 +110,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 02 | Agentic AI with Claude Code | ✅ Completed |  ✅ Solved | [Post](https://www.linkedin.com/posts/maneetta-antony-452075387_dmibypravinmishra-agenticai-claudecode-ugcPost-7481318574037442560-3TCh/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo) | [Blog](https://dev-enthusiast.blogspot.com/2026/07/week-2-when-ai-met-infrastructureand.html) |
 | 03 | Linux & Bash for DevOps | ✅ Completed |  ✅ Solved | [Post](https://www.linkedin.com/posts/maneetta-antony-452075387_dmi-cohort-4-live-micro-internship-waiting-share-7484101331813617664-QLfh/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo) | [Blog](https://dev-enthusiast.blogspot.com/2026/07/week-3-bulletproof-incident-response.html) |
 | 04 | Git & GitHub | ✅ Completed |  ✅ Solved | [Post](https://www.linkedin.com/posts/maneetta-antony-452075387_dmi-cohort-4-live-micro-internship-waiting-share-7485928644792451072-T_V8/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo) | [Blog](https://dev-enthusiast.blogspot.com/2026/07/week-4-week-git-stopped-being-just.html) |
-| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | [Post](https://lnkd.in/p/gRzVzXp5) | [Blog](https://dev-enthusiast.blogspot.com/2026/08/week-05-complete-devops-lifecycle_02119802950.html) |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
