@@ -50,7 +50,9 @@ Start the web server and confirm the Mini Finance website is accessible through 
 
 #### Screenshot 1 — Browser showing the Mini Finance website running at the EC2 public IP
 
-Add your screenshot here.
+![Mini Finance Website - Live on EC2](./screenshots/assignment-03/Screenshot%201.png)
+
+*Figure 1: Mini Finance — Simple Personal Budget Tracker website successfully deployed and running on EC2 instance at IP 98.81.191.216. The website displays the Overview page with balance information ($254,800), card details, user profile (Curwen Arthurs), transaction history pie chart, and navigation menu. All assets (CSS, images, JavaScript) are loading correctly.*
 
 ---
 
@@ -72,13 +74,13 @@ Paste the public IP address of your EC2 instance here (e.g. `http://3.91.105.10`
 
 # Completion Checklist
 
-- [ ] EC2 instance launched in a public subnet with SSH (22) and HTTP (80) allowed
-- [ ] Connected to the instance via SSH
-- [ ] Web server (Nginx or Apache) installed
-- [ ] Mini Finance repository cloned and files copied to the web server root
-- [ ] Web server started and website verified in the browser (Screenshot 1)
-- [ ] EC2 Public IP URL included
-- [ ] No sensitive data exposed
+- [x] EC2 instance launched in a public subnet with SSH (22) and HTTP (80) allowed
+- [x] Connected to the instance via SSH
+- [x] Web server (Nginx or Apache) installed
+- [x] Mini Finance repository cloned and files copied to the web server root
+- [x] Web server started and website verified in the browser (Screenshot 1)
+- [x] EC2 Public IP URL included
+- [x] No sensitive data exposed
 
 ---
 
