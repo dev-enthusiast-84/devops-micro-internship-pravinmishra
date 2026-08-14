@@ -20,7 +20,9 @@ Download or clone the portfolio website template from GitHub and confirm `index.
 
 #### Screenshot 1 — File Explorer or terminal showing the template folder contents with `index.html` visible
 
-Add your screenshot here.
+![Portfolio Template Structure - VS Code Explorer](./screenshots/assignment-02/Screenshot%201.png)
+
+*Figure 1: Portfolio template folder structure in VS Code showing index.html, style.css, privacy.html, README.md, and images/ folder. The index.html file is open showing the HTML structure with hero section and portfolio content.*
 
 ---
 
@@ -34,7 +36,9 @@ Create a globally unique S3 bucket in your chosen AWS region.
 
 #### Screenshot 2 — S3 bucket created screen showing the bucket name and region
 
-Add your screenshot here.
+![S3 Bucket Created - Bucket Details](./screenshots/assignment-02/Screenshot%202.png)
+
+*Figure 2: S3 bucket successfully created with name "pravin-portfolio-maneetta-use-east-1" in the US East 1 region. The bucket overview page shows the Objects tab is active.*
 
 ---
 
@@ -48,7 +52,9 @@ Upload the contents of the template folder (not the folder itself) so `index.htm
 
 #### Screenshot 3 — S3 bucket Objects view showing `index.html` at the root level
 
-Add your screenshot here.
+![S3 Objects View - Files Uploaded](./screenshots/assignment-02/Screenshot%203.png)
+
+*Figure 3: S3 Objects view displaying 6 uploaded objects with index.html at the root level, along with privacy.html, README.md, style.css, terms.html, and an images/ folder containing the website assets.*
 
 ---
 
@@ -62,7 +68,9 @@ Enable S3 Static Website Hosting with `index.html` as the index document and `er
 
 #### Screenshot 4 — Static website hosting enabled screen showing the website endpoint
 
-Add your screenshot here.
+![Static Website Hosting Enabled](./screenshots/assignment-02/Screenshot%204.png)
+
+*Figure 4: S3 bucket Properties showing "Static website hosting" is Enabled with hosting type "Bucket hosting" and the bucket website endpoint: http://pravin-portfolio-maneetta-use-east-1.s3-website-us-east-1.amazonaws.com*
 
 ---
 
@@ -76,7 +84,9 @@ Adjust Block Public Access settings and save a bucket policy that grants public 
 
 #### Screenshot 5 — Bucket policy page showing the policy saved successfully, with the bucket name visible
 
-Add your screenshot here.
+![Bucket Policy - Public Read Access Configured](./screenshots/assignment-02/Screenshot%205.png)
+
+*Figure 5: Bucket Permissions page showing the success message "Successfully edited bucket policy" with the bucket policy JSON visible. The policy grants PublicReadGetObject action on s3:pravin-portfolio-maneetta-use-east-1/* for public read access to all objects.*
 
 ---
 
@@ -90,7 +100,9 @@ Load the site through the S3 website endpoint and confirm the homepage, images, 
 
 #### Screenshot 6 — Browser showing the live website with the S3 website endpoint visible in the address bar
 
-Add your screenshot here.
+![Live Website - Portfolio Deployed on S3](./screenshots/assignment-02/Screenshot%206.png)
+
+*Figure 6: Browser displaying the live portfolio website accessed via the S3 website endpoint (pravin-portfolio-maneetta-use-east-1.s3-website-us-east-1.amazonaws.com). The homepage shows the portfolio with navigation menu (Home, University, Blog, Book, Program, Contact), hero banner with profile image, and the DMI tagline.*
 
 ---
 
@@ -104,7 +116,9 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 
 #### Screenshot 7 (optional) — Before/after view, or a browser view showing the updated text
 
-Add your screenshot here.
+![Live Website - Updated with DevOps Highlight](./screenshots/assignment-02/Screenshot%207.png)
+
+*Figure 7: Browser showing the updated portfolio website with a visible change - the word "DevOps" is now highlighted in green in the hero text "Start your DevOps Journey here". This demonstrates the successful re-upload and cache refresh of the updated content.*
 
 ---
 
@@ -116,17 +130,23 @@ Add your screenshot here.
 
 ---
 
+## Live Website URL
+
+🌐 **S3 Website Endpoint:** http://pravin-portfolio-maneetta-use-east-1.s3-website-us-east-1.amazonaws.com
+
+---
+
 # Completion Checklist
 
-- [ ] Task 1: Template downloaded/cloned with `index.html` confirmed (Screenshot 1)
-- [ ] Task 2: Globally unique S3 bucket created (Screenshot 2)
-- [ ] Task 3: Website files uploaded with `index.html` at bucket root (Screenshot 3)
-- [ ] Task 4: Static website hosting enabled (Screenshot 4)
-- [ ] Task 5: Public-read bucket policy saved (Screenshot 5)
-- [ ] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
-- [ ] Task 7: Optional small update re-uploaded and verified (Screenshot 7)
-- [ ] S3 Website Endpoint URL included
-- [ ] No sensitive account information exposed
+- [x] Task 1: Template downloaded/cloned with `index.html` confirmed (Screenshot 1)
+- [x] Task 2: Globally unique S3 bucket created (Screenshot 2)
+- [x] Task 3: Website files uploaded with `index.html` at bucket root (Screenshot 3)
+- [x] Task 4: Static website hosting enabled (Screenshot 4)
+- [x] Task 5: Public-read bucket policy saved (Screenshot 5)
+- [x] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
+- [x] Task 7: Optional small update re-uploaded and verified (Screenshot 7)
+- [x] S3 Website Endpoint URL included
+- [x] No sensitive account information exposed
 
 ---
 
