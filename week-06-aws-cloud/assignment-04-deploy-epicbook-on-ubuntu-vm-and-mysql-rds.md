@@ -222,13 +222,29 @@ Clone the EpicBook repository, install backend dependencies, configure `.env` wi
 
 #### Screenshot 15 — Terminal showing the backend running, or `ss -tulpn` showing the port open
 
-Add your screenshot here.
+![Backend Running - Node.js Server with Database Initialization](./screenshots/assignment-04/Screenshot%2015.png)
+
+*Figure 15: EpicBook backend successfully running with Node.js:
+- Command: npm run start
+- MVC project initialized (mvc_project@201.0.0)
+- Database tables created: Author, Book, Cart, Checkout, Cartbook
+- SQL queries executed with InnoDB engine
+- App listening on PORT 8080
+- Environment variables injected from .env file (debug enabled)*
 
 ---
 
 #### Screenshot 16 — `curl` output proving the backend responds
 
-Add your screenshot here.
+![Backend API Response - curl Test Successful](./screenshots/assignment-04/Screenshot%2016.png)
+
+*Figure 16: Backend API successfully responding to HTTP requests:
+- Command: curl -I http://localhost:8080
+- Response: HTTP/1.1 200 OK
+- Server: Express (X-Powered-By header)
+- Content-Type: text/html; charset=utf-8
+- Content-Length: 24858 bytes
+- Backend connectivity verified and responding correctly*
 
 ---
 
@@ -287,16 +303,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
-- [ ] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
-- [ ] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
-- [ ] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
-- [ ] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
-- [ ] Task 6: Database initialized from the SQL dump (Screenshot 13)
-- [ ] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
+- [x] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
+- [x] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
+- [x] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
+- [x] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
+- [x] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
+- [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
+- [x] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
 - [ ] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
 - [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
-- [ ] No sensitive data exposed
+- [x] No sensitive data exposed
 
 ---
 
