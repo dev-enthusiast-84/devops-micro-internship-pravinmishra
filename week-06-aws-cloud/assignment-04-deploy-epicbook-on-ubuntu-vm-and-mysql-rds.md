@@ -1,3 +1,4 @@
+
 # Assignment 4 — Deploy EpicBook on Ubuntu VM + MySQL RDS with Secure Cloud Network
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
@@ -286,16 +287,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [x] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
-- [x] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
-- [x] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
-- [x] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
-- [x] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
-- [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
-- [~] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16) - Repository cloned (14/16)
+- [ ] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
+- [ ] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
+- [ ] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
+- [ ] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
+- [ ] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
+- [ ] Task 6: Database initialized from the SQL dump (Screenshot 13)
+- [ ] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
 - [ ] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
 - [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
-- [x] No sensitive data exposed
+- [ ] No sensitive data exposed
 
 ---
 
