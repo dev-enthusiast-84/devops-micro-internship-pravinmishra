@@ -20,19 +20,30 @@ Create `epicbook-vpc` (10.0.0.0/16) with a public subnet (10.0.1.0/24) and a pri
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![VPC Configuration - EpicBook VPC](./screenshots/assignment-04/Screenshot%201.png)
+
+*Figure 1: VPC "epicbook-vpc" successfully created with IPv4 CIDR block 10.0.0.0/16. Status: Available. DNS resolution enabled.*
 
 ---
 
 #### Screenshot 2 — Subnets list showing both subnets and their CIDRs
 
-Add your screenshot here.
+![Subnets Configuration - Public and Private](./screenshots/assignment-04/Screenshot%202.png)
+
+*Figure 2: Two subnets created in the epicbook-vpc:
+- epicbook-public-subnet: 10.0.1.0/24 (Available)
+- epicbook-private-subnet: 10.0.2.0/24 (Available)*
 
 ---
 
 #### Screenshot 3 — Route table showing 0.0.0.0/0 → IGW and association with the public subnet
 
-Add your screenshot here.
+![Route Table Configuration - IGW Route](./screenshots/assignment-04/Screenshot%203.png)
+
+*Figure 3: Route table "epicbook-rtb" configured with two routes:
+- 0.0.0.0/0 → Internet Gateway (igw-0b13780d8a247d7a9) - Active
+- 10.0.0.0/16 → local - Active
+Associated with epicbook-public-subnet*
 
 ---
 
@@ -46,13 +57,21 @@ Create `epicbook-ec2-sg` (SSH from your IP, HTTP/HTTPS public) and `epicbook-rds
 
 #### Screenshot 4 — EC2 security-group inbound rules showing ports and sources
 
-Add your screenshot here.
+![EC2 Security Group - Inbound Rules](./screenshots/assignment-04/Screenshot%204.png)
+
+*Figure 4: epicbook-ec2-sg security group with 3 inbound rules:
+- SSH (TCP 22): 0.0.0.0/0
+- HTTP (TCP 80): 0.0.0.0/0
+- HTTPS (TCP 443): 0.0.0.0/0*
 
 ---
 
 #### Screenshot 5 — RDS security-group inbound rule showing MySQL 3306 allowed from the EC2 security group
 
-Add your screenshot here.
+![RDS Security Group - MySQL Inbound Rule](./screenshots/assignment-04/Screenshot%205.png)
+
+*Figure 5: epicbook-rds-sg security group with 1 inbound rule:
+- MySQL/Aurora (TCP 3306): Source sg-0457f651c920d59fd (epicbook-ec2-sg)*
 
 ---
 
@@ -66,13 +85,25 @@ Launch an Ubuntu 20.04 instance in the public subnet with `epicbook-ec2-sg` atta
 
 #### Screenshot 6 — EC2 instance summary showing the public IPv4 address, subnet, and security group
 
-Add your screenshot here.
+![EC2 Instance Details - Network Configuration](./screenshots/assignment-04/Screenshot%206.png)
+
+*Figure 6: EC2 instance "epicbook-Web-Server" (i-0e83924f9489f5594) successfully launched:
+- Public IPv4 address: 54.208.29.58
+- Instance state: Running
+- Subnet: epicbook-public-subnet
+- Security group: epicbook-ec2-sg
+- Instance type: t3.micro*
 
 ---
 
 #### Screenshot 7 — Terminal showing a successful SSH login
 
-Add your screenshot here.
+![SSH Connection - Ubuntu Instance Access](./screenshots/assignment-04/Screenshot%207.png)
+
+*Figure 7: Successful SSH login to EC2 instance:
+- Connected to ubuntu@ec2-54-208-29-58.compute-1.amazonaws.com
+- Ubuntu 26.04 LTS running
+- System information displayed with login successful*
 
 ---
 
@@ -86,19 +117,32 @@ Install Node.js, npm, Nginx, and the MySQL client on the instance, and confirm N
 
 #### Screenshot 8 — Output of `node -v` and `npm -v`
 
-Add your screenshot here.
+![Node.js and npm Installation - Versions Verified](./screenshots/assignment-04/Screenshot%208.png)
+
+*Figure 8: Software versions verified on EC2 instance:
+- node -v: v22.22.1
+- npm -v: 9.2.0*
 
 ---
 
 #### Screenshot 9 — Output of `systemctl status nginx`
 
-Add your screenshot here.
+![Nginx Web Server - Status Running](./screenshots/assignment-04/Screenshot%209.png)
+
+*Figure 9: Nginx service status:
+- Status: active (running)
+- Main PID: 29409
+- Loaded from /usr/lib/systemd/system/nginx.service
+- Service started successfully as reverse proxy server*
 
 ---
 
 #### Screenshot 10 — Output of `mysql --version`
 
-Add your screenshot here.
+![MySQL Client - Version Installed](./screenshots/assignment-04/Screenshot%2010.png)
+
+*Figure 10: MySQL client version verified on EC2 instance:
+- mysql --version: Ver 8.4.10-0ubuntu0.26.04.1 for Linux on x86_64 (Ubuntu)*
 
 ---
 
@@ -112,13 +156,27 @@ Create a private MySQL RDS instance in `epicbook-vpc` using a DB Subnet Group ov
 
 #### Screenshot 11 — RDS instance summary showing Publicly accessible: No
 
-Add your screenshot here.
+![RDS Instance - Private Database Configuration](./screenshots/assignment-04/Screenshot%2011.png)
+
+*Figure 11: RDS MySQL instance "epicbook-db" summary:
+- Status: Available
+- Engine: MySQL Community
+- Class: db.t4g.micro
+- Publicly accessible: No (Private database in private subnet)
+- Port: 3306*
 
 ---
 
 #### Screenshot 12 — Connectivity & security section showing the VPC and attached security group
 
-Add your screenshot here.
+![RDS Connectivity & Security - Private Subnet Configuration](./screenshots/assignment-04/Screenshot%2012.png)
+
+*Figure 12: RDS connectivity & security details:
+- VPC: epicbook-vpc (vpc-02dfd21b0fe73ec48)
+- Subnet group: epicbook-db-subnet-group (in private subnet)
+- Security group: epicbook-rds-sg (sg-052cb7d99585a0755) - Active
+- Internet access gateway: Disabled
+- Endpoint: epicbook-db.cklo4cmkm5b6.us-east-1.rds.amazonaws.com*
 
 ---
 
@@ -132,7 +190,13 @@ Connect to RDS from EC2, create the `epicbook` database, and import the provided
 
 #### Screenshot 13 — Terminal showing successful `SHOW TABLES;` output with tables listed
 
-Add your screenshot here.
+![Database Initialization - Tables and Data Verified](./screenshots/assignment-04/Screenshot%2013.png)
+
+*Figure 13: Successful database connection from EC2 to RDS and SQL dump import verification:
+- Connected to epicbook-db.cklo4cmkm5b6.us-east-1.rds.amazonaws.com
+- Database "bookstore" created and initialized
+- SHOW TABLES output displays: Author, Book, Cart
+- SELECT COUNT(*) queries confirm data import: 53 authors, 54 books*
 
 ---
 
@@ -146,7 +210,12 @@ Clone the EpicBook repository, install backend dependencies, configure `.env` wi
 
 #### Screenshot 14 — Terminal showing the repository cloned and the `ls` output
 
-Add your screenshot here.
+![EpicBook Repository - Cloned and Ready for Deployment](./screenshots/assignment-04/Screenshot%2014.png)
+
+*Figure 14: EpicBook repository successfully cloned to EC2 instance:
+- Directory: ~/theepicbook
+- Files present: Installation & Configuration Guide.md, README.md, config, db, models, node_modules, package.json, package-lock.json, public, routes, server.js, views
+- Repository ready for backend deployment and environment configuration*
 
 ---
 
@@ -217,16 +286,16 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
-- [ ] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
-- [ ] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
-- [ ] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
-- [ ] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
-- [ ] Task 6: Database initialized from the SQL dump (Screenshot 13)
-- [ ] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
+- [x] Task 1: VPC, public/private subnets, IGW, and public routing created (Screenshots 1–3)
+- [x] Task 2: Least-privilege EC2 and RDS security groups created (Screenshots 4–5)
+- [x] Task 3: Ubuntu EC2 launched in the public subnet with SSH verified (Screenshots 6–7)
+- [x] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
+- [x] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
+- [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
+- [~] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16) - Repository cloned (14/16)
 - [ ] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
 - [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
-- [ ] No sensitive data exposed
+- [x] No sensitive data exposed
 
 ---
 
