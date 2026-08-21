@@ -294,19 +294,41 @@ Verify the frontend loads publicly, the backend responds through Nginx, and EC2 
 
 #### Screenshot 19 — Browser showing the EpicBook application loaded with the public IP visible
 
-Add your screenshot here.
+![EpicBook Frontend - Live in Browser](./screenshots/assignment-04/Screenshot%2019.png)
+
+*Figure 19: EpicBook frontend application successfully loaded and running in browser:
+- URL: 54.208.29.58/api/ (public IP endpoint visible)
+- Title: "The EpicBook!"
+- Hero section displaying: "Discover Your Next Great Read"
+- Book gallery showing multiple book covers (Behind the Corporate Curtain, The Little Astronaut, Journal)
+- Responsive design with navigation and shopping cart
+- All frontend assets loaded correctly*
 
 ---
 
 #### Screenshot 20 — Terminal showing a successful API call through the public endpoint
 
-Add your screenshot here.
+![API Response - curl Test from Public Endpoint](./screenshots/assignment-04/Screenshot%2020.png)
+
+*Figure 20: Successful API call through public endpoint via curl:
+- Command: curl http://54.208.29.58/api/
+- Response: Complete HTML page with proper structure
+- Headers include Firebase, Materialize CSS, Font Awesome, jQuery libraries
+- Navigation component with logo "The EpicBook"
+- Body structure with blue-grey theme and responsive layout
+- Demonstrates successful end-to-end communication through Nginx reverse proxy*
 
 ---
 
 #### Screenshot 21 — Terminal showing a successful database connectivity test (`SELECT 1;` or similar)
 
-Add your screenshot here.
+![Database Connectivity Test - Private RDS Access Verified](./screenshots/assignment-04/Screenshot%2021.png)
+
+*Figure 21: Successful database connectivity test from EC2 to private RDS:
+- Command: mysql -h epicbook-db.cklo4cmkm5b6.us-east-1.rds.amazonaws.com -u admin -p -e "SELECT 1;"
+- Query result: Returns "1" confirming successful connection
+- EC2 can successfully reach the private RDS database in the private subnet
+- Complete end-to-end communication verified: Frontend → Nginx → Backend → Private RDS*
 
 ---
 
@@ -327,7 +349,7 @@ Add your screenshot here.
 - [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
 - [x] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
 - [x] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
-- [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
+- [x] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
 - [x] No sensitive data exposed
 
 ---
