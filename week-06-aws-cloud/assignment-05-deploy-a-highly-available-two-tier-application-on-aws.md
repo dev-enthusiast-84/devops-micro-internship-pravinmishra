@@ -20,31 +20,71 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![HA VPC Configuration](./screenshots/assignment-05/Screenshot%201.png)
+
+*Figure 1: High-Availability VPC "ha-tt-vpc" successfully created:
+- VPC ID: vpc-06c94889a7fcd4387
+- IPv4 CIDR: 10.0.0.0/16
+- State: Available
+- DNS resolution enabled*
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![Four Subnets Across Two AZs](./screenshots/assignment-05/Screenshot%202.png)
+
+*Figure 2: High-Availability subnet configuration:
+- ha-tt-public-subnet-1: 10.0.1.0/24 (us-east-1a)
+- ha-tt-public-subnet-2: 10.0.2.0/24 (us-east-1b)
+- ha-tt-private-subnet-1: 10.0.3.0/24 (us-east-1a)
+- ha-tt-private-subnet-2: 10.0.4.0/24 (us-east-1b)
+All subnets available across two Availability Zones*
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![Public Route Table with IGW](./screenshots/assignment-05/Screenshot%203.png)
+
+*Figure 3: Public route table "ha-tt-public-rtb" configuration:
+- Routes:
+  - 0.0.0.0/0 → igw-022d4ab839bcb3383 (Internet Gateway) - Active
+  - 10.0.0.0/16 → local - Active
+- Explicit subnet associations: 2 subnets
+  - ha-tt-public-subnet-1
+  - ha-tt-public-subnet-2
+- Both public subnets have internet access via IGW*
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![Private Route Table with NAT Gateway](./screenshots/assignment-05/Screenshot%204.png)
+
+*Figure 4: Private route table "ha-tt-private-rtb" configuration:
+- Routes:
+  - 0.0.0.0/0 → nat-0ad866679... (NAT Gateway) - Active
+  - 10.0.0.0/16 → local - Active
+- Explicit subnet associations: 2 subnets
+  - ha-tt-private-subnet-1
+  - ha-tt-private-subnet-2
+- Both private subnets have outbound internet access via NAT Gateway*
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+![NAT Gateway with Elastic IP](./screenshots/assignment-05/Screenshot%205.png)
+
+*Figure 5: NAT Gateway "ha-natgw" status and configuration:
+- NAT Gateway ID: nat-0ad8666797-0b76607
+- State: Available
+- Connectivity type: Public
+- Primary public IPv4 address (Elastic IP): 184.192.90.137
+- Subnet: ha-tt-public-subnet-1 (us-east-1a)
+- Created: Friday, August 21, 2026
+- Provides outbound internet access for private subnets*
 
 ---
 
@@ -259,7 +299,7 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
+- [x] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
 - [ ] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
 - [ ] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
 - [ ] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
