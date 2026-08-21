@@ -258,13 +258,29 @@ Copy the frontend files to the Nginx web root and configure Nginx to reverse-pro
 
 #### Screenshot 17 — `nginx -t` success output
 
-Add your screenshot here.
+![Nginx Configuration Test - Syntax Valid](./screenshots/assignment-04/Screenshot%2017.png)
+
+*Figure 17: Nginx configuration validation successful:
+- Command: sudo nginx -t
+- Output: nginx: configuration file /etc/nginx/nginx.conf test is successful
+- Configuration syntax verified and ready to serve
+- Minor warning about conflicting server name (non-critical)*
 
 ---
 
 #### Screenshot 18 — Nginx configuration snippet showing the `/api/` reverse proxy
 
-Add your screenshot here.
+![Nginx Configuration - Reverse Proxy Setup](./screenshots/assignment-04/Screenshot%2018.png)
+
+*Figure 18: Nginx configuration for reverse proxy:
+- Server block listening on port 80
+- Root directory: /var/www/html
+- Frontend served from location /
+- location / block uses try_files with index.html fallback
+- Reverse proxy configured at location /api/
+  - proxy_pass http://127.0.0.1:3000/
+  - Proper headers forwarded: Host, X-Real-IP, X-Forwarded-For
+  - HTTP version 1.1 for proxying*
 
 ---
 
@@ -310,7 +326,7 @@ Add your screenshot here.
 - [x] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
 - [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
 - [x] Task 7: Backend deployed and responding on port 3000 (Screenshots 14–16)
-- [ ] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
+- [x] Task 8: Nginx serving the frontend and reverse-proxying to the backend (Screenshots 17–18)
 - [ ] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
 - [x] No sensitive data exposed
 
