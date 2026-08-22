@@ -461,7 +461,8 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 ![LinkedIn Post - HA Two-Tier AWS Application](./screenshots/assignment-05/linkedin-post.png)
 
-*Figure: Published LinkedIn post by Maneetta Antony (Sr Staff Software Engineer) describing the highly available AWS infrastructure project:
+*Figure: Published LinkedIn post by Maneetta Antony 
+describing the highly available AWS infrastructure project:
 - Topic: Building fault-tolerant infrastructure with real-world failure testing
 - Architecture: Custom VPC with 4 subnets across 2 AZs, least-privilege security groups
 - Key Features: Auto Scaling Group for auto-healing, Multi-AZ RDS for data resilience
