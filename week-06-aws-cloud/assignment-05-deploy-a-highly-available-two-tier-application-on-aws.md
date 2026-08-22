@@ -402,7 +402,7 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/gCVR3Fyq`
 
 ---
 
@@ -430,7 +430,7 @@ Add your screenshot here.
 - [x] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
 - [~] Task 8: Both high-availability tests completed (Screenshots 19–22)
 - [ ] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
-- [ ] LinkedIn post published and URL submitted
+- [x] LinkedIn post published and URL submitted
 - [x] No sensitive data exposed
 
 ---
