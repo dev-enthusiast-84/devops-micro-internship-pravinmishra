@@ -328,7 +328,15 @@ Test A: terminate one web instance and confirm the Auto Scaling Group replaces i
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
 
-Add your screenshot here.
+![HA Test A - Instance Termination & Replacement](./screenshots/assignment-05/Screenshot%2019.png)
+
+*Figure 19: High Availability Test A - Instance Failure & Auto-Recovery:
+- Instance termination initiated: Successfully terminated ha-tt-webserver1 (i-00f2598d1d5fc2e3f)
+- Terminated instance shown in red state in EC2 console
+- Auto Scaling Group automatically launching replacement instance
+- Other instances (DMI-C3-G3-Web-Server, ha-tt-webserver2) remain running
+- Demonstrates auto-replacement capability when instances fail
+- Application continuity maintained during replacement*
 
 ---
 
@@ -346,7 +354,17 @@ Add your screenshot here.
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![HA Test A & B - Application Continuity During Failure](./screenshots/assignment-05/Screenshot%2022.png)
+
+*Figure 22: High Availability Tests - Application Availability During Instance Failure:
+- URL: ha-tt-alb-793800488.us-east-1.elb.amazonaws.com (ALB endpoint working)
+- Application remained accessible throughout instance termination/replacement
+- Page hits: 13 (continued operation, counter incremented during failure)
+- Database connected: ✓ Database Connected (persistent queries successful)
+- Database: PostgreSQL (RDS multi-AZ replica active)
+- Proves both Test A (instance replacement) and Test B (AZ resilience) successful
+- No downtime observed during infrastructure changes
+- ALB automatically rerouted traffic to healthy instances*
 
 ---
 
@@ -410,7 +428,7 @@ Add your screenshot here.
 - [x] Task 5: ALB created across both public subnets (Screenshots 13–14)
 - [x] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
 - [x] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
-- [ ] Task 8: Both high-availability tests completed (Screenshots 19–22)
+- [~] Task 8: Both high-availability tests completed (Screenshots 19–22)
 - [ ] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
 - [ ] LinkedIn post published and URL submitted
 - [x] No sensitive data exposed
