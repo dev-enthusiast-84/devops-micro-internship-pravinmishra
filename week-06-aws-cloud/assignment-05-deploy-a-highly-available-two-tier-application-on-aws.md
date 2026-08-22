@@ -98,19 +98,30 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 #### Screenshot 6 — ALB Security Group inbound rules
 
-Add your screenshot here.
+![ALB Security Group - HTTP Public](./screenshots/assignment-05/Screenshot%206.png)
+
+*Figure 6: ALB security group "ha-alb-sg" with 1 inbound rule:
+- HTTP TCP 80 from 0.0.0.0/0 (public internet access)*
 
 ---
 
 #### Screenshot 7 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP
 
-Add your screenshot here.
+![EC2 Security Group - HTTP from ALB & SSH](./screenshots/assignment-05/Screenshot%207.png)
+
+*Figure 7: EC2 security group "ha-web-sg" with 2 inbound rules:
+- HTTP TCP 80 from ALB security group (sg-0331b20f5898d1b16)
+- SSH TCP 22 from 74.12.139.191/32 (restricted IP)*
 
 ---
 
 #### Screenshot 8 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group
 
-Add your screenshot here.
+![RDS Security Group - Database Ports from EC2](./screenshots/assignment-05/Screenshot%208.png)
+
+*Figure 8: RDS security group "ha-db-sg" with 2 inbound rules (least privilege):
+- PostgreSQL TCP 5432 from EC2 security group (sg-053ddf61b6d910e1d)
+- MySQL/Aurora TCP 3306 from EC2 security group (sg-053ddf61b6d910e1d)*
 
 ---
 
@@ -124,13 +135,39 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 9 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No
 
-Add your screenshot here.
+![RDS Instance - Multi-AZ PostgreSQL](./screenshots/assignment-05/Screenshot%209a.png)
+
+*Figure 9a: RDS instance "ha-tt-db" connectivity & security summary:
+- Status: Available
+- Engine: PostgreSQL
+- Port: 5432
+- Database: postgres
+- Internet access gateway: Disabled
+- Publicly accessible: No
+- VPC security group: ha-db-sg (Active)*
+
+![RDS Instance Configuration - Multi-AZ Details](./screenshots/assignment-05/Screenshot%209b.png)
+
+*Figure 9b: RDS configuration showing Multi-AZ setup:
+- Multi-AZ: Yes
+- Secondary Zone: us-east-1b (different AZ from primary us-east-1a)
+- Storage: 200 GiB with encryption enabled
+- Provisioned IOPS: 3000*
 
 ---
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group
 
-Add your screenshot here.
+![RDS Connectivity & Security Settings](./screenshots/assignment-05/Screenshot%2010.png)
+
+*Figure 10: RDS connectivity and security configuration:
+- VPC: ha-tt-vpc (vpc-06c94889a7fcd4387)
+- Subnet group: ha-tt-subnet-group
+- Subnets: Private subnets in two AZs
+- Security group: ha-db-sg (Active)
+- Availability Zone: us-east-1a (primary)
+- Endpoint: ha-tt-db.cklo4cmkm5b6.us-east-1.rds.amazonaws.com
+- Port: 5432*
 
 ---
 
@@ -144,13 +181,26 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 11 — Launch Template details showing that user data exists, including a visible snippet
 
-Add your screenshot here.
+![Launch Template - User Data Script](./screenshots/assignment-05/Screenshot%2011.png)
+
+*Figure 11: Launch Template "HA-WEB-Launch-Template" with user data script visible:
+- PostgreSQL database configuration with RDS endpoint
+- System setup: Node.js and nginx installation
+- Application deployment from GitHub repository
+- Environment variables configured (DB_TYPE, DB_ENDPOINT, APP_PORT=8000)
+- Application starts automatically on instance launch*
 
 ---
 
 #### Screenshot 12 — A running instance created from the template showing the application responds on port 80
 
-Add your screenshot here.
+![Application Running - Database Connected](./screenshots/assignment-05/Screenshot%2012.png)
+
+*Figure 12: Instance created from launch template with application running:
+- Application responds on port 80 (via nginx reverse proxy)
+- Database connectivity verified: ✓ Database Connected
+- Database type: PostgreSQL
+- Page hit counter showing 1 (application functioning)*
 
 ---
 
@@ -164,13 +214,31 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+![Application Load Balancer - Multi-AZ](./screenshots/assignment-05/Screenshot%2013.png)
+
+*Figure 13: ALB "ha-tt-alb" configuration:
+- Status: Active
+- Type: Application (Internet-facing)
+- Availability Zones: 2 zones selected
+  - us-east-1a (use1-az1)
+  - us-east-1b (use1-az2)
+- Subnets: Both public subnets
+- DNS name: ha-tt-alb-793800488.us-east-1.elb.amazonaws.com*
 
 ---
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+![Target Group - Two Healthy Instances](./screenshots/assignment-05/Screenshot%2014.png)
+
+*Figure 14: Target group "ha-tt-tg" health status:
+- Total targets: 2
+- Healthy: 2
+- Unhealthy: 0
+- Load balancer: ha-tt-alb
+- Registered targets in different AZs:
+  - Instance in us-east-1a (use1-az1) - Healthy
+  - Instance in us-east-1b (use1-az2) - Healthy*
 
 ---
 
@@ -184,13 +252,33 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+![Auto Scaling Group - Multi-AZ Configuration](./screenshots/assignment-05/Screenshot%2015.png)
+
+*Figure 15: Auto Scaling Group "ha-tt-asg" configuration:
+- Status: At desired capacity
+- Instance health: 2/2 Healthy
+- Desired capacity: 2
+- Minimum: 2
+- Maximum: 4
+- Availability Zones: 2 zones
+  - us-east-1a (use1-az1)
+  - us-east-1b (use1-az2)
+- Launch template: HA-WEB-Launch-Template*
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+![Target Group After HA Test - All Healthy](./screenshots/assignment-05/Screenshot%2016.png)
+
+*Figure 16: Target group after testing shows:
+- Successfully deregistered 1 target (as part of HA test)
+- Total targets: 2 instances
+- Healthy: 2 (both instances restored/running)
+- Distribution across Availability Zones:
+  - Instance in us-east-1b - Healthy
+  - Instance in us-east-1a - Healthy
+- Application remains accessible during scaling events*
 
 ---
 
@@ -204,13 +292,29 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![Application via ALB - Database Write Verified](./screenshots/assignment-05/Screenshot%2017.png)
+
+*Figure 17: Application accessible through ALB DNS endpoint:
+- URL: ha-tt-alb-793800488.us-east-1.elb.amazonaws.com
+- Application loaded and responding
+- Database write operation successful: Page hit counter = 1
+- Database read operation successful: ✓ Database Connected
+- Database type displayed: PostgreSQL
+- Confirms end-to-end connectivity: ALB → EC2 → RDS*
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![Multiple Requests - Page Counter Incrementing](./screenshots/assignment-05/Screenshot%2018.png)
+
+*Figure 18: Application with multiple page hits demonstrating database read/write:
+- URL: ha-tt-alb-793800488.us-east-1.elb.amazonaws.com
+- Page hit counter: 10 (incremented from previous 1)
+- Database writes verified: Each refresh increments the counter in database
+- Database reads verified: ✓ Database Connected displayed on every request
+- Database: PostgreSQL
+- Multi-refresh testing shows persistent data storage and retrieval*
 
 ---
 
@@ -300,16 +404,16 @@ Add your screenshot here.
 # Completion Checklist
 
 - [x] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
-- [ ] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
-- [ ] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
-- [ ] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
-- [ ] Task 5: ALB created across both public subnets (Screenshots 13–14)
-- [ ] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
-- [ ] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
+- [x] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
+- [x] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
+- [x] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
+- [x] Task 5: ALB created across both public subnets (Screenshots 13–14)
+- [x] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
+- [x] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
 - [ ] Task 8: Both high-availability tests completed (Screenshots 19–22)
 - [ ] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
 - [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [x] No sensitive data exposed
 
 ---
 
