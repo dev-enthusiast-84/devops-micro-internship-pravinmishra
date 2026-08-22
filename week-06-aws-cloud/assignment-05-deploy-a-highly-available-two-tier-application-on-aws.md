@@ -453,15 +453,23 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`https://lnkd.in/p/gCVR3Fyq`
+[LinkedIn post](https://lnkd.in/p/gCVR3Fyq)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post - HA Two-Tier AWS Application](./screenshots/assignment-05/linkedin-post.png)
+
+*Figure: Published LinkedIn post by Maneetta Antony (Sr Staff Software Engineer) describing the highly available AWS infrastructure project:
+- Topic: Building fault-tolerant infrastructure with real-world failure testing
+- Architecture: Custom VPC with 4 subnets across 2 AZs, least-privilege security groups
+- Key Features: Auto Scaling Group for auto-healing, Multi-AZ RDS for data resilience
+- Testing: Destructive failure tests (instance termination, AZ impact simulation)
+- Results: Zero downtime achieved during instance failures and AZ impacts
+- Engagement: 6 hashtags (#AWS #DevOps #CloudEngineering #HighAvailability #SystemDesign #MultiAZ)
+- Post URL: https://lnkd.in/p/gCVR3Fyq
+- Context: Part of DevOps Micro Internship Cohort 3 with Agentic AI by Pravin Mishra*
 
 ---
 
