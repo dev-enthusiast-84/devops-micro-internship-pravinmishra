@@ -57,6 +57,9 @@ us-east-1
 **Database:**
 - Amazon RDS (Relational Database Service) - MySQL with Multi-AZ deployment and read replica
 
+**Monitoring & Logging:**
+- Amazon CloudWatch Logs - application and system logs from EC2 instances and ALB access logs
+
 ---
 
 # Task 3 — Public Entry Point
