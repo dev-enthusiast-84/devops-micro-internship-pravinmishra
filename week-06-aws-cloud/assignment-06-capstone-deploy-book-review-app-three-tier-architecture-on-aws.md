@@ -34,13 +34,28 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+us-east-1
 
 ---
 
 **Services used:**
 
-Write your answer here.
+**Networking:**
+- Amazon VPC (Virtual Private Cloud)
+- Subnets (public and private across multiple Availability Zones)
+- Security Groups
+- Internet Gateway
+- NAT Gateway
+- Route Tables
+
+**Compute:**
+- Amazon EC2 (Elastic Compute Cloud) - Web Tier and App Tier instances
+
+**Load Balancing:**
+- Application Load Balancer (ALB) - public ALB for Web Tier, internal ALB for App Tier
+
+**Database:**
+- Amazon RDS (Relational Database Service) - MySQL with Multi-AZ deployment and read replica
 
 ---
 
