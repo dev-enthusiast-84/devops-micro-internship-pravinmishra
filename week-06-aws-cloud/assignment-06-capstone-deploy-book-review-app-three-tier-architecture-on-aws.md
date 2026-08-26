@@ -43,6 +43,7 @@ us-east-1
 **Networking:**
 - Amazon VPC (Virtual Private Cloud)
 - Subnets (public and private across multiple Availability Zones)
+- Availability Zones - for high availability and fault tolerance
 - Security Groups
 - Internet Gateway
 - NAT Gateway
@@ -59,6 +60,7 @@ us-east-1
 
 **Database:**
 - Amazon RDS (Relational Database Service) - MySQL with Multi-AZ deployment and read replica
+- DB Subnet Group - for managing RDS database instance subnets across Availability Zones
 
 **Monitoring & Logging:**
 - Amazon CloudWatch Logs - application and system logs from EC2 instances and ALB access logs
