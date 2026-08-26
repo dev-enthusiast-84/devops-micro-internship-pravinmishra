@@ -47,6 +47,8 @@ us-east-1
 - Internet Gateway
 - NAT Gateway
 - Route Tables
+- Elastic IP - for NAT Gateway and static public IP addressing
+- VPC Flow Logs - for network troubleshooting and traffic analysis
 
 **Compute:**
 - Amazon EC2 (Elastic Compute Cloud) - Web Tier and App Tier instances
