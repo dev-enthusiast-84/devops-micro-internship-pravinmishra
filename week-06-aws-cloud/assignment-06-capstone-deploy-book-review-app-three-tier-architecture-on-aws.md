@@ -53,6 +53,7 @@ us-east-1
 
 **Load Balancing:**
 - Application Load Balancer (ALB) - public ALB for Web Tier, internal ALB for App Tier
+- Target Groups - for routing traffic to EC2 instances in each tier
 
 **Database:**
 - Amazon RDS (Relational Database Service) - MySQL with Multi-AZ deployment and read replica
