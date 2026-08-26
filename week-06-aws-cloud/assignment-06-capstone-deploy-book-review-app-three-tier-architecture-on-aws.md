@@ -70,37 +70,47 @@ Capture visual proof of every tier and load balancer.
 
 #### Screenshot 1 — Web Tier EC2 instance in a public subnet
 
-Add your screenshot here.
+![Screenshot 1 - Web Tier EC2](./screenshots/assignment-06/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — App Tier EC2 instance in a private subnet
 
-Add your screenshot here.
+![Screenshot 2 - App Tier EC2](./screenshots/assignment-06/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![Screenshot 3a - Public ALB](./screenshots/assignment-06/Screenshot%203a.png)
+
+![Screenshot 3b - Public ALB](./screenshots/assignment-06/Screenshot%203b.png)
 
 ---
 
 #### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![Screenshot 4a - Internal ALB](./screenshots/assignment-06/Screenshot%204a.png)
+
+![Screenshot 4b - Internal ALB](./screenshots/assignment-06/Screenshot%204b.png)
 
 ---
 
 #### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
 
-Add your screenshot here.
+![Screenshot 5 - RDS Multi-AZ and Read Replica](./screenshots/assignment-06/Screenshot%205.png)
 
 ---
 
 #### Screenshot 6 — Book Review App UI working through the public ALB
 
-Add your screenshot here.
+![Screenshot 6a - Book Review App UI](./screenshots/assignment-06/Screenshot%206a.png)
+
+![Screenshot 6b - Book Review App UI](./screenshots/assignment-06/Screenshot%206b.png)
+
+![Screenshot 6c - Book Review App UI](./screenshots/assignment-06/Screenshot%206c.png)
+
+![Screenshot 6d - Book Review App UI](./screenshots/assignment-06/Screenshot%206d.png)
 
 ---
 
