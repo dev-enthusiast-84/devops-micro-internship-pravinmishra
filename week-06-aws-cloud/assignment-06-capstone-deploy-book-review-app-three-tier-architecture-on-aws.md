@@ -54,8 +54,6 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 #### Public ALB DNS
 
-Paste your public ALB DNS name here:
-
 `bookreviewapp-web-lb-1741679757.us-east-1.elb.amazonaws.com`
 
 ---
