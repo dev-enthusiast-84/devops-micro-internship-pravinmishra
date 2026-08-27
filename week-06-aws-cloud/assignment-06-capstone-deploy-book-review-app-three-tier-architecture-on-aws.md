@@ -145,19 +145,35 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+Component creation and infrastructure setup were smooth due to clear solution documentation. Identifying AWS service configurations and using the provided docs made the initial deployment process straightforward. The three-tier architecture design, VPC setup, subnet configuration, and security group framework all deployed as expected.
 
 ---
 
 **Issues encountered and fixes:**
 
-Write your answer here.
+1. **Application Deployment & PM2 Troubleshooting** — Application deployment initially failed. PM2 (process manager) was new, requiring exploration and troubleshooting of application logs and process status to identify failures.
+
+2. **Web ALB to App Tier Connectivity** — Initial security group rules did not enable full connectivity between the Web ALB and backend App servers. Solution: Reviewed and corrected inbound rules for the App Tier security group to allow traffic from the Web ALB.
+
+3. **Bastion Host Access Pattern** — The bastion concept recommended in solution docs did not work with available inbound rules for private App server access. Explored alternative methods and AWS CLI commands to verify connectivity and configurations.
+
+4. **API Proxy & Backend Connectivity** — Backend API requests through the proxy path initially failed due to incomplete security group rules and configuration. Fixed by adjusting ALB target group rules, listener configurations, and verifying security group ingress/egress rules.
+
+5. **Application-Level Issues** — App code had race condition issues causing duplicate record creation and 500 errors. Home page load failures occurred due to API connectivity issues. Used debugging techniques and AWS CLI to verify service attributes, configurations, and behavior.
+
+6. **Root Cause Identification** — The core challenge was identifying why API responses were not accessible through the Web server. Systematic troubleshooting involved enabling VPC Flow Logs for network analysis, invoking AWS CLI commands to inspect service configurations, and iteratively testing connectivity between tiers.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+- **AWS Documentation** — Official AWS docs for VPC, EC2, ALB, RDS, Security Groups, and service configuration best practices
+- **AWS CLI** — Used to inspect resource configurations, verify service attributes, and validate security group rules
+- **VPC Flow Logs** — Enabled for network troubleshooting and analyzing traffic patterns between application tiers
+- **CloudWatch Logs** — Monitored application and system logs for debugging failures and identifying issues
+- **Claude (AI Assistant)** — Assisted with systematic troubleshooting, provided debugging suggestions, identified root causes, and helped document learning and script commands for future reference
+- **PM2 Documentation** — Learned process management, log inspection, and troubleshooting techniques
+- **Solution Documentation** — Provided baseline architecture and configuration patterns
 
 ---
 
@@ -171,9 +187,7 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+`https://lnkd.in/p/ginaA5Vd`
 
 ---
 
