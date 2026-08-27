@@ -1,199 +1,247 @@
-<svg viewBox="0 0 1800 1200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 2000 1400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .title { font-size: 32px; font-weight: bold; fill: #232F3E; text-anchor: middle; }
-      .subtitle { font-size: 14px; fill: #FF9900; text-anchor: middle; letter-spacing: 1px; }
-      .vpc-label { font-size: 13px; font-weight: bold; fill: #EC7211; }
-      .az-label { font-size: 12px; fill: #232F3E; font-weight: bold; }
-      .section-title { font-size: 14px; font-weight: bold; fill: #232F3E; }
-      .label { font-size: 11px; fill: #232F3E; text-anchor: middle; }
-      .label-white { font-size: 11px; fill: white; text-anchor: middle; font-weight: bold; }
-      .arrow { stroke: #232F3E; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
-      .arrow-dashed { stroke: #666; stroke-width: 2; stroke-dasharray: 5,5; fill: none; marker-end: url(#arrowhead-gray); }
-      .vpc-border { fill: none; stroke: #EC7211; stroke-width: 2; stroke-dasharray: 5,5; }
-      .az-border { fill: none; stroke: #B7B8BC; stroke-width: 1; stroke-dasharray: 3,3; }
-      .subnet-border { fill: none; stroke: #B7B8BC; stroke-width: 1; }
-      .alb-box { fill: #FF9900; stroke: #232F3E; stroke-width: 2; }
-      .ec2-box { fill: #F58536; stroke: #232F3E; stroke-width: 2; }
-      .rds-box { fill: #527FFF; stroke: #232F3E; stroke-width: 2; }
-      .service-box { fill: #E8E8E8; stroke: #999; stroke-width: 1; }
+      .title-main { font-size: 48px; font-weight: bold; fill: #003366; text-anchor: middle; }
+      .title-sub { font-size: 18px; fill: #009900; text-anchor: middle; letter-spacing: 3px; font-weight: bold; }
+      .tier-header { fill: white; font-weight: bold; font-size: 16px; text-anchor: middle; }
+      .label-large { font-size: 14px; font-weight: bold; fill: #232F3E; }
+      .label { font-size: 12px; fill: #232F3E; }
+      .label-small { font-size: 10px; fill: #666; }
+      .label-white { font-size: 11px; fill: white; font-weight: bold; }
+      .arrow { stroke: #232F3E; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .vpc-border { fill: none; stroke: #27AE60; stroke-width: 3; stroke-dasharray: 8,4; }
+      .subnet-border { fill: none; stroke: #B7B8BC; stroke-width: 2; }
+      .tier-section { fill: #F5F5F5; stroke: #B7B8BC; stroke-width: 1; }
+      .box-web { fill: #E8D4F1; stroke: #7A3E8C; stroke-width: 2; }
+      .box-app { fill: #D4E8F1; stroke: #0073BB; stroke-width: 2; }
+      .box-db { fill: #F1E8D4; stroke: #FF9900; stroke-width: 2; }
+      .alb-circle { fill: #9966CC; stroke: #232F3E; stroke-width: 2; }
+      .icon-text { font-size: 10px; fill: white; font-weight: bold; text-anchor: middle; }
     </style>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#232F3E" />
-    </marker>
-    <marker id="arrowhead-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    <marker id="arrowhead" markerWidth="15" markerHeight="15" refX="12" refY="6" orient="auto">
+      <polygon points="0 0, 15 6, 0 12" fill="#232F3E" />
     </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="1800" height="1200" fill="#FFFFFF"/>
+  <rect width="2000" height="1400" fill="white"/>
 
-  <!-- Title -->
-  <text x="900" y="40" class="title">AWS THREE-TIER ARCHITECTURE</text>
-  <text x="900" y="65" class="subtitle">Book Review App - Production Deployment</text>
+  <!-- AWS Logo -->
+  <circle cx="100" cy="60" r="40" fill="#FF9900"/>
+  <text x="100" y="70" style="font-size: 24px; font-weight: bold; fill: white; text-anchor: middle;">aws</text>
 
-  <!-- Internet -->
-  <circle cx="100" cy="200" r="40" fill="#EC7211" stroke="#232F3E" stroke-width="2"/>
-  <text x="100" y="210" class="label-white">INTERNET</text>
-  <path d="M 140 200 L 200 200" class="arrow"/>
+  <!-- Main Title -->
+  <text x="1000" y="70" class="title-main">BOOK REVIEW APP – AWS ARCHITECTURE</text>
+  <text x="1000" y="100" class="title-sub">HIGHLY AVAILABLE • SECURE • SCALABLE</text>
 
-  <!-- VPC Border -->
-  <rect x="200" y="80" width="1550" height="900" class="vpc-border"/>
-  <text x="220" y="100" class="vpc-label">VPC: 10.0.0.0/16</text>
-
-  <!-- ===== AVAILABILITY ZONE 1 ===== -->
+  <!-- VPC Container -->
+  <rect x="250" y="140" width="1700" height="880" class="vpc-border"/>
   <g>
-    <!-- AZ1 Border -->
-    <rect x="220" y="130" width="725" height="850" class="az-border"/>
-    <text x="240" y="155" class="az-label">Availability Zone: us-east-1a</text>
+    <circle cx="280" cy="170" r="20" fill="#27AE60" stroke="#232F3E" stroke-width="2"/>
+    <text x="280" y="178" style="font-size: 14px; fill: white; font-weight: bold; text-anchor: middle;">VPC</text>
+  </g>
+  <text x="330" y="175" class="label-large">VPC – 10.0.0.0/16</text>
 
-    <!-- WEB TIER SUBNET -->
-    <rect x="240" y="180" width="685" height="140" fill="none" stroke="#B7B8BC" stroke-width="1.5"/>
-    <text x="260" y="200" class="section-title">Public Subnet: 10.0.1.0/24</text>
-    
-    <!-- ALB -->
-    <rect x="270" y="220" width="80" height="80" class="alb-box"/>
-    <text x="310" y="250" class="label-white" style="font-size: 10px;">ALB</text>
-    <text x="310" y="265" class="label-white" style="font-size: 9px;">80/443</text>
+  <!-- ============= WEB TIER ============= -->
+  <g>
+    <!-- Header -->
+    <rect x="280" y="200" width="520" height="40" fill="#7A3E8C" stroke="#232F3E" stroke-width="2"/>
+    <text x="540" y="230" class="tier-header">WEB TIER (PUBLIC)</text>
 
-    <!-- Web Tier EC2 -->
-    <rect x="400" y="220" width="80" height="80" class="ec2-box"/>
-    <text x="440" y="250" class="label-white" style="font-size: 10px;">EC2</text>
-    <text x="440" y="265" class="label-white" style="font-size: 9px;">Nginx</text>
-    <text x="440" y="280" class="label" style="font-size: 8px;">10.0.1.x</text>
+    <!-- Public ALB -->
+    <circle cx="380" cy="300" r="45" class="alb-circle"/>
+    <text x="380" y="295" class="icon-text" style="font-size: 12px;">⚙</text>
+    <text x="380" y="320" class="label-white">ALB</text>
+    <text x="380" y="340" class="label-small" style="text-anchor: middle;">80/443</text>
 
-    <!-- APP TIER SUBNET -->
-    <rect x="240" y="340" width="685" height="140" fill="none" stroke="#B7B8BC" stroke-width="1.5"/>
-    <text x="260" y="360" class="section-title">Private Subnet: 10.0.3.0/24</text>
+    <!-- Public Subnet A -->
+    <rect x="300" y="380" width="220" height="180" class="box-web" stroke="#7A3E8C" stroke-width="2"/>
+    <text x="410" y="405" class="label-large" style="text-anchor: middle;">PUBLIC SUBNET A</text>
+    <text x="410" y="425" class="label" style="text-anchor: middle; fill: #7A3E8C;">10.0.1.0/24 (us-east-1a)</text>
+
+    <!-- Web EC2 A -->
+    <rect x="330" y="450" width="70" height="70" fill="#FF9900" stroke="#232F3E" stroke-width="2"/>
+    <text x="365" y="490" class="label-white" style="font-size: 10px;">WEB EC2</text>
+    <text x="365" y="510" class="label-small" style="text-anchor: middle; fill: white;">Nginx</text>
+
+    <!-- Public Subnet B -->
+    <rect x="540" y="380" width="220" height="180" class="box-web" stroke="#7A3E8C" stroke-width="2"/>
+    <text x="650" y="405" class="label-large" style="text-anchor: middle;">PUBLIC SUBNET B</text>
+    <text x="650" y="425" class="label" style="text-anchor: middle; fill: #7A3E8C;">10.0.2.0/24 (us-east-1b)</text>
+
+    <!-- Web EC2 B -->
+    <rect x="570" y="450" width="70" height="70" fill="#FF9900" stroke="#232F3E" stroke-width="2"/>
+    <text x="605" y="490" class="label-white" style="font-size: 10px;">WEB EC2</text>
+    <text x="605" y="510" class="label-small" style="text-anchor: middle; fill: white;">Nginx</text>
+
+    <!-- DNS Label -->
+    <text x="540" y="600" class="label-small" style="text-anchor: middle; font-style: italic;">bookreviewapp-web-lb-***.elb</text>
+
+    <!-- Arrow to App -->
+    <path d="M 410 350 L 410 400" class="arrow"/>
+    <path d="M 650 350 L 650 400" class="arrow"/>
+  </g>
+
+  <!-- ============= APP TIER ============= -->
+  <g>
+    <!-- Header -->
+    <rect x="820" y="200" width="520" height="40" fill="#0073BB" stroke="#232F3E" stroke-width="2"/>
+    <text x="1080" y="230" class="tier-header">APP TIER (PRIVATE)</text>
 
     <!-- Internal ALB -->
-    <rect x="270" y="380" width="80" height="80" class="alb-box"/>
-    <text x="310" y="410" class="label-white" style="font-size: 10px;">ALB</text>
-    <text x="310" y="425" class="label-white" style="font-size: 9px;">3000</text>
+    <circle cx="1020" cy="300" r="45" fill="#0073BB" stroke="#232F3E" stroke-width="2"/>
+    <text x="1020" y="295" class="icon-text" style="font-size: 12px;">⚙</text>
+    <text x="1020" y="320" class="label-white">ALB</text>
+    <text x="1020" y="340" class="label-small" style="text-anchor: middle;">3000</text>
 
-    <!-- App Tier EC2 -->
-    <rect x="400" y="380" width="80" height="80" class="ec2-box"/>
-    <text x="440" y="410" class="label-white" style="font-size: 10px;">EC2</text>
-    <text x="440" y="425" class="label-white" style="font-size: 9px;">Node.js</text>
-    <text x="440" y="440" class="label" style="font-size: 8px;">10.0.3.x</text>
+    <!-- Private Subnet A -->
+    <rect x="840" y="380" width="220" height="180" class="box-app" stroke="#0073BB" stroke-width="2"/>
+    <text x="950" y="405" class="label-large" style="text-anchor: middle;">PRIVATE APP A</text>
+    <text x="950" y="425" class="label" style="text-anchor: middle; fill: #0073BB;">10.0.3.0/24 (us-east-1a)</text>
 
-    <!-- DB TIER SUBNET -->
-    <rect x="240" y="500" width="685" height="140" fill="none" stroke="#B7B8BC" stroke-width="1.5"/>
-    <text x="260" y="520" class="section-title">Private Subnet: 10.0.5.0/24</text>
+    <!-- App EC2 A -->
+    <rect x="870" y="450" width="70" height="70" fill="#0073BB" stroke="#232F3E" stroke-width="2"/>
+    <text x="905" y="490" class="label-white" style="font-size: 10px;">APP EC2</text>
+    <text x="905" y="510" class="label-small" style="text-anchor: middle; fill: white;">Node.js</text>
+
+    <!-- Private Subnet B -->
+    <rect x="1080" y="380" width="220" height="180" class="box-app" stroke="#0073BB" stroke-width="2"/>
+    <text x="1190" y="405" class="label-large" style="text-anchor: middle;">PRIVATE APP B</text>
+    <text x="1190" y="425" class="label" style="text-anchor: middle; fill: #0073BB;">10.0.4.0/24 (us-east-1b)</text>
+
+    <!-- App EC2 B -->
+    <rect x="1110" y="450" width="70" height="70" fill="#0073BB" stroke="#232F3E" stroke-width="2"/>
+    <text x="1145" y="490" class="label-white" style="font-size: 10px;">APP EC2</text>
+    <text x="1145" y="510" class="label-small" style="text-anchor: middle; fill: white;">Node.js</text>
+
+    <!-- DNS Label -->
+    <text x="1080" y="600" class="label-small" style="text-anchor: middle; font-style: italic;">internal-bookreviewapp-*</text>
+
+    <!-- Arrow from Web -->
+    <path d="M 760 500 L 840 500" class="arrow"/>
+    <path d="M 760 500 L 1080 500" class="arrow"/>
+  </g>
+
+  <!-- ============= DATABASE TIER ============= -->
+  <g>
+    <!-- Header -->
+    <rect x="1360" y="200" width="520" height="40" fill="#7A3E8C" stroke="#232F3E" stroke-width="2"/>
+    <text x="1620" y="230" class="tier-header">DATABASE TIER (PRIVATE)</text>
+
+    <!-- Private DB Subnet A -->
+    <rect x="1380" y="280" width="220" height="130" class="box-db" stroke="#FF9900" stroke-width="2"/>
+    <text x="1490" y="305" class="label-large" style="text-anchor: middle;">PRIVATE DB A</text>
+    <text x="1490" y="325" class="label" style="text-anchor: middle; fill: #FF9900;">10.0.5.0/24 (us-east-1a)</text>
 
     <!-- RDS Primary -->
-    <rect x="270" y="540" width="80" height="80" class="rds-box"/>
-    <text x="310" y="570" class="label-white" style="font-size: 10px;">RDS</text>
-    <text x="310" y="585" class="label-white" style="font-size: 9px;">MySQL</text>
-    <text x="310" y="600" class="label-white" style="font-size: 8px;">Primary</text>
+    <circle cx="1430" cy="420" r="35" fill="#527FFF" stroke="#232F3E" stroke-width="2"/>
+    <text x="1430" y="420" class="label-white" style="font-size: 10px; text-anchor: middle;">RDS</text>
+    <text x="1430" y="440" class="label-small" style="text-anchor: middle; fill: white;">Primary</text>
 
-    <!-- Arrows within AZ1 -->
-    <path d="M 350 250 L 400 250" class="arrow"/>
-    <path d="M 440 300 L 440 340" class="arrow"/>
-    <path d="M 350 410 L 400 410" class="arrow"/>
-    <path d="M 440 460 L 440 500" class="arrow"/>
-    <path d="M 310 620 L 310 680" class="arrow-dashed" style="stroke: #0073BB; stroke-width: 2.5;"/>
+    <!-- Private DB Subnet B -->
+    <rect x="1620" y="280" width="220" height="130" class="box-db" stroke="#FF9900" stroke-width="2"/>
+    <text x="1730" y="305" class="label-large" style="text-anchor: middle;">PRIVATE DB B</text>
+    <text x="1730" y="325" class="label" style="text-anchor: middle; fill: #FF9900;">10.0.6.0/24 (us-east-1b)</text>
+
+    <!-- RDS Read Replica -->
+    <circle cx="1720" cy="420" r="35" fill="#527FFF" stroke="#232F3E" stroke-width="2"/>
+    <text x="1720" y="420" class="label-white" style="font-size: 10px; text-anchor: middle;">RDS</text>
+    <text x="1720" y="440" class="label-small" style="text-anchor: middle; fill: white;">Replica</text>
+
+    <!-- Multi-AZ Arrow -->
+    <path d="M 1465 420 L 1685 420" class="arrow" style="stroke: #527FFF; stroke-width: 2;"/>
+    <text x="1575" y="405" class="label-small" style="text-anchor: middle; fill: #527FFF; font-weight: bold;">Multi-AZ Sync</text>
+
+    <!-- Arrow from App -->
+    <path d="M 1300 500 L 1380 400" class="arrow"/>
+    <path d="M 1300 500 L 1620 400" class="arrow"/>
   </g>
 
-  <!-- ===== AVAILABILITY ZONE 2 ===== -->
+  <!-- ============= NETWORKING SECTION ============= -->
   <g>
-    <!-- AZ2 Border -->
-    <rect x="970" y="130" width="725" height="850" class="az-border"/>
-    <text x="990" y="155" class="az-label">Availability Zone: us-east-1b</text>
+    <rect x="280" y="1050" width="1700" height="120" fill="#FFFACD" stroke="#FF9900" stroke-width="2"/>
+    <text x="310" y="1080" class="label-large">NETWORKING</text>
 
-    <!-- WEB TIER SUBNET -->
-    <rect x="990" y="180" width="685" height="140" fill="none" stroke="#B7B8BC" stroke-width="1.5"/>
-    <text x="1010" y="200" class="section-title">Public Subnet: 10.0.2.0/24</text>
-    
-    <!-- Web Tier EC2 -->
-    <rect x="1150" y="220" width="80" height="80" class="ec2-box"/>
-    <text x="1190" y="250" class="label-white" style="font-size: 10px;">EC2</text>
-    <text x="1190" y="265" class="label-white" style="font-size: 9px;">Nginx</text>
-    <text x="1190" y="280" class="label" style="font-size: 8px;">10.0.2.x</text>
+    <!-- 6 Subnet boxes -->
+    <g>
+      <rect x="310" y="1100" width="130" height="50" fill="#E8D4F1" stroke="#7A3E8C" stroke-width="1.5"/>
+      <text x="375" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">PUBLIC SUBNET A</text>
+      <text x="375" y="1135" class="label-small" style="text-anchor: middle;">10.0.1.0/24</text>
+    </g>
 
-    <!-- APP TIER SUBNET -->
-    <rect x="990" y="340" width="685" height="140" fill="none" stroke="#B7B8BC" stroke-width="1.5"/>
-    <text x="1010" y="360" class="section-title">Private Subnet: 10.0.4.0/24</text>
+    <g>
+      <rect x="460" y="1100" width="130" height="50" fill="#E8D4F1" stroke="#7A3E8C" stroke-width="1.5"/>
+      <text x="525" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">PUBLIC SUBNET B</text>
+      <text x="525" y="1135" class="label-small" style="text-anchor: middle;">10.0.2.0/24</text>
+    </g>
 
-    <!-- App Tier EC2 -->
-    <rect x="1150" y="380" width="80" height="80" class="ec2-box"/>
-    <text x="1190" y="410" class="label-white" style="font-size: 10px;">EC2</text>
-    <text x="1190" y="425" class="label-white" style="font-size: 9px;">Node.js</text>
-    <text x="1190" y="440" class="label" style="font-size: 8px;">10.0.4.x</text>
+    <g>
+      <rect x="610" y="1100" width="130" height="50" fill="#D4E8F1" stroke="#0073BB" stroke-width="1.5"/>
+      <text x="675" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">PRIVATE APP A</text>
+      <text x="675" y="1135" class="label-small" style="text-anchor: middle;">10.0.3.0/24</text>
+    </g>
 
-    <!-- DB TIER SUBNET -->
-    <rect x="990" y="500" width="685" height="140" fill="none" stroke="#B7B8BC" stroke-width="1.5"/>
-    <text x="1010" y="520" class="section-title">Private Subnet: 10.0.6.0/24</text>
+    <g>
+      <rect x="760" y="1100" width="130" height="50" fill="#D4E8F1" stroke="#0073BB" stroke-width="1.5"/>
+      <text x="825" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">PRIVATE APP B</text>
+      <text x="825" y="1135" class="label-small" style="text-anchor: middle;">10.0.4.0/24</text>
+    </g>
 
-    <!-- RDS Standby -->
-    <rect x="1120" y="540" width="80" height="80" class="rds-box"/>
-    <text x="1160" y="570" class="label-white" style="font-size: 10px;">RDS</text>
-    <text x="1160" y="585" class="label-white" style="font-size: 9px;">MySQL</text>
-    <text x="1160" y="600" class="label-white" style="font-size: 8px;">Replica</text>
+    <g>
+      <rect x="910" y="1100" width="130" height="50" fill="#F1E8D4" stroke="#FF9900" stroke-width="1.5"/>
+      <text x="975" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">PRIVATE DB A</text>
+      <text x="975" y="1135" class="label-small" style="text-anchor: middle;">10.0.5.0/24</text>
+    </g>
 
-    <!-- Arrows within AZ2 -->
-    <path d="M 1190 300 L 1190 340" class="arrow"/>
-    <path d="M 1190 460 L 1190 500" class="arrow"/>
-    <path d="M 1160 620 L 1160 680" class="arrow-dashed" style="stroke: #0073BB; stroke-width: 2.5;"/>
+    <g>
+      <rect x="1060" y="1100" width="130" height="50" fill="#F1E8D4" stroke="#FF9900" stroke-width="1.5"/>
+      <text x="1125" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">PRIVATE DB B</text>
+      <text x="1125" y="1135" class="label-small" style="text-anchor: middle;">10.0.6.0/24</text>
+    </g>
+
+    <!-- Security & NAT -->
+    <g>
+      <rect x="1220" y="1100" width="130" height="50" fill="#FFCCCC" stroke="#CC0000" stroke-width="1.5"/>
+      <text x="1285" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">SECURITY</text>
+      <text x="1285" y="1135" class="label-small" style="text-anchor: middle;">GROUPS</text>
+    </g>
+
+    <g>
+      <rect x="1370" y="1100" width="130" height="50" fill="#CCFFCC" stroke="#27AE60" stroke-width="1.5"/>
+      <text x="1435" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">NAT</text>
+      <text x="1435" y="1135" class="label-small" style="text-anchor: middle;">GATEWAY</text>
+    </g>
+
+    <g>
+      <rect x="1520" y="1100" width="130" height="50" fill="#E8E8E8" stroke="#999" stroke-width="1.5"/>
+      <text x="1585" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">CLOUDWATCH</text>
+      <text x="1585" y="1135" class="label-small" style="text-anchor: middle;">+ VPC LOGS</text>
+    </g>
+
+    <g>
+      <rect x="1670" y="1100" width="130" height="50" fill="#E8E8E8" stroke="#999" stroke-width="1.5"/>
+      <text x="1735" y="1120" class="label-small" style="text-anchor: middle; font-weight: bold;">TARGET</text>
+      <text x="1735" y="1135" class="label-small" style="text-anchor: middle;">GROUPS</text>
+    </g>
   </g>
 
-  <!-- Cross-AZ Connections -->
-  <path d="M 480 250 L 1150 250" class="arrow" style="stroke: #FF9900; stroke-width: 2.5;"/>
-  <text x="815" y="245" class="label" style="fill: #FF9900; font-weight: bold;">Public ALB Targets</text>
-
-  <path d="M 480 410 L 1150 410" class="arrow" style="stroke: #0073BB; stroke-width: 2.5;"/>
-  <text x="815" y="405" class="label" style="fill: #0073BB; font-weight: bold;">Internal ALB Targets</text>
-
-  <path d="M 350 580 L 1120 580" class="arrow-dashed" style="stroke: #527FFF; stroke-width: 2.5;"/>
-  <text x="735" y="575" class="label" style="fill: #527FFF; font-weight: bold;">Multi-AZ Sync</text>
-
-  <!-- Services/Components Section -->
+  <!-- ============= KEY BENEFITS ============= -->
   <g>
-    <rect x="220" y="1020" width="1530" height="160" fill="#F5F5F5" stroke="#B7B8BC" stroke-width="1"/>
-    <text x="240" y="1045" class="section-title">AWS Services & Components</text>
+    <rect x="280" y="1200" width="1700" height="170" fill="#E8F4E8" stroke="#27AE60" stroke-width="2"/>
+    <text x="310" y="1225" class="label-large">KEY BENEFITS & FEATURES</text>
 
-    <!-- Row 1 -->
-    <rect x="240" y="1060" width="140" height="40" class="service-box"/>
-    <text x="310" y="1085" class="label">Security Groups</text>
+    <text x="320" y="1255" class="label">✓ Highly Available (Multi-AZ Deployment)</text>
+    <text x="320" y="1280" class="label">✓ Secure (Private Subnets, Security Groups, No Public DB Access)</text>
+    <text x="320" y="1305" class="label">✓ Scalable (Auto Scaling Groups, Load Balancers)</text>
+    <text x="320" y="1330" class="label">✓ Reliable (RDS Backups, Health Checks, Read Replica)</text>
 
-    <rect x="400" y="1060" width="140" height="40" class="service-box"/>
-    <text x="470" y="1085" class="label">Internet Gateway</text>
-
-    <rect x="560" y="1060" width="140" height="40" class="service-box"/>
-    <text x="630" y="1085" class="label">NAT Gateway</text>
-
-    <rect x="720" y="1060" width="140" height="40" class="service-box"/>
-    <text x="790" y="1085" class="label">Route Tables</text>
-
-    <rect x="880" y="1060" width="140" height="40" class="service-box"/>
-    <text x="950" y="1085" class="label">Elastic IP</text>
-
-    <!-- Row 2 -->
-    <rect x="240" y="1115" width="140" height="40" class="service-box"/>
-    <text x="310" y="1140" class="label">CloudWatch</text>
-
-    <rect x="400" y="1115" width="140" height="40" class="service-box"/>
-    <text x="470" y="1140" class="label">VPC Flow Logs</text>
-
-    <rect x="560" y="1115" width="140" height="40" class="service-box"/>
-    <text x="630" y="1140" class="label">Target Groups</text>
-
-    <rect x="720" y="1115" width="140" height="40" class="service-box"/>
-    <text x="790" y="1140" class="label">DB Subnet Group</text>
-
-    <rect x="880" y="1115" width="140" height="40" class="service-box"/>
-    <text x="950" y="1140" class="label">Auto Scaling</text>
-
-    <rect x="1040" y="1115" width="140" height="40" class="service-box"/>
-    <text x="1110" y="1140" class="label">Health Checks</text>
-
-    <!-- Key Features -->
-    <rect x="1200" y="1060" width="530" height="95" fill="#FFFACD" stroke="#FF9900" stroke-width="1.5"/>
-    <text x="1220" y="1080" style="font-size: 11px; font-weight: bold; fill: #232F3E;">KEY FEATURES:</text>
-    <text x="1220" y="1100" style="font-size: 10px; fill: #232F3E;">✓ Multi-AZ HA  ✓ Tier Isolation  ✓ Auto-scaling</text>
-    <text x="1220" y="1120" style="font-size: 10px; fill: #232F3E;">✓ Read Replica  ✓ CloudWatch+VPC Logs  ✓ No Public DB Access</text>
-    <text x="1220" y="1140" style="font-size: 10px; fill: #232F3E;">✓ Encrypted Data  ✓ Automated Backups  ✓ Production-Ready</text>
+    <text x="1050" y="1255" class="label">✓ Encrypted Data (at Rest & In Transit)</text>
+    <text x="1050" y="1280" class="label">✓ Monitored (CloudWatch, VPC Flow Logs)</text>
+    <text x="1050" y="1305" class="label">✓ Isolated Tiers (Security Group Rules)</text>
+    <text x="1050" y="1330" class="label">✓ Cost-Optimized (NAT Gateway, Elastic IPs)</text>
   </g>
+
+  <!-- ============= FOOTER ============= -->
+  <rect x="0" y="1390" width="2000" height="10" fill="#003366"/>
 
 </svg>
