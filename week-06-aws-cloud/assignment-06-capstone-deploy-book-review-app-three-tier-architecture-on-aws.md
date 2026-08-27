@@ -193,7 +193,7 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post Screenshot](./screenshots/assignment-06/Linkedin-Post.png)
 
 ---
 
