@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-![Architecture Diagram](./architecture-diagram.png)
+![Architecture Diagram](./screenshots/assignment-06/architecture-diagram.png)
 
 ---
 
