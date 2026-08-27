@@ -30,21 +30,23 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
+![Screenshot 1 - Azure Portal Homepage](./screenshots/assignment-01/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
+![Screenshot 2 - Subscriptions (Free Trial)](./screenshots/assignment-01/Screenshot%202.png)
 
 ---
 
 ### Notes
 
-Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
+**Azure Services Overview for Beginners:**
 
-Write your answer here.
+**Virtual Machines (VMs)** — Think of this as renting a computer in the cloud. You get full control, install your own software, and manage everything like a physical server. This is the most basic compute service. **Azure App Services** — A simpler option for running web apps without managing servers—Microsoft handles the infrastructure. **Azure Storage** — Cloud storage for files, data, and backups (like Google Drive or OneDrive but for applications). **Resource Groups** — Folders/containers to organize and manage all your Azure resources together. **SQL Database** — Managed database service for storing structured data (no server management needed).
+
+**Which services to explore first and why:** I will start with Virtual Machines to understand core infrastructure concepts, then move to Azure Storage for data management, and finally App Services to learn managed deployment. This progression builds from foundational to advanced, similar to AWS learning paths, and enables end-to-end application development experience across compute, storage, and services.
 
 ---
 
@@ -57,12 +59,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Azure Free Account created with identity, phone, and payment verification completed
-- [ ] Microsoft Agreement and Offer Terms accepted
-- [ ] Azure Portal accessed successfully (Screenshot 1)
-- [ ] Free Trial subscription confirmed (Screenshot 2)
-- [ ] Reflection paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [x] Azure Free Account created with identity, phone, and payment verification completed
+- [x] Microsoft Agreement and Offer Terms accepted
+- [x] Azure Portal accessed successfully (Screenshot 1)
+- [x] Free Trial subscription confirmed (Screenshot 2)
+- [x] Reflection paragraph written (Notes)
+- [x] No sensitive information exposed
 
 ---
 
