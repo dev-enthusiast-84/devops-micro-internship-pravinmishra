@@ -20,7 +20,7 @@ Create the Azure Resource Group `react-app-rg` in a region close to you.
 
 #### Screenshot 1 — Resource Group overview showing the name and region
 
-Add your screenshot here.
+![Screenshot 1 - Resource Group Overview](./screenshots/assignment-02/Screenshot%201.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create an Ubuntu 20.04 LTS VM (size B1s) with a Network Security Group allowing 
 
 #### Screenshot 2 — Azure VM overview page showing the VM name, Resource Group, and region
 
-Add your screenshot here.
+![Screenshot 2 - VM Overview](./screenshots/assignment-02/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Network Security Group inbound rules showing ports 22 and 80 allowed
 
-Add your screenshot here.
+![Screenshot 3 - NSG Inbound Rules](./screenshots/assignment-02/Screenshot%203.png)
 
 ---
 
@@ -54,7 +54,7 @@ Connect to the VM over SSH and confirm the Linux prompt is visible.
 
 #### Screenshot 4 — Terminal showing a successful SSH login with the prompt visible
 
-Add your screenshot here.
+![Screenshot 4 - SSH Login](./screenshots/assignment-02/Screenshot%204.png)
 
 ---
 
@@ -68,7 +68,7 @@ Update Ubuntu and install Git, Node.js, and npm.
 
 #### Screenshot 5 — Terminal output showing `node -v` and `npm -v`
 
-Add your screenshot here.
+![Screenshot 5 - Node and npm Versions](./screenshots/assignment-02/Screenshot%205.png)
 
 ---
 
@@ -82,7 +82,9 @@ Clone `my-react-app`, install dependencies, and run `npm run build` to produce t
 
 #### Screenshot 6 — Terminal showing successful `npm run build` completion and `ls -la build` output
 
-Add your screenshot here.
+![Screenshot 6a - npm run build](./screenshots/assignment-02/Screenshot%206a.png)
+
+![Screenshot 6b - build directory listing](./screenshots/assignment-02/Screenshot%206b.png)
 
 ---
 
@@ -96,13 +98,13 @@ Install Nginx and configure it to serve the `build/` directory with `try_files $
 
 #### Screenshot 7 — Successful `sudo nginx -t` output
 
-Add your screenshot here.
+![Screenshot 7 - nginx -t test](./screenshots/assignment-02/Screenshot%207.png)
 
 ---
 
 #### Screenshot 8 — Nginx configuration snippet showing the build root and `try_files` directive
 
-Add your screenshot here.
+![Screenshot 8 - Nginx Configuration](./screenshots/assignment-02/Screenshot%208.png)
 
 ---
 
@@ -116,7 +118,7 @@ Confirm the React app loads through the VM's public IP, navigation works, and a 
 
 #### Screenshot 9 — Browser showing the React app with the public IP visible in the address bar
 
-Add your screenshot here.
+![Screenshot 9 - React App in Browser](./screenshots/assignment-02/Screenshot%209.png)
 
 ---
 
@@ -130,7 +132,7 @@ Restrict the SSH Network Security Group rule to your IP if not already restricte
 
 #### Screenshot 10 (optional) — Network Security Group rule showing SSH restricted to your IP
 
-Add your screenshot here.
+![Screenshot 10 - SSH Hardening](./screenshots/assignment-02/Screenshot%2010.png)
 
 ---
 
@@ -143,15 +145,15 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Resource Group created (Screenshot 1)
-- [ ] Task 2: Ubuntu VM provisioned with correct NSG rules (Screenshots 2 & 3)
-- [ ] Task 3: SSH access verified (Screenshot 4)
-- [ ] Task 4: Git, Node.js, and npm installed (Screenshot 5)
-- [ ] Task 5: React app built successfully (Screenshot 6)
-- [ ] Task 6: Nginx configured with SPA routing support (Screenshots 7 & 8)
-- [ ] Task 7: App verified via the VM public IP, including route refresh (Screenshot 9)
-- [ ] Task 8: SSH hardening applied (Screenshot 10, optional)
-- [ ] No sensitive data exposed
+- [x] Task 1: Resource Group created (Screenshot 1)
+- [x] Task 2: Ubuntu VM provisioned with correct NSG rules (Screenshots 2 & 3)
+- [x] Task 3: SSH access verified (Screenshot 4)
+- [x] Task 4: Git, Node.js, and npm installed (Screenshot 5)
+- [x] Task 5: React app built successfully (Screenshots 6a & 6b)
+- [x] Task 6: Nginx configured with SPA routing support (Screenshots 7 & 8)
+- [x] Task 7: App verified via the VM public IP, including route refresh (Screenshot 9)
+- [x] Task 8: SSH hardening applied (Screenshot 10, optional)
+- [x] No sensitive data exposed
 
 ---
 
