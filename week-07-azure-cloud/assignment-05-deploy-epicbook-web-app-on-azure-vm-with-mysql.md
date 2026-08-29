@@ -20,19 +20,21 @@ Create a VNet (10.0.0.0/16) with a public subnet (10.0.1.0/24) for the VM and a 
 
 #### Screenshot 1 — Virtual Network overview showing the 10.0.0.0/16 address space and both subnets
 
-Add your screenshot here.
+![Screenshot 1 - VNet Overview](./screenshots/assignment-05/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Public and private NSG inbound rules showing ports 80, 22, and restricted 3306 access
 
-Add your screenshot here.
+![Screenshot 2a - NSG Rules Part 1](./screenshots/assignment-05/Screenshot%202a.png)
+
+![Screenshot 2b - NSG Rules Part 2](./screenshots/assignment-05/Screenshot%202b.png)
 
 ---
 
 #### Screenshot 3 — Public IP and Network Interface association for the Virtual Machine
 
-Add your screenshot here.
+![Screenshot 3 - Public IP and NIC](./screenshots/assignment-05/Screenshot%203.png)
 
 ---
 
@@ -146,7 +148,7 @@ Paste the public IP URL of your Virtual Machine here:
 
 # Completion Checklist
 
-- [ ] Task 1: Network foundation created with public/private subnets and NSGs (Screenshots 1–3)
+- [x] Task 1: Network foundation created with public/private subnets and NSGs (Screenshots 1–3)
 - [ ] Task 2: VM provisioned and required software installed (Screenshots 4–5)
 - [ ] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8)
 - [ ] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
