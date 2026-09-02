@@ -3,7 +3,7 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-5%2F14-brightgreen?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-6%2F14-brightgreen?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -75,7 +75,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 03 | Linux & Bash for DevOps | [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) |
 | 04 | Git & GitHub | [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) |
 | 05 | DevOps Lifecycle & Agile | [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) |
-| 06 | AWS Cloud | <!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) --> |
+| 06 | AWS Cloud | [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) |
 | 07 | Azure Cloud | <!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) --> |
 | 08 | Terraform | <!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) --> |
 | 09 | Ansible | <!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) --> |
@@ -111,7 +111,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 03 | Linux & Bash for DevOps | ✅ Completed |  ✅ Solved | [Post](https://www.linkedin.com/posts/maneetta-antony-452075387_dmi-cohort-4-live-micro-internship-waiting-share-7484101331813617664-QLfh/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo) | [Blog](https://dev-enthusiast.blogspot.com/2026/07/week-3-bulletproof-incident-response.html) |
 | 04 | Git & GitHub | ✅ Completed |  ✅ Solved | [Post](https://www.linkedin.com/posts/maneetta-antony-452075387_dmi-cohort-4-live-micro-internship-waiting-share-7485928644792451072-T_V8/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo) | [Blog](https://dev-enthusiast.blogspot.com/2026/07/week-4-week-git-stopped-being-just.html) |
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | [Post](https://lnkd.in/p/gRzVzXp5) | [Blog](https://dev-enthusiast.blogspot.com/2026/08/week-05-complete-devops-lifecycle_02119802950.html) |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | [Post](https://lnkd.in/p/gcKr2TEP) | [Blog](https://dev-enthusiast.blogspot.com/2026/09/week-6-technical-deep-dive-building.html) |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
