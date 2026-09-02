@@ -48,13 +48,13 @@ Launch an Ubuntu 22.04 LTS VM (Standard B1s or equivalent) in the public subnet,
 
 #### Screenshot 4 — Virtual Machine overview showing Ubuntu, size, public IP, and subnet
 
-Add your screenshot here.
+![Screenshot 4 - VM Overview](./screenshots/assignment-05/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful software installation or installed-version checks
 
-Add your screenshot here.
+![Screenshot 5 - Software Installation](./screenshots/assignment-05/Screenshot%205.png)
 
 ---
 
@@ -68,7 +68,7 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 6 — Terminal showing the EpicBook repository cloned and dependencies installed
 
-Add your screenshot here.
+![Screenshot 6 - EpicBook Clone and Dependencies](./screenshots/assignment-05/Screenshot%206.png)
 
 ---
 
@@ -149,8 +149,8 @@ Paste the public IP URL of your Virtual Machine here:
 # Completion Checklist
 
 - [x] Task 1: Network foundation created with public/private subnets and NSGs (Screenshots 1–3)
-- [ ] Task 2: VM provisioned and required software installed (Screenshots 4–5)
-- [ ] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8)
+- [x] Task 2: VM provisioned and required software installed (Screenshots 4–5)
+- [x] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8 partial)
 - [ ] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
 - [ ] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
 - [ ] No sensitive data exposed
