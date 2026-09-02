@@ -134,7 +134,15 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 Map this assignment to Gather → Analyze → Human Act → Verify: which step did the script perform, which did Claude perform, and why must the remediation command always be run by you and never by Claude?
 
-Add your answer here
+**Gather:** The audit script performed the Gather step by running read-only AWS CLI commands to collect configuration details from S3, EC2, Security Groups, RDS, and EBS resources without modifying anything.
+
+**Analyze:** Claude performed the Analyze step by reading the audit report and interpreting the findings, explaining the security and cost implications of each PASS, WARN, or FAIL result, and recommending specific fixes.
+
+**Human Act:** I performed the Human Act step by manually executing the remediation command (e.g., updating security group rules) in my own terminal with proper scoping (restricted to my IP, not the entire internet), ensuring human judgment and approval controls every change.
+
+**Verify:** The script performed the Verify step again by re-running the five checks after remediation to confirm the finding was resolved and the configuration was corrected.
+
+**Why Claude must never execute remediation:** Claude must only analyze and recommend because: (1) it prevents accidental misconfigurations or overshooting fixes, (2) it ensures human accountability for every change to production systems, (3) it maintains the principle of least privilege by keeping destructive actions separated from analytical operations, and (4) it forces explicit human approval and understanding of what is being changed and why, which is critical for compliance and security governance.
 
 ---
 
@@ -156,7 +164,7 @@ Your submission must include:
 - [x] Task 5: Baseline audit run and reviewed honestly (Screenshot 5)
 - [x] Task 6: `/aws-audit` skill built and run, with no `Write` access (Screenshots 6–7)
 - [x] Task 7: A real finding fixed by hand and re-verified as passing (Screenshots 8–9)
-- [ ] Gather → Analyze → Human Act → Verify reflection completed (Notes)
+- [x] Gather → Analyze → Human Act → Verify reflection completed (Notes)
 - [x] No AWS credentials or unblurred account IDs exposed
 
 ---
