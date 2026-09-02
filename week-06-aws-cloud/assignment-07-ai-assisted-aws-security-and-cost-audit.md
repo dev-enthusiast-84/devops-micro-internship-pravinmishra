@@ -20,7 +20,7 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Terminal showing your AWS identity and your S3, EC2, and RDS resources listed
 
-Add your screenshot here.
+![Screenshot 1 - AWS Resources](./screenshots/assignment-07/Screenshot%201.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude the audit script is rea
 
 #### Screenshot 2 — `CLAUDE.md` open showing the project overview and safety rules
 
-Add your screenshot here.
+![Screenshot 2 - CLAUDE.md](./screenshots/assignment-07/Screenshot%202.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 #### Screenshot 3 — Claude's proposed five-check audit plan
 
-Add your screenshot here.
+![Screenshot 3 - Audit Plan](./screenshots/assignment-07/Screenshot%203.png)
 
 ---
 
@@ -62,7 +62,17 @@ Write a Bash script that runs the five checks from Task 3 using only read-only A
 
 #### Screenshot 4 — The script open in your editor, showing the checks and the report logic
 
-Add your screenshot here.
+![Screenshot 4a - Audit Script Part 1](./screenshots/assignment-07/Screenshot%204a.png)
+
+![Screenshot 4b - Audit Script Part 2](./screenshots/assignment-07/Screenshot%204b.png)
+
+![Screenshot 4c - Audit Script Part 3](./screenshots/assignment-07/Screenshot%204c.png)
+
+![Screenshot 4d - Audit Script Part 4](./screenshots/assignment-07/Screenshot%204d.png)
+
+![Screenshot 4e - Audit Script Part 5](./screenshots/assignment-07/Screenshot%204e.png)
+
+![Screenshot 4f - Audit Script Part 6](./screenshots/assignment-07/Screenshot%204f.png)
 
 ---
 
@@ -76,7 +86,7 @@ Run the script against your live AWS account and review the report honestly, not
 
 #### Screenshot 5 — Script output showing your Full Name and all five check results
 
-Add your screenshot here.
+![Screenshot 5 - Baseline Audit Report](./screenshots/assignment-07/Screenshot%205.png)
 
 ---
 
@@ -90,13 +100,13 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 #### Screenshot 6 — Skill file showing the restricted tool access
 
-Add your screenshot here.
+![Screenshot 6 - Skill File](./screenshots/assignment-07/Screenshot%206.png)
 
 ---
 
 #### Screenshot 7 — `/aws-audit` output showing the findings and Claude's recommendation
 
-Add your screenshot here.
+![Screenshot 7 - Skill Output](./screenshots/assignment-07/Screenshot%207.png)
 
 ---
 
@@ -110,13 +120,13 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 #### Screenshot 8 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![Screenshot 8 - Remediation Command](./screenshots/assignment-07/Screenshot%208.png)
 
 ---
 
 #### Screenshot 9 — Second script run showing the finding now passing
 
-Add your screenshot here.
+![Screenshot 9 - Second Audit Run](./screenshots/assignment-07/Screenshot%209.png)
 
 ---
 
@@ -139,15 +149,15 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: AWS resources confirmed and workspace created (Screenshot 1)
-- [ ] Task 2: `CLAUDE.md` created with safety rules (Screenshot 2)
-- [ ] Task 3: Claude proposed a read-only five-check audit plan (Screenshot 3)
-- [ ] Task 4: Audit script built, executable, and syntax-checked (Screenshot 4)
-- [ ] Task 5: Baseline audit run and reviewed honestly (Screenshot 5)
-- [ ] Task 6: `/aws-audit` skill built and run, with no `Write` access (Screenshots 6–7)
-- [ ] Task 7: A real finding fixed by hand and re-verified as passing (Screenshots 8–9)
+- [x] Task 1: AWS resources confirmed and workspace created (Screenshot 1)
+- [x] Task 2: `CLAUDE.md` created with safety rules (Screenshot 2)
+- [x] Task 3: Claude proposed a read-only five-check audit plan (Screenshot 3)
+- [x] Task 4: Audit script built, executable, and syntax-checked (Screenshots 4a–4f)
+- [x] Task 5: Baseline audit run and reviewed honestly (Screenshot 5)
+- [x] Task 6: `/aws-audit` skill built and run, with no `Write` access (Screenshots 6–7)
+- [x] Task 7: A real finding fixed by hand and re-verified as passing (Screenshots 8–9)
 - [ ] Gather → Analyze → Human Act → Verify reflection completed (Notes)
-- [ ] No AWS credentials or unblurred account IDs exposed
+- [x] No AWS credentials or unblurred account IDs exposed
 
 ---
 
