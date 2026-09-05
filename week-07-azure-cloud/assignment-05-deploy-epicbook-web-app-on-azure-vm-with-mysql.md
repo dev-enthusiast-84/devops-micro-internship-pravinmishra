@@ -74,13 +74,13 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 7 — Nginx configuration or service status proving the frontend is configured to be served
 
-Add your screenshot here.
+![Screenshot 7 - Nginx Configuration](./screenshots/assignment-05/Screenshot%207.png)
 
 ---
 
 #### Screenshot 8 — Backend process or listening-port evidence (without exposing environment-variable secrets)
 
-Add your screenshot here.
+![Screenshot 8 - Backend Process](./screenshots/assignment-05/Screenshot%208.png)
 
 ---
 
@@ -94,19 +94,19 @@ Create a private Azure Database for MySQL Flexible Server (VNet Integration) in 
 
 #### Screenshot 9 — MySQL Flexible Server overview showing Private access (VNet Integration)
 
-Add your screenshot here.
+![Screenshot 9 - MySQL Flexible Server Overview](./screenshots/assignment-05/Screenshot%209.png)
 
 ---
 
 #### Screenshot 10 — Networking configuration showing the private subnet and restricted access
 
-Add your screenshot here.
+![Screenshot 10 - MySQL Networking Configuration](./screenshots/assignment-05/Screenshot%2010.png)
 
 ---
 
 #### Screenshot 11 — MySQL Client output showing the EpicBook database or imported tables (no password visible)
 
-Add your screenshot here.
+![Screenshot 11 - MySQL Client Output](./screenshots/assignment-05/Screenshot%2011.png)
 
 ---
 
@@ -120,13 +120,13 @@ Confirm the EpicBook application loads through the VM's public IP and that viewi
 
 #### Screenshot 12 — Browser showing the EpicBook application with the Virtual Machine public IP visible
 
-Add your screenshot here.
+![Screenshot 12 - EpicBook Application Homepage](./screenshots/assignment-05/Screenshot%2012.png)
 
 ---
 
 #### Screenshot 13 — Proof of a successful database-backed action (viewing products, adding to cart, or placing an order)
 
-Add your screenshot here.
+![Screenshot 13 - Order Confirmation](./screenshots/assignment-05/Screenshot%2013.png)
 
 ---
 
@@ -134,7 +134,7 @@ Add your screenshot here.
 
 Paste the public IP URL of your Virtual Machine here:
 
-`Add your URL here`
+`http://20.220.83.188/`
 
 ---
 
@@ -150,10 +150,10 @@ Paste the public IP URL of your Virtual Machine here:
 
 - [x] Task 1: Network foundation created with public/private subnets and NSGs (Screenshots 1–3)
 - [x] Task 2: VM provisioned and required software installed (Screenshots 4–5)
-- [x] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8 partial)
-- [ ] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
-- [ ] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
-- [ ] No sensitive data exposed
+- [x] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8)
+- [x] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
+- [x] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
+- [x] No sensitive data exposed
 
 ---
 
