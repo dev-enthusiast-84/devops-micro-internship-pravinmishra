@@ -22,6 +22,8 @@ Create a `terraform-azure-vm` project and define the resource group, virtual net
 
 ![Screenshot 1](screenshots/assignment-01/Screenshot%201.png)
 
+> **Note (deviation from spec):** The assignment asks for an Ubuntu 18.04 VM. This deployment uses Ubuntu 22.04 LTS (`Canonical` / `0001-com-ubuntu-server-jammy` / `22_04-lts`) instead. The 18.04 image (`Canonical:UbuntuServer:18_04-lts-gen2`) was confirmed available in East US, but the VM was kept on 22.04 for this submission.
+
 ---
 
 #### Screenshot 2 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
@@ -102,7 +104,7 @@ Run `terraform destroy` to clean up the Azure resources after testing.
 
 Write a short paragraph explaining what you learned or any issues you encountered.
 
-Write your answer here.
+Three Azure errors blocked the deployment, and each had a different fix. The first two were unregistered resource providers: Microsoft.Network and Microsoft.Compute were not registered on the subscription, so Terraform got MissingSubscriptionRegistration errors. Registering each provider with az provider register --wait fixed them. The third was a capacity restriction: Standard_B1s was not available in East US, so I checked which sizes were unrestricted and priced the options before switching to Standard_D2as_v4. Along the way, I found a hardcoded VM password in main.tf. I moved it to a sensitive variable, added a .gitignore to keep state files and secrets out of git, and wrote a README covering setup and teardown. The main lesson is that Azure fails at apply time, not plan time, so provider registration and regional capacity both need checking before you run terraform apply.
 
 ---
 
@@ -116,12 +118,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
+- [x] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2; Ubuntu 22.04 used instead of 18.04, see note under Screenshot 1)
 - [x] Task 2: `terraform init` completed successfully (Screenshot 3)
 - [x] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
 - [x] Task 4: VM verified as running via Azure CLI (Screenshot 7)
 - [x] Task 5: `terraform destroy` completed successfully (Screenshot 8)
-- [ ] Learning/issues paragraph written (Notes)
+- [x] Learning/issues paragraph written (Notes)
 - [x] No sensitive information exposed
 
 ---
