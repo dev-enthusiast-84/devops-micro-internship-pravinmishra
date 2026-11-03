@@ -28,6 +28,8 @@ Create a `terraform-azure-vm` project and define the resource group, virtual net
 
 ![Screenshot 2](screenshots/assignment-01/Screenshot%202.png)
 
+> **Note (deviation from spec):** The assignment asks for an Ubuntu 18.04 VM. This deployment uses Ubuntu 22.04 LTS (`Canonical` / `0001-com-ubuntu-server-jammy` / `22_04-lts`) instead. The 18.04 image (`Canonical:UbuntuServer:18_04-lts-gen2`) was confirmed available in East US, but the VM was kept on 22.04 for this submission.
+
 ---
 
 # Task 2 — Initialize Terraform
