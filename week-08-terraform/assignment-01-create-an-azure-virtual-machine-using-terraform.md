@@ -116,7 +116,7 @@ Three Azure errors blocked the deployment, and each had a different fix. The fir
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
+- [x] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
 - [x] Task 2: `terraform init` completed successfully (Screenshot 3)
 - [x] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
 - [x] Task 4: VM verified as running via Azure CLI (Screenshot 7)
