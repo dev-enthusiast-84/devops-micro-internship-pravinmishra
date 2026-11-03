@@ -22,6 +22,8 @@ Create a `terraform-azure-vm` project and define the resource group, virtual net
 
 ![Screenshot 1](screenshots/assignment-01/Screenshot%201.png)
 
+> **Note (deviation from spec):** The assignment asks for an Ubuntu 18.04 VM. This deployment uses Ubuntu 22.04 LTS (`Canonical` / `0001-com-ubuntu-server-jammy` / `22_04-lts`) instead. The 18.04 image (`Canonical:UbuntuServer:18_04-lts-gen2`) was confirmed available in East US, but the VM was kept on 22.04 for this submission.
+
 ---
 
 #### Screenshot 2 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
@@ -118,7 +120,7 @@ Three Azure errors blocked the deployment, and each had a different fix. The fir
 
 # Completion Checklist
 
-- [x] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
+- [x] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2; Ubuntu 22.04 used instead of 18.04, see notes under Screenshots 1 and 2)
 - [x] Task 2: `terraform init` completed successfully (Screenshot 3)
 - [x] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
 - [x] Task 4: VM verified as running via Azure CLI (Screenshot 7)
