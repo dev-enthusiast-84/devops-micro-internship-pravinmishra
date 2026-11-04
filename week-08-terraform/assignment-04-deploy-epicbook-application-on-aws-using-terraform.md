@@ -44,7 +44,7 @@ Use Terraform to launch a t2.micro Ubuntu 22.04 EC2 instance in the public subne
 
 #### Screenshot 3 — Terraform apply output showing successful EC2 provisioning
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-04/Screenshot%203.png)
 
 ---
 
@@ -177,7 +177,7 @@ Add your screenshot here.
 # Completion Checklist
 
 - [x] Task 1: VPC, subnets, IGW, and Security Groups created with Terraform (Screenshots 1–2)
-- [ ] Task 2: EC2 provisioned and required software installed (Screenshots 3–5)
+- [x] Task 2: EC2 provisioned and required software installed (Screenshots 3–5)
 - [x] Task 3: EpicBook deployed and Nginx serving the app (Screenshots 6–7)
 - [x] Task 4: Private RDS MySQL created and database initialized (Screenshots 8–10)
 - [x] Task 5: End-to-end functionality validated (Screenshots 11–12)
