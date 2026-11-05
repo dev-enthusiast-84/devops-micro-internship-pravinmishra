@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-Add your screenshot here.
+![Screenshot 1](screenshots/assignment-02/Screenshot%201.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-Add your screenshot here.
+![Screenshot 2](screenshots/assignment-02/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-02/Screenshot%203.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-Add your screenshot here.
+![Screenshot 4](screenshots/assignment-02/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-02/Screenshot%205.png)
 
 ---
 
@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-Add your screenshot here.
+![Screenshot 6](screenshots/assignment-02/Screenshot%206.png)
 
 ---
 
@@ -88,15 +88,15 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-Add your screenshot here.
+![Screenshot 7](screenshots/assignment-02/Screenshot%207.png)
 
 ---
 
 ### Notes
 
-Write your analysis here.
+Image Size Analysis: Single-Stage vs Multi-Stage
 
-Write your answer here.
+The single-stage image (react-app:single, built on node:20) is 2.17 GB (505 MB compressed). The multi-stage image (react-app:multistage, built with node:18-alpine and served by nginx:alpine) is 95.1 MB (26.6 MB compressed). That is about a 95.6% reduction in size (94.7% compressed). The smaller runtime image is more secure because it contains only Nginx and the static build/ output. Node.js, npm, node_modules, source code and build tools are left out, so there are fewer packages that could have known CVEs (security vulnerabilities). This shrinks the attack surface: an attacker has fewer binaries, shells and libraries to exploit, and no dev dependencies or source files can leak at runtime. The smaller size also speeds up deployment. Registry pushes and pulls move about 27 MB instead of about 505 MB, so new nodes start faster, scaling and rollbacks are quicker, and storage and bandwidth costs go down. For build caching, I copy package*.json and run npm ci before COPY . .. The dependency layer is then reused from cache unless the package files change, so source-only edits rebuild in seconds. A .dockerignore file that excludes node_modules, build and .git also keeps the build context small.
 
 ---
 
@@ -107,6 +107,8 @@ Write your answer here.
 Optionally configure an Nginx health check, cache headers, parameterized ports via environment variables, or a lighter runtime image, and compare results.
 
 > Screenshot optional.
+
+![Screenshot Optional](screenshots/assignment-02/Screenshot%20Optional.png)
 
 ---
 
@@ -120,15 +122,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+[LinkedIn post](https://www.linkedin.com/posts/maneetta-antony-452075387_docker-devops-react-share-7524014003975610369-8KmX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn post](screenshots/assignment-02/linkedin%20post.png)
 
 ---
 
@@ -142,13 +142,13 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: `.dockerignore` created (Screenshot 1)
-- [ ] Task 2: Single-stage image built and verified (Screenshots 2–3)
-- [ ] Task 3: Multi-stage image built and verified (Screenshots 4–5)
-- [ ] Task 4: Image sizes compared (Screenshot 6)
-- [ ] Task 5: Analysis written (Screenshot 7 & Notes)
-- [ ] Task 6: Optional production optimizations explored
-- [ ] No sensitive information exposed
+- [x] Task 1: `.dockerignore` created (Screenshot 1)
+- [x] Task 2: Single-stage image built and verified (Screenshots 2–3)
+- [x] Task 3: Multi-stage image built and verified (Screenshots 4–5)
+- [x] Task 4: Image sizes compared (Screenshot 6)
+- [x] Task 5: Analysis written (Screenshot 7 & Notes)
+- [x] Task 6: Optional production optimizations explored
+- [x] No sensitive information exposed
 
 ---
 
