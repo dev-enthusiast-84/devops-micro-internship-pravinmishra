@@ -154,8 +154,6 @@ Publish a LinkedIn post about what you achieved in this assignment, with public 
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
 [LinkedIn post](https://www.linkedin.com/posts/maneetta-antony_terraform-aws-devops-share-7523605107209551873-00AX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAMKjaMBgVWqnGQ7U4godYqOh1rcqonVh74)
 
 ---
