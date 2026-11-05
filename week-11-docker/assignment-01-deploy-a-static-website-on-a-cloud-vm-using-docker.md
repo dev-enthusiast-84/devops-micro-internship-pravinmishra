@@ -140,7 +140,7 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn post](https://www.linkedin.com/posts/maneetta-antony-452075387_docker-aws-ec2-share-7523972097316966400-rICe/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo)
 
 ---
 
