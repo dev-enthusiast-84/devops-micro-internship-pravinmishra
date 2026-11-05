@@ -124,7 +124,11 @@ Document the workstation setup in `README.md`, including a "New Machine? Do This
 
 State one thing that makes this setup team-friendly, and one pitfall you avoided (e.g. global pip, missing SSH agent). Note any corporate proxy or CA certificate steps, if applicable.
 
-Write your answer here.
+Team-friendly feature: requirements.txt pins every tool version, and .vscode/settings.json points the editor at the project's .venv. A new teammate who runs pip install -r requirements.txt gets the same Ansible and lint results as everyone else.
+
+Pitfall avoided: The staged copy of .pre-commit-config.yaml still had trailing whitespace, even though the working copy was already fixed. That would have failed the yamllint and ansible-lint hooks on commit. I caught it because the linter failed, and I staged the corrected file so the commit matched the working copy.
+
+Corporate proxy or CA certificate: None were needed in this environment. Package installs, the pre-commit hooks, and the push to GitHub all worked without proxy or certificate changes. If you're on a corporate network, you may need to configure those yourself.
 
 ---
 
@@ -143,8 +147,8 @@ Write your answer here.
 - [x] Task 4: SSH key generated and loaded into agent (Screenshot 6)
 - [x] Task 5: Git identity configured and pre-commit hooks passing (Screenshots 7–8)
 - [x] Task 6: README and checklist completed (Screenshots 9–10)
-- [ ] Team-friendly choice / pitfall notes written (Notes)
-- [ ] No private keys or secrets exposed
+- [x] Team-friendly choice / pitfall notes written (Notes)
+- [x] No private keys or secrets exposed
 
 ---
 
