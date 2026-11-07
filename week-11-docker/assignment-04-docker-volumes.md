@@ -20,61 +20,61 @@ Run an Nginx container (`myweb`) with a Bind Mount from `~/nginx-logs` to `/var/
 
 #### Screenshot 1 — Output of `docker images`
 
-Add your screenshot here.
+![Screenshot 1](screenshots/assignment-04/task1/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker search nginx`
 
-Add your screenshot here.
+![Screenshot 2](screenshots/assignment-04/task1/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-04/task1/Screenshot%203.png)
 
 ---
 
 #### Screenshot 4 — Creation of the `~/nginx-logs` directory
 
-Add your screenshot here.
+![Screenshot 4](screenshots/assignment-04/task1/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker run` with the Bind Mount
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-04/task1/Screenshot%205.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+![Screenshot 6](screenshots/assignment-04/task1/Screenshot%206.png)
 
 ---
 
 #### Screenshot 7 — Browser displaying the Nginx Welcome Page
 
-Add your screenshot here.
+![Screenshot 7](screenshots/assignment-04/task1/Screenshot%207.png)
 
 ---
 
 #### Screenshot 8 — Output of `ls ~/nginx-logs` showing `access.log` and `error.log`
 
-Add your screenshot here.
+![Screenshot 8](screenshots/assignment-04/task1/Screenshot%208.png)
 
 ---
 
 #### Screenshot 9 — Successful removal of the container
 
-Add your screenshot here.
+![Screenshot 9](screenshots/assignment-04/task1/Screenshot%209.png)
 
 ---
 
 #### Screenshot 10 — Output of `ls ~/nginx-logs` confirming the log files remain after the container has been removed
 
-Add your screenshot here.
+![Screenshot 10](screenshots/assignment-04/task1/Screenshot%2010.png)
 
 ---
 
