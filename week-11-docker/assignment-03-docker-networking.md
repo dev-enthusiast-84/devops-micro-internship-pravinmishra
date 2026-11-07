@@ -20,37 +20,37 @@ List Docker networks, verify/pull the Nginx image, run an Nginx container (`mywe
 
 #### Screenshot 1 — Output of `docker network ls`
 
-Add your screenshot here.
+![Screenshot 1](screenshots/assignment-03/task%201/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker images`
 
-Add your screenshot here.
+![Screenshot 2](screenshots/assignment-03/task%201/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Output of `docker search nginx`
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-03/task%201/Screenshot%203.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker pull nginx` (if applicable)
 
-Add your screenshot here.
+![Screenshot 4](screenshots/assignment-03/task%201/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the running `myweb` container
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-03/task%201/Screenshot%205.png)
 
 ---
 
 #### Screenshot 6 — Browser displaying the Nginx Welcome Page using the Public IP address
 
-Add your screenshot here.
+![Screenshot 6](screenshots/assignment-03/task%201/Screenshot%206.png)
 
 ---
 
@@ -64,55 +64,55 @@ Create a custom bridge network `mynetwork`, build and run a Node/Express `fronte
 
 #### Screenshot 1 — Output of `docker network create mynetwork`
 
-Add your screenshot here.
+![Screenshot 1](screenshots/assignment-03/task%202/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker network ls`
 
-Add your screenshot here.
+![Screenshot 2](screenshots/assignment-03/task%202/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Frontend Dockerfile
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-03/task%202/Screenshot%203.png)
 
 ---
 
 #### Screenshot 4 — Successful `docker build` for the frontend
 
-Add your screenshot here.
+![Screenshot 4](screenshots/assignment-03/task%202/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Output of `docker ps` showing the frontend container
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-03/task%202/Screenshot%205.png)
 
 ---
 
 #### Screenshot 6 — Output of `docker ps` showing both frontend and backend containers
 
-Add your screenshot here.
+![Screenshot 6](screenshots/assignment-03/task%202/Screenshot%206.png)
 
 ---
 
 #### Screenshot 7 — Output of `docker network inspect mynetwork`
 
-Add your screenshot here.
+![Screenshot 7](screenshots/assignment-03/task%202/Screenshot%207.png)
 
 ---
 
 #### Screenshot 8 — Successful `curl http://<Public-IP>` showing "Hello from Frontend"
 
-Add your screenshot here.
+![Screenshot 8](screenshots/assignment-03/task%202/Screenshot%208.png)
 
 ---
 
 #### Screenshot 9 — Successful `curl backend` output from the frontend container showing the Nginx Welcome Page
 
-Add your screenshot here.
+![Screenshot 9](screenshots/assignment-03/task%202/Screenshot%209.png)
 
 ---
 
