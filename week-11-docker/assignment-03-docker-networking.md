@@ -126,91 +126,95 @@ Build a three-tier app (frontend, backend, MongoDB) across `backend-network` (ba
 
 #### Screenshot 1 — Creation of `backend-network`
 
-Add your screenshot here.
+![Screenshot 1](screenshots/assignment-03/task3/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Creation of `frontend-network`
 
-Add your screenshot here.
+![Screenshot 2](screenshots/assignment-03/task3/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Project folder structure
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-03/task3/Screenshot%203.png)
 
 ---
 
 #### Screenshot 4 — Database Dockerfile
 
-Add your screenshot here.
+![Screenshot 4](screenshots/assignment-03/task3/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Backend Dockerfile
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-03/task3/Screenshot%205.png)
 
 ---
 
 #### Screenshot 6 — Frontend Dockerfile
 
-Add your screenshot here.
+![Screenshot 6](screenshots/assignment-03/task3/Screenshot%206.png)
 
 ---
 
 #### Screenshot 7 — Successful Docker image builds (database, backend, frontend)
 
-Add your screenshot here.
+![Screenshot 7](screenshots/assignment-03/task3/Screenshot%207A.png)
+
+![Screenshot 7](screenshots/assignment-03/task3/Screenshot%207B.png)
+
+![Screenshot 7](screenshots/assignment-03/task3/Screenshot%207C.png)
 
 ---
 
 #### Screenshot 8 — Running containers (`docker ps`)
 
-Add your screenshot here.
+![Screenshot 8](screenshots/assignment-03/task3/Screenshot%208.png)
 
 ---
 
 #### Screenshot 9 — Output of `docker network inspect backend-network`
 
-Add your screenshot here.
+![Screenshot 9](screenshots/assignment-03/task3/Screenshot%209.png)
 
 ---
 
 #### Screenshot 10 — Output of `docker network inspect frontend-network`
 
-Add your screenshot here.
+![Screenshot 10](screenshots/assignment-03/task3/Screenshot%2010.png)
 
 ---
 
 #### Screenshot 11 — Browser showing the frontend application
 
-Add your screenshot here.
+![Screenshot 11](screenshots/assignment-03/task3/Screenshot%2011.png)
 
 ---
 
 #### Screenshot 12 — Successful `curl api` from the frontend container
 
-Add your screenshot here.
+![Screenshot 12](screenshots/assignment-03/task3/Screenshot%2012.png)
 
 ---
 
 #### Screenshot 13 — MongoDB connection using `mongosh`
 
-Add your screenshot here.
+![Screenshot 13](screenshots/assignment-03/task3/Screenshot%2013.png)
 
 ---
 
 #### Screenshot 14 — Successful document insertion
 
-Add your screenshot here.
+![Screenshot 14](screenshots/assignment-03/task3/Screenshot%2014.png)
 
 ---
 
 #### Screenshot 15 — Successful retrieval of the inserted document
 
-Add your screenshot here.
+![Screenshot 15](screenshots/assignment-03/task3/Screenshot%2015.png)
 
 ---
 
@@ -224,31 +228,31 @@ Deploy an Nginx container (`fastapp`) using Host Network Mode and verify it's re
 
 #### Screenshot 1 — Output of `docker run --network host`
 
-Add your screenshot here.
+![Screenshot 1](screenshots/assignment-03/task3/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker ps` showing the running `fastapp` container
 
-Add your screenshot here.
+![Screenshot 2](screenshots/assignment-03/task3/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Browser or terminal displaying the Nginx Welcome Page
 
-Add your screenshot here.
+![Screenshot 3](screenshots/assignment-03/task3/Screenshot%203.png)
 
 ---
 
 #### Screenshot 4 — Output of `docker inspect fastapp | grep "NetworkMode"`
 
-Add your screenshot here.
+![Screenshot 4](screenshots/assignment-03/task3/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-03/task3/Screenshot%205.png)
 
 ---
 
@@ -270,7 +274,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Screenshot 5](screenshots/assignment-03/task3/Screenshot%205.png)
 
 ---
 
