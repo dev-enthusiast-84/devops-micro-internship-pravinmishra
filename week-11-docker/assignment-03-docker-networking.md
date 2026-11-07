@@ -228,31 +228,31 @@ Deploy an Nginx container (`fastapp`) using Host Network Mode and verify it's re
 
 #### Screenshot 1 — Output of `docker run --network host`
 
-![Screenshot 1](screenshots/assignment-03/task3/Screenshot%201.png)
+![Screenshot 1](screenshots/assignment-03/task4/Screenshot%201.png)
 
 ---
 
 #### Screenshot 2 — Output of `docker ps` showing the running `fastapp` container
 
-![Screenshot 2](screenshots/assignment-03/task3/Screenshot%202.png)
+![Screenshot 2](screenshots/assignment-03/task4/Screenshot%202.png)
 
 ---
 
 #### Screenshot 3 — Browser or terminal displaying the Nginx Welcome Page
 
-![Screenshot 3](screenshots/assignment-03/task3/Screenshot%203.png)
+![Screenshot 3](screenshots/assignment-03/task4/Screenshot%203.png)
 
 ---
 
 #### Screenshot 4 — Output of `docker inspect fastapp | grep "NetworkMode"`
 
-![Screenshot 4](screenshots/assignment-03/task3/Screenshot%204.png)
+![Screenshot 4](screenshots/assignment-03/task4/Screenshot%204.png)
 
 ---
 
 #### Screenshot 5 — Successful cleanup showing `docker stop fastapp` and `docker rm fastapp`
 
-![Screenshot 5](screenshots/assignment-03/task3/Screenshot%205.png)
+![Screenshot 5](screenshots/assignment-03/task4/Screenshot%205.png)
 
 ---
 
@@ -268,13 +268,13 @@ Create a LinkedIn post covering the assignment objective, networking modes explo
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post — Docker Networking](https://www.linkedin.com/posts/maneetta-antony-452075387_docker-devops-cloudcomputing-share-7524751129222701056-xOel/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF86Sz4BPT7sueDLOfQEmLqLbCo5V7ah-Jo)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-![Screenshot 5](screenshots/assignment-03/task3/Screenshot%205.png)
+![Published LinkedIn post](screenshots/assignment-03/task4/linkedin%20post.png)
 
 ---
 
@@ -288,10 +288,10 @@ Paste your LinkedIn post URL here:
 
 # Completion Checklist
 
-- [ ] Task 1: Standalone app on default bridge network deployed and verified (Screenshots 1–6)
-- [ ] Task 2: Custom bridge network with frontend/backend communication verified (Screenshots 1–9)
-- [ ] Task 3: Multi-tier app across two networks deployed and verified end to end (Screenshots 1–15)
-- [ ] Task 4: Host network mode deployment verified and cleaned up (Screenshots 1–5)
+- [x] Task 1: Standalone app on default bridge network deployed and verified (Screenshots 1–6)
+- [x] Task 2: Custom bridge network with frontend/backend communication verified (Screenshots 1–9)
+- [x] Task 3: Multi-tier app across two networks deployed and verified end to end (Screenshots 1–15)
+- [x] Task 4: Host network mode deployment verified and cleaned up (Screenshots 1–5)
 - [ ] No sensitive information exposed
 
 ---
