@@ -600,3 +600,100 @@ These screenshots are from your earlier version. They are kept so nothing is los
 - week-04-git-and-github/assignment-01: Checklist note "Screenshots 1–4 present; Screenshot 5 pending Task 4".
 - week-11-docker/assignment-02: Note that the 2,170 MB conversion and percentage were calculated from the earlier sizes (2.17 GB, 95.1 MB). Confirm against your `docker images` output.
 - week-08-terraform/assignment-02: Project-directory screenshot (`Screenshot 1.png`) is not in the current upstream template and was removed from the Task 1 section. The image remains in `screenshots/assignment-02/`.
+
+---
+
+# Full Screenshot and Task Audit (all submitted files)
+
+Method: every image link was opened and compared with its task text. Split screenshots (4a/4b, 6a/6b) were judged together. Items marked UNVERIFIED could not be viewed because the image viewer hit a limit. Re-check those before relying on them.
+
+## Cross-cutting
+
+- **Unredacted AWS account IDs** visible in screenshots: 930412472824 and 533267262133 (week-02 a03: Screenshots 4, 6b, 7, 12; week-02 a04: Screenshots 5, 7); 822426641667 (week-06 a05, several). Blur before submission.
+- **Personal email visible**: week-02 a01 Screenshot 2; week-05 a05 Screenshot 4.
+- **API token prefix visible**: week-05 a05 Screenshot 3 (only "ATATT" prefix shown; still redact the rest).
+- **Full name** not visible in several required screenshots (see per-file notes).
+- **Repo owner** in many links is `dev-enthusiast-84`. Confirm the fork and push items against the student's own GitHub account.
+
+## Week 0–2
+
+- **w00 a01**: Task 1 ChatGPT screenshot shows only the answer, not the prompt. Task 5 VS Code screenshot too low-resolution to read the pwd/ls output. Re-shoot.
+- **w02 a01**: Screenshot 2 shows only "Welcome back Maneetta" (full name required). Screenshot 4 has no tool-call lines (Read) even though the caption claims them. Screenshot 5 shows Read 1 file, with no shell command. Screenshot 6 (LinkedIn) is a placeholder.
+- **w02 a02**: Screenshot 1 is not a before-CLAUDE.md baseline. It shows MCP servers, agents, skills, and hooks, which exist only later. Screenshot 2 shows a /init chat saying CLAUDE.md already exists, not the generated file. Screenshot 6 (GitHub CLAUDE.md) and Screenshot 7 (WhatsApp) are placeholders.
+- **w02 a03**: Bonus Task 5 Screenshot 9 ("live site") shows a different site (Pravin Mishra's DMI site), not the student's CloudFront site. "Live site verified" is not supported.
+- **w02 a04**: Task 1 claims four agent files, but Screenshot 1 shows three (drift-detector first appears in 7a). LinkedIn Screenshot 7 is a placeholder (the file name 7.png is reused for the audit report).
+- **w02 a05**: Task 1 Screenshot 1: read:user scope not visible. Task 2 Screenshot 2: .mcp.json shows terraform and aws only, no GitHub server. Task 6 Screenshot 6 is a placeholder.
+- **w02 a06**: Task 8 Screenshots 8/9: the log says "terraform validate executed", but post-tool-logger.sh only logs "terraform apply executed". The evidence does not match the script. Task 5 Screenshot 5: PostToolUse block cut off. Screenshot 9 (deploy.log) and Screenshot 10 (post) are placeholders.
+- **w02 a07**: Task 4 requires three tests; only two shown (breakpoints recall missing).
+- **w02 a08**: Task 1 Screenshot 1 OK (name visible). Task 2 Screenshot 2 OK. Public access and commit items UNVERIFIABLE.
+
+## Week 3
+
+- **w03 a01**: Task 3 Screenshot 1 shows the AWS account dropdown, not the Account page. Task 4 Screenshot 2 (WhatsApp) is a placeholder.
+- **w03 a02**: Task 4 Screenshot 4 shows PICO editing, not nano as the task says. Content matches. Minor.
+- **w03 a03**: Task 3 links point to `screenshots/assignment-03/task 3/`. That folder does not exist; the real folder is `task3`. Three broken links. Task 3 screenshots show no full name. Tasks 5–7 and LinkedIn: UNVERIFIED (media limit).
+- **w03 a04**: Task 3 Screenshot 3 and Task 5 Screenshot 8 both point to the same image (duplicate). LinkedIn URL is identical to week-03 a03's URL (likely copy-paste). Images UNVERIFIED.
+- **w03 a05**: Images UNVERIFIED (media limit). Task 7 links to `task6/` folder, not `task7/`.
+- **w03 a06**: Script screenshot shows a `<Your Full Name>` placeholder and check function names that differ from the notes. Minor. Everything else OK.
+
+## Week 4
+
+- **w04 a01**: Screenshot 5 (WhatsApp) placeholder. Screenshots 1–4: UNVERIFIED (media limit).
+- **w04 a02**: Screenshot 13a points to the same file as Screenshot 13 (duplicate). Screenshot 15 needs both full name and group name visible. All images UNVERIFIED.
+- **w04 a03**: LinkedIn URL and Screenshot 16 are placeholders. Images UNVERIFIED.
+- **w04 a04**: Screenshot 7 (WhatsApp) placeholder. Images UNVERIFIED.
+- **w04 a05**: Images UNVERIFIED. Confirm the PR URL and fork owner.
+- **w04 a06**: **GAP**: PR #66 targets the upstream class repo (`pravinmishraaws/devops-micro-internship-pravinmishra`), not the student's own fork, which the task requires. The notes admit this. Images UNVERIFIED.
+
+## Week 5
+
+- **w05 a01**: Screenshot 6 (WhatsApp) placeholder. Screenshots 1, 3, 4, 5: UNVERIFIED (media limit).
+- **w05 a02**: LinkedIn URL and Screenshot 13 are placeholders. Task 1 Screenshot 1 shows a story page, not a Space confirmation. Recheck mapping. Tasks 2–8 OK. Full name visible (Maneetta Antony).
+- **w05 a03**: No Day 4 Daily Scrum comment screenshot, though the checklist claims Days 1–5. Demo video link: UNVERIFIABLE. LinkedIn URLs: UNVERIFIABLE (cannot open).
+- **w05 a04**: Task 5 notes read "Write your answer here." (missing). Jira space shows only "Maneetta" (full name not shown; judgment call). Screenshot 11 commit adds 56 files (the whole template), not just the UI change; mention in the notes.
+- **w05 a05**: **MISMATCH**: Screenshot 5 says there is no active sprint (Sprint 1 closed, Sprint 2 future, no issues), but the notes say the live query matched the active Sprint 1. Task 7 Screenshot 7 and 8 reuse 7b (duplicate, no separate second run). LinkedIn URL and Screenshot 9 placeholders. Screenshot 3 shows the token prefix; Screenshot 4 shows a personal email.
+
+## Week 6
+
+- **w06 a01**: Screenshot 2 (WhatsApp, Task 8) placeholder. Screenshots 1a/1b OK. Check budget start date against Task 5.
+- **w06 a02**: Task 4: error.html not visible in hosting settings or the bucket listing (GAP). LinkedIn URL and Screenshot 8 placeholders.
+- **w06 a03**: Screenshots 1–6 are placeholders (no evidence for Tasks 1–6). Task 7 OK (IP 98.81.191.216 in address bar). LinkedIn URL and Screenshot 8 placeholders.
+- **w06 a04**: Task 8: Screenshot 18 proxies `/api/` to port 3000, not 127.0.0.1:8080 as the task requires. PM2 persistence evidence missing. Screenshot 20 curl lacks `-i`. LinkedIn URL and Screenshot 22 placeholders.
+- **w06 a05**: Task 1: subnets in Screenshot 2 are 10.0.11.0/24 and 10.0.12.0/24, not 10.0.3.0/24 and 10.0.4.0/24 as the markdown says. Task 3: **PostgreSQL** shown, but the task requires MySQL. DB subnet group includes a public subnet (not private-only). Task 6 Screenshot 16 is a target-group view, not the EC2 instance list. Task 9 diagram shows EC2 in private subnets, with CIDRs that differ from the screenshots. Task 8: instance name in banner (i-041a103) differs from the highlighted row (ha-tt-webserver1). Account ID visible.
+- **w06 a06**: Tasks 1, 3, 4 OK (architecture diagram, ALB, RDS replica, app UI). Tasks 2 and 5 are narrative (UNVERIFIABLE). LinkedIn post: URL present, not confirmed by image.
+- **w06 a07**: Task 1 Screenshot 2 (pwd/find) placeholder; Notes unanswered. Task 2 OK. **Task 3 MISMATCH**: linked image is CLAUDE.md, not the five-check plan. Task 4 Screenshots 6 and 7 placeholders. Task 5 Screenshot 9 placeholder; baseline output lacks full name. **Task 7 (verified by me): Screenshot 8 shows `authorize-security-group-ingress` on port 22 from `0.0.0.0/0` with no revoke step. The audit script then reports FAIL ("1 security group(s) allow SSH (port 22) from 0.0.0.0/0"). The task required a rule scoped to the student's own IP.** LinkedIn URL and screenshot, GitHub repo URL, and Notes placeholders open.
+
+## Week 7
+
+- **w07 a01**: Task 5 Screenshot 2 shows "Azure subscription 1" on an Azure Plan, not "Free Trial" as required. WhatsApp Screenshot 3 placeholder.
+- **w07 a02**: Task 2: Screenshot 2 shows **Ubuntu 24.04**, the task requires 20.04. Screenshot 3 shows the SSH rule open to "Any", not restricted to an IP. Task 7 Screenshot 9: deployed page shows template text ("Deployed by: Your Full Name", "Date: DD/MM/YYYY"). Nested-route refresh not shown. Screenshot 11 and LinkedIn URL placeholders.
+- **w07 a03**: Screenshots 1, 2, 4, 5, 6, 7, 9, 11, 12 are placeholders; LinkedIn URL open. Screenshot 3 (subnets incl. AzureBastionSubnet) and 8 (LB frontend) OK. Screenshot 10 (NGINX via LB IP) OK.
+- **w07 a04**: Screenshots 1–5 are placeholders. Task 5 linked image is named "Screenshot 1" where the template expects Screenshot 6 (renumber). LinkedIn Screenshot 7 and URL open.
+- **w07 a05**: PM2 Screenshot 14 placeholder. LinkedIn URL and Screenshot 15 placeholders. Screenshot 10 shows `systemctl status nginx` instead of the proxy_pass config (allowed alternative). Tasks 1–5 OK.
+
+## Week 8
+
+- **w08 a01**: Task 0 Screenshots 1–3 placeholders. Task 6 WhatsApp Screenshot 12 placeholder. VM public IP question unfilled. Task 1 S4 OK (provider, RG, VNet, NIC, VM). Tasks 1 S5 through 5 (S5–S11): UNVERIFIED (media limit).
+- **w08 a02**: Screenshot 1 (`aws --version`) placeholder. Screenshot 5 (plan) placeholder. Screenshot 11 (share) placeholder. EC2 public IP field unfilled. Everything else UNVERIFIED (media limit).
+- **w08 a03**: Screenshots 1–3, 5, 6, 7, 9, 11, 15, 16 placeholders. VM IP field unfilled. Screenshot 4 (main.tf provider/RG/NSG) linked. Remaining Screenshots 8, 10, 12–14 UNVERIFIED (media limit).
+- **w08 a04**: Modular Terraform (35 screenshots). 34 of 35 slots are placeholders. The evidence exists in the `screenshots/assignment-04/` folder but is not embedded: files 6–12 map to Tasks 6–10 (apply outputs, RDS not public, `SHOW TABLES`, npm and Nginx, EpicBook at the EC2 IP, cart order). The VS Code explorer file (1) shows the wrong module names (`compute`, `database`, `networking`, `security`). Public URL field unfilled. LinkedIn post (Screenshot 35) present; the URL is present but not confirmed by the image.
+- **Action for w08 a04**: decide whether to embed the unlinked folder evidence where it matches, and whether to rebuild the modular structure.
+
+## Week 9
+
+- **w09 a01**: Task 1 Screenshot 1 (workspace, `ls -la`, `git status`) placeholder. Task 2 Screenshot 2: `which ansible`, `yamllint --version`, `pre-commit --version` not visible. Task 3 Screenshot 4: only `.editorconfig` visible, not `.vscode/settings.json`. Task 5 Screenshot 7: SSH config verification output missing. Task 6 Screenshot 8: git name, email, and default branch not visible. Task 4 Screenshot 6, Task 7 Screenshot 10, Task 9 WhatsApp Screenshot 13 placeholders. Task 8 README: 12-item checklist visible, full name not shown. Assignment Questions 3 and 4 unanswered. Task 7 Screenshot 9 (`pre-commit run --all-files`) OK.
+
+## Week 11
+
+- **w11 a01**: Task 8 Screenshot 8 uses `curl checkip.amazonaws.com`, not `curl ifconfig.me` as the task requires. Public application URL field unfilled. Task 1 SSH source redacted, so "SSH from my IP" is UNVERIFIABLE. Task 2 Screenshot 2 shows apt output, not `cat /var/log/cloud-init-output.log` header (partial). LinkedIn OK.
+- **w11 a02**: Task 2 Screenshot 3 shows `54.227.21.152:3000`, not `localhost:3000`. Task 3 Screenshot 5 shows `54.227.21.152:8080`, not `localhost` port 80. Environment mismatch with the task text. Full name appears in most screenshots (checkbox still unticked; confirm). Image sizes and calculation OK.
+- **w11 a03**: Task 2 Screenshots 6 (web/client running) and 7 (service discovery) are placeholders. Task 3 Screenshot 13 (frontend-to-backend) placeholder; a `docker exec ui curl api` image exists in the folder but is not linked, and uses `curl api`, not `wget` as the task requires. Task 3 Screenshot 14 (backend-to-DB) shows a host-side `mongosh` session via 127.0.0.1, not from the backend container. Screenshot 15 (frontend-to-DB isolation) placeholder. Task 4 Screenshot 19: full name not visible. Networking Notes placeholder.
+- **w11 a04**: Task 1 Screenshot 3 (`docker ps`) shows port mapping but no `-v` bind-mount command. Screenshot 4: no full-name caption. Screenshot 5: `ls` shows the log files, but nothing shows the container writing to them. Task 2 (Screenshots 8–22): all placeholders; no Task 2 files in the folder. Storage Persistence Notes, Public Application URL, LinkedIn URL and LinkedIn Screenshot: placeholders.
+
+## Open re-checks (UNVERIFIED)
+
+- All of **w04** (images returned "media removed").
+- **w05 a01 and a02**: most images (media limit).
+- **w03 a03** Tasks 5–7 and LinkedIn; **w03 a04**; **w03 a05**.
+- **w08 a01** Tasks 1–5 (except S4); **w08 a02**; **w08 a03** (remaining slots).
+- Re-run these in small batches once the image limit resets.
