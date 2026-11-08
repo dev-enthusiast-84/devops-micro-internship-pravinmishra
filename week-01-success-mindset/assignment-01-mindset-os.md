@@ -226,7 +226,7 @@ https://dev-enthusiast.blogspot.com/2026/07/five-years-from-now-colleagues.html
 * [x] Task 2 includes all three truths and evidence from my life.
 * [x] Task 3 includes a 300+ word article written in past tense.
 * [x] My Task 3 article is published on an approved public platform.
-* [ ] I added the correct DMI credit note and replaced `YOUR-GITHUB-USERNAME`. **(FLAG: credit note kept from original submission; `YOUR-GITHUB-USERNAME` placeholder still present in the P.S. line)**
+* [ ] I added the correct DMI credit note and replaced `YOUR-GITHUB-USERNAME`.
 * [x] I published a LinkedIn post sharing my Task 3 article.
 * [x] Task 5 has 10 non-fiction books with titles and authors.
 * [x] Task 6 includes learning, output, health, time, and finance metrics.
@@ -237,13 +237,11 @@ https://dev-enthusiast.blogspot.com/2026/07/five-years-from-now-colleagues.html
 
 ---
 
-
 ## 📌 About DMI & CloudAdvisory
 
 DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
 
 It helps learners build strong DevOps foundations with hands-on experience.
-
 
 ## 📌 Resources
 

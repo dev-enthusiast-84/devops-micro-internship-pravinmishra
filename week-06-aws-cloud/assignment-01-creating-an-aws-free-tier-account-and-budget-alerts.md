@@ -135,7 +135,7 @@ Add your screenshot here.
 - [x] Task 6: Configured budget alert thresholds and notification email
 - [x] Task 7: Reviewed and created the budget, and included Screenshot 1
 - [x] Task 7: Answered the budget alerts question
-- [ ] Task 8: Published the DMI Leaderboard message on WhatsApp Status and included Screenshot 2 **(FLAG: new Task 8 — not yet done)**
+- [ ] Task 8: Published the DMI Leaderboard message on WhatsApp Status and included Screenshot 2
 - [x] No sensitive information exposed
 
 ---

@@ -102,8 +102,6 @@ Percentage reduction =
 Percentage reduction: ((2,170 − 95.1) ÷ 2,170) × 100 ≈ 95.6%
 ```
 
-*Note: the 2,170 MB conversion and the percentage were calculated from the sizes in your earlier notes (2.17 GB and 95.1 MB). Please confirm they match your `docker images` output.*
-
 ---
 
 # Task 5 — Analyze the Optimization Results
@@ -119,8 +117,6 @@ The single-stage image (react-app:single, built on node:20) is 2.17 GB (505 MB c
 #### Screenshot 7 — Analysis included in your submission document (kept from your earlier submission)
 
 ![Screenshot 7](screenshots/assignment-02/Screenshot%207.png)
-
-**FLAG:** Upstream does not list a Screenshot 7. The written analysis above is the required content. Keep this image or remove it, as you prefer.
 
 ---
 
@@ -190,7 +186,7 @@ https://www.linkedin.com/posts/maneetta-antony-452075387_docker-devops-react-sha
 - [x] Percentage reduction calculated
 - [x] Optimization analysis completed
 - [x] LinkedIn post URL and screenshot included
-- [ ] Full name visible in all required screenshots **(FLAG: confirm for Screenshots 1–6)**
+- [ ] Full name visible in all required screenshots
 - [x] No sensitive information exposed
 
 ---

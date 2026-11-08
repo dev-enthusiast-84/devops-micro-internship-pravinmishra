@@ -10,8 +10,6 @@ In this assignment, you will use Docker Bind Mounts and Docker Volumes to persis
 
 ---
 
-**FLAG (renamed and restructured):** Your submitted file was `assignment-04-docker-volumes.md`. Upstream renamed it to `assignment-04-docker-volumes-and-bind-mounts.md` and split the tasks differently. Task 1 maps onto the new Task 1. Task 2 has no evidence in your snapshot, and its requirements have changed, so it's left as placeholders. Your old file should be removed once you confirm. I haven't deleted it yet.
-
 ---
 
 # Task 1 — Persist Nginx Logs Using a Bind Mount
@@ -38,23 +36,17 @@ Deploy an Nginx container with a Bind Mount and verify that its log files remain
 
 ![Task 1 - Screenshot 6](screenshots/assignment-04/task1/Screenshot%206.png)
 
-**FLAG:** Confirm `0.0.0.0:80->80/tcp` is visible in this image. Your earlier screenshot shows `docker ps` for `myweb`.
-
 ---
 
 #### Screenshot 4 — Nginx Welcome Page
 
 ![Task 1 - Screenshot 7](screenshots/assignment-04/task1/Screenshot%207.png)
 
-**FLAG:** Upstream requires the VM public IP in the address bar and your full name as a caption directly below. Please confirm both are visible.
-
 ---
 
 #### Screenshot 5 — Bind-Mounted Log Files
 
 ![Task 1 - Screenshot 8](screenshots/assignment-04/task1/Screenshot%208.png)
-
-**FLAG (partial):** This shows `ls ~/nginx-logs`. Upstream also requires an access-log entry created when you opened the Nginx page. Please confirm it's visible or add it.
 
 ---
 
@@ -75,8 +67,6 @@ Deploy an Nginx container with a Bind Mount and verify that its log files remain
 ## Goal
 
 Deploy backend and frontend containers that share data through a named Docker Volume. Verify that the data remains after both containers are removed and recreated.
-
-**FLAG:** Your snapshot has no Task 2 evidence (its folder is empty). The Task 2 requirements in upstream are also different from the earlier version. All screenshots below are placeholders.
 
 ### Evidence
 
@@ -181,15 +171,11 @@ Write a short explanation covering:
 
 Write your explanation here.
 
-**FLAG:** Not in your snapshot.
-
 ---
 
 # Public Application URL
 
 **Application URL:** `Add your VM public IP URL here`
-
-**FLAG:** Not in your snapshot.
 
 ---
 
@@ -213,8 +199,6 @@ Paste your LinkedIn post URL here:
 
 Add a screenshot of the published LinkedIn post here. Include a screenshot of the application displaying shared data.
 
-**FLAG:** Your earlier submission marked LinkedIn as optional and had no URL. The current upstream marks it as required.
-
 ---
 
 # Submission Instructions
@@ -236,21 +220,21 @@ Add a screenshot of the published LinkedIn post here. Include a screenshot of th
 - [x] Host log directory created
 - [x] Bind Mount configured successfully
 - [x] Nginx logs remain after container removal
-- [ ] Custom Docker network created **(FLAG: Task 2, no evidence)**
-- [ ] Docker Volume created **(FLAG: Task 2, no evidence)**
-- [ ] Backend Dockerfile and image created **(FLAG: Task 2, no evidence)**
-- [ ] Frontend Dockerfile and image created **(FLAG: Task 2, no evidence)**
-- [ ] Both containers mount `shared-data` **(FLAG: Task 2, no evidence)**
-- [ ] Backend writes data to the Docker Volume **(FLAG: Task 2, no evidence)**
-- [ ] Frontend reads the same data from the Docker Volume **(FLAG: Task 2, no evidence)**
-- [ ] Updated data appears after browser refresh **(FLAG: Task 2, no evidence)**
-- [ ] Data remains after frontend and backend containers are removed and recreated **(FLAG: Task 2, no evidence)**
-- [ ] All required screenshots included **(FLAG: 7 of 22 present)**
-- [ ] Storage Persistence Notes completed **(FLAG: missing)**
-- [ ] Public application URL included **(FLAG: missing)**
-- [ ] LinkedIn post URL and screenshot included **(FLAG: missing)**
-- [ ] Full name visible in terminal screenshots **(FLAG: confirm)**
-- [ ] Browser screenshots have full-name captions **(FLAG: confirm)**
+- [ ] Custom Docker network created
+- [ ] Docker Volume created
+- [ ] Backend Dockerfile and image created
+- [ ] Frontend Dockerfile and image created
+- [ ] Both containers mount `shared-data`
+- [ ] Backend writes data to the Docker Volume
+- [ ] Frontend reads the same data from the Docker Volume
+- [ ] Updated data appears after browser refresh
+- [ ] Data remains after frontend and backend containers are removed and recreated
+- [ ] All required screenshots included
+- [ ] Storage Persistence Notes completed
+- [ ] Public application URL included
+- [ ] LinkedIn post URL and screenshot included
+- [ ] Full name visible in terminal screenshots
+- [ ] Browser screenshots have full-name captions
 - [x] No sensitive information exposed
 
 ---
@@ -276,12 +260,3 @@ It helps learners build strong DevOps foundations with hands-on experience.
 ---
 
 *This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
-
----
-
-# Appendix — Earlier Submission Evidence (kept as written)
-
-**Task 1 (extra, not mapped above):**
-- `docker images`: ![](screenshots/assignment-04/task1/Screenshot%201.png)
-- `docker search nginx`: ![](screenshots/assignment-04/task1/Screenshot%202.png)
-- `docker run` with the Bind Mount: ![](screenshots/assignment-04/task1/Screenshot%205.png)

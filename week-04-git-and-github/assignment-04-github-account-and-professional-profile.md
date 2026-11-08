@@ -108,7 +108,7 @@ Paste your GitHub profile URL here:
 - [x] At least one public repository forked (Screenshot 5)
 - [x] Professional bio added to your GitHub profile (Screenshot 6)
 - [x] GitHub profile URL included
-- [ ] WhatsApp Status shared for Task 4 **(FLAG: new Task 4 — not yet done; Screenshot 7 pending)**
+- [ ] WhatsApp Status shared for Task 4
 - [x] No passwords, codes, or authentication secrets exposed
 
 ---

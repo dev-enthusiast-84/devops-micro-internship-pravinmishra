@@ -150,8 +150,6 @@ Expected to show the deployed static website, with the VM public IP visible in t
 
 **VM Public IP / Application URL:** `Add your application URL here`
 
-**FLAG:** Your submitted file does not include the application URL. Please add it.
-
 ---
 
 # LinkedIn Requirement
@@ -168,8 +166,6 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 
 ![Linkedin Post](screenshots/assignment-01/Linkedin%20Post.png)
 
-**FLAG:** Your earlier submission marked LinkedIn as optional. The current upstream marks it as a required section. Your post is in place.
-
 ---
 
 # Submission Instructions
@@ -185,9 +181,9 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 # Completion Checklist
 
 - [x] Cloud VM provisioned successfully
-- [ ] Public IP enabled **(FLAG: confirm; visible in Screenshot 1)**
-- [ ] SSH port 22 restricted to my IP address **(FLAG: confirm in Screenshot 1)**
-- [ ] HTTP port 80 enabled from Anywhere **(FLAG: confirm in Screenshot 1)**
+- [ ] Public IP enabled
+- [ ] SSH port 22 restricted to my IP address
+- [ ] HTTP port 80 enabled from Anywhere
 - [x] Docker installed using Cloud-Init
 - [x] Cloud-Init Docker installation log captured
 - [x] Docker installation verified
@@ -196,9 +192,9 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 - [x] Docker image built successfully
 - [x] Docker container is running with port 80 mapped
 - [x] Website is accessible through the VM public IP
-- [ ] Public application URL included **(FLAG: missing from file)**
+- [ ] Public application URL included
 - [x] LinkedIn post published
-- [ ] All required screenshots included **(FLAG: confirm Full Name is visible in each)**
+- [ ] All required screenshots included
 - [x] No sensitive information exposed
 
 ---

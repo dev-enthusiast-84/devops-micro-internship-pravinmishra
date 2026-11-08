@@ -150,8 +150,6 @@ Run EpicBook in the background using PM2, configure startup after a VM reboot, s
 
 Add your screenshot here.
 
-**FLAG:** No PM2 evidence in your snapshot. This section is new in upstream.
-
 ---
 
 # LinkedIn Post (Required)
@@ -197,14 +195,12 @@ Add your screenshot here.
 - [x] Task 3: Private MySQL server configured, `bookstore` created, and schema and seed data imported (Screenshots 6–8)
 - [x] Task 4: EpicBook configured and running behind Nginx (Screenshots 9–11)
 - [x] Task 5: Product viewing, cart operations, checkout, and database changes verified (Screenshots 12–13)
-- [ ] PM2 configured, startup command completed, and process list saved (Screenshot 14) **(FLAG: new section — not yet done)**
-- [ ] Application remains accessible through Nginx while running under PM2 **(FLAG: new section)**
-- [ ] LinkedIn post published with the required hashtags, credit note, and tags (Screenshot 15) **(FLAG: new required section — not yet done)**
-- [ ] Full name, working website URL, and LinkedIn post URL included **(FLAG: LinkedIn post URL missing; full name visibility not confirmed)**
-- [ ] Brief configuration notes included **(FLAG: no notes in snapshot)**
+- [ ] PM2 configured, startup command completed, and process list saved (Screenshot 14)
+- [ ] Application remains accessible through Nginx while running under PM2
+- [ ] LinkedIn post published with the required hashtags, credit note, and tags (Screenshot 15)
+- [ ] Full name, working website URL, and LinkedIn post URL included
+- [ ] Brief configuration notes included
 - [x] All screenshots readable and no sensitive information exposed
-
-**FLAG (naming):** Upstream names the delegated subnet `private-db-subnet`. Your snapshot doesn't state the subnet name. Please confirm the name matches your deployment.
 
 ---
 

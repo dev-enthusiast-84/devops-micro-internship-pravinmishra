@@ -135,8 +135,8 @@ Confirm below:
 - [x] Live GitHub query returns real repository data
 - [x] All required screenshots added
 - [x] GitHub repository URL included
-- [ ] MCP achievement shared on Facebook or WhatsApp Status **(FLAG: new Task 6 — not yet done)**
-- [ ] Screenshot 6 added showing the published post/status **(FLAG: new Task 6)**
+- [ ] MCP achievement shared on Facebook or WhatsApp Status
+- [ ] Screenshot 6 added showing the published post/status
 
 ---
 

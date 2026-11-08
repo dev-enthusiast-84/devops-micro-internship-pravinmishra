@@ -130,13 +130,13 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Mini Finance project downloaded and extracted (Screenshot 1) **(FLAG: missing)**
-- [ ] Task 2: Storage Account created with Standard performance and LRS redundancy in `mini-finance-rg` (Screenshot 2) **(FLAG: missing)**
-- [ ] Task 3: Static Website Hosting enabled and Primary endpoint copied (Screenshot 3) **(FLAG: missing)**
-- [ ] Task 4: Website files uploaded with `index.html` at the `$web` root and the original folder structure preserved (Screenshots 4–5) **(FLAG: missing)**
+- [ ] Task 1: Mini Finance project downloaded and extracted (Screenshot 1)
+- [ ] Task 2: Storage Account created with Standard performance and LRS redundancy in `mini-finance-rg` (Screenshot 2)
+- [ ] Task 3: Static Website Hosting enabled and Primary endpoint copied (Screenshot 3)
+- [ ] Task 4: Website files uploaded with `index.html` at the `$web` root and the original folder structure preserved (Screenshots 4–5)
 - [x] Task 5: Website, styling, and images verified through the Primary endpoint (Screenshot 6)
 - [x] Working website URL included
-- [ ] LinkedIn post published with the required content and hashtags (Screenshot 7) **(FLAG: new required section — not yet done)**
+- [ ] LinkedIn post published with the required content and hashtags (Screenshot 7)
 - [ ] LinkedIn post URL included
 - [ ] All screenshots readable
 - [x] No sensitive account information exposed

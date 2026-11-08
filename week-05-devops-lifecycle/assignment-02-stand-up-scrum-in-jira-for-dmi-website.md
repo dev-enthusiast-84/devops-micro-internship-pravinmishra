@@ -180,7 +180,7 @@ Add your screenshot here.
 - [x] Task 6: One-week Sprint 1 started with the required Sprint Goal (Screenshots 8 & 9)
 - [x] Task 7: Frontend and devops filters demonstrated (Screenshots 10 & 11)
 - [x] Task 8: Burndown Chart opened for Sprint 1 (Screenshot 12)
-- [ ] LinkedIn post published **(FLAG: new required section — not yet done; URL and Screenshot 13 pending)**
+- [ ] LinkedIn post published
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed
 

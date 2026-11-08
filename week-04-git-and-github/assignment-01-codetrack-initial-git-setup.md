@@ -105,11 +105,11 @@ Before submission, verify:
 - [x] .git folder visible in the required evidence
 - [x] Local user.name and user.email configured and verified
 - [x] Global user.name and user.email configured and verified
-- [ ] All four Git setup screenshots included and readable **(Screenshots 1–4 present; FLAG: Screenshot 5 pending Task 4)**
+- [ ] All four Git setup screenshots included and readable
 - [x] Explanation of the .git folder written in your own words
-- [ ] WhatsApp Status shared for Task 4 **(FLAG: new Task 4 — not yet done)**
-- [ ] WhatsApp Status screenshot included and readable **(FLAG: new Task 4)**
-- [ ] Leaderboard progress link visible in the WhatsApp Status screenshot **(FLAG: new Task 4)**
+- [ ] WhatsApp Status shared for Task 4
+- [ ] WhatsApp Status screenshot included and readable
+- [ ] Leaderboard progress link visible in the WhatsApp Status screenshot
 - [x] No sensitive data exposed
 
 ---

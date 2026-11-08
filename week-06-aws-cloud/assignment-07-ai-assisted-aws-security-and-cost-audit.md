@@ -122,8 +122,6 @@ Make it executable and confirm it has no syntax errors.
 
 ![Screenshot 4f - Audit Script Part 6](./screenshots/assignment-07/Screenshot%204f.png)
 
-**FLAG:** Upstream expects three separate screenshots here (5: top section, 6: one check function, 7: `bash -n` and `ls -l`). Your six images are kept together under Screenshot 5 for now. Let me know if you want them split to match.
-
 ---
 
 #### Screenshot 6 — One check function (for example `check_ssh_open_to_world`) showing the AWS CLI call and conditional
@@ -244,8 +242,6 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 ![Screenshot 9 - Second Audit Run](./screenshots/assignment-07/Screenshot%209.png)
 
-**FLAG:** Upstream expects a separate note answer for each question below. Your earlier answer is a combined Gather → Analyze → Human Act → Verify summary, placed under question 4.
-
 ---
 
 ### Notes You Must Write (Very Important)
@@ -331,19 +327,19 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: AWS resources confirmed and workspace created (Screenshots 1–2) **(FLAG: Screenshot 2 missing)**
+- [ ] Task 1: AWS resources confirmed and workspace created (Screenshots 1–2)
 - [ ] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
 - [ ] Task 3: Claude produced a read-only five-check audit plan before any script existed (Screenshot 4)
-- [ ] Task 4: `aws-audit.sh` built, executable, and passes `bash -n` (Screenshots 5–7) **(FLAG: Screenshots 6 and 7 missing)**
-- [ ] Task 5: Baseline audit captured and saved with Full Name visible (Screenshots 8–9) **(FLAG: Screenshot 9 missing)**
+- [ ] Task 4: `aws-audit.sh` built, executable, and passes `bash -n` (Screenshots 5–7)
+- [ ] Task 5: Baseline audit captured and saved with Full Name visible (Screenshots 8–9)
 - [ ] Task 6: `/aws-audit` skill loads and runs successfully with no Write permission (Screenshots 10–11)
 - [ ] Task 7: A real finding was fixed by you and reverified as PASS (Screenshots 12–13)
 - [x] Skill never executed a remediation command
-- [ ] New security group rule is scoped to your own IP, not `0.0.0.0/0` **(FLAG: not confirmed in snapshot)**
-- [ ] All 13 required task screenshots are included **(FLAG: 4 missing — see above)**
-- [ ] All "Notes You Must Write" questions are answered in your own words **(FLAG: most upstream note questions unanswered; see Notes)**
+- [ ] New security group rule is scoped to your own IP, not `0.0.0.0/0`
+- [ ] All 13 required task screenshots are included
+- [ ] All "Notes You Must Write" questions are answered in your own words
 - [x] No AWS credentials or unblurred account IDs exposed
-- [ ] LinkedIn post published and URL submitted **(FLAG: new required section — not yet done)**
+- [ ] LinkedIn post published and URL submitted
 - [ ] GitHub repository URL included in submission
 - [ ] All assignment files committed and visible in GitHub repository
 

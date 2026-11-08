@@ -110,7 +110,7 @@ Add your screenshot here.
 - [x] Task 2: Email verification completed, or a Google sign-in note included (Screenshot 2 or Notes)
 - [x] Task 3: Professional profile updated with full name, role/title, and bio (Screenshot 3)
 - [x] Task 4: Projects page and a Board or Backlog explored (Screenshots 4 & 5)
-- [ ] Task 5: WhatsApp Status shared with the Jira setup message and generated DMI leaderboard progress link (Screenshot 6) **(FLAG: new Task 5 — not yet done)**
+- [ ] Task 5: WhatsApp Status shared with the Jira setup message and generated DMI leaderboard progress link (Screenshot 6)
 - [x] No Jira issues created
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed

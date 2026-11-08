@@ -179,7 +179,7 @@ Add your screenshot here.
 - [x] Task 7: Small update re-uploaded and verified (Screenshot 7)
 - [x] S3 Website Endpoint URL included
 - [x] No sensitive account information exposed
-- [ ] LinkedIn post published **(FLAG: new required section — not yet done; URL and Screenshot 8 pending)**
+- [ ] LinkedIn post published
 
 ---
 

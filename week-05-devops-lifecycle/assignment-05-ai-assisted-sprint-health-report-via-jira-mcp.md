@@ -233,10 +233,8 @@ Your submission must include:
 - [x] Skill never created, edited, transitioned, or commented on any issue
 - [x] Reflection answered (Notes)
 - [x] No API token value exposed
-- [ ] LinkedIn post URL **(FLAG: new required section — not yet done)**
-- [ ] LinkedIn Screenshot 9 **(FLAG: new required section — not yet done)**
-
-**FLAG for review:** Screenshot 8 currently reuses your `Screenshot 7b.png` file (the second-run report), because your snapshot has no separate Screenshot 8 image. Confirm whether that's the right image or whether you have a separate one.
+- [ ] LinkedIn post URL
+- [ ] LinkedIn Screenshot 9
 
 ---
 

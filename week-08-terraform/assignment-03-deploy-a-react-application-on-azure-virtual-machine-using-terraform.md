@@ -12,8 +12,6 @@ You will verify the automated deployment through SSH, confirm that Nginx is runn
 
 ---
 
-**FLAG (task change):** Your submitted version used a manual deployment: you installed Node.js, Git, and built the React app over SSH (old Tasks 5–7). The current upstream task automates this with `cloud-init.sh` passed through `custom_data`. Your old manual evidence is kept below only where it still fits a current slot. Your Notes paragraph also refers to `setup-react.sh`, which the current spec calls `cloud-init.sh`. Let's decide together whether to rebuild the automated version or keep the manual steps.
-
 ---
 
 # Task 0 — Set Up and Verify the Terraform and Azure CLI Environment
@@ -30,8 +28,6 @@ Add a screenshot of the terminal showing successful `terraform version` output.
 
 Add your screenshot here.
 
-**FLAG:** New upstream task. Not in your snapshot.
-
 ---
 
 ### Screenshot 2 — Azure CLI Version
@@ -40,8 +36,6 @@ Add a screenshot of the terminal showing successful `az version` output.
 
 Add your screenshot here.
 
-**FLAG:** New upstream task. Not in your snapshot.
-
 ---
 
 ### Screenshot 3 — HashiCorp Terraform Extension
@@ -49,8 +43,6 @@ Add your screenshot here.
 Add a screenshot of the VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled.
 
 Add your screenshot here.
-
-**FLAG:** New upstream task. Not in your snapshot.
 
 ---
 
@@ -92,8 +84,6 @@ Add a screenshot of VS Code showing the AzureRM provider, resource group, and Ne
 
 ![Screenshot 2 - main.tf with required Azure resources](screenshots/assignment-03/Screenshot%202.png)
 
-**FLAG:** Your `main.tf` screenshot is kept here. Please confirm it shows the provider, resource group, and NSG.
-
 ---
 
 ### Screenshot 5 — Linux Virtual Machine and `custom_data`
@@ -104,8 +94,6 @@ Ensure that passwords, private keys, account IDs, access tokens, and other sensi
 
 Add your screenshot here.
 
-**FLAG:** Your snapshot doesn't show `custom_data` configuration. This is new for the automated version.
-
 ---
 
 ### Screenshot 6 — Completed `cloud-init.sh`
@@ -115,8 +103,6 @@ Add a screenshot of VS Code showing the completed `cloud-init.sh` deployment scr
 Ensure that no passwords, Azure credentials, access tokens, SSH private keys, or other sensitive information are visible.
 
 Add your screenshot here.
-
-**FLAG:** New upstream file (`cloud-init.sh`). Your deployment script is named `setup-react.sh` in your notes. Not in your snapshot.
 
 ---
 
@@ -174,8 +160,6 @@ Add a screenshot showing the VM public IP address returned by `terraform output`
 
 Add your screenshot here.
 
-**FLAG:** Your Screenshot 5 in the old version was the Azure portal showing the VM and its public IP. It is not the `terraform output` view that upstream requires. Please add the `terraform output` view.
-
 ## VM Public IP Address
 
 Record the public IP address displayed by `terraform output`.
@@ -197,8 +181,6 @@ Connect to the Azure Linux virtual machine and confirm that the cloud-init/user 
 Add a screenshot of SSH terminal showing successful connection to the Azure VM and evidence that the React application deployment completed such as the deployed files in `/var/www/html` or successful cloud-init output.
 
 ![Screenshot 6 - SSH connection](screenshots/assignment-03/Screenshot%206.png)
-
-**FLAG:** Your SSH screenshot is kept. Upstream also expects evidence of automated cloud-init completion, which is not in your snapshot.
 
 ---
 
@@ -283,8 +265,6 @@ Ensure that no passwords, private keys, account IDs, access tokens, or other sen
 
 Add your screenshot here.
 
-**FLAG:** New upstream task. Not in your snapshot.
-
 ---
 
 # Submission Instructions
@@ -303,38 +283,38 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Installed Terraform and verified it using `terraform version` **(FLAG: not in snapshot)**
-- [ ] Installed Azure CLI and verified it using `az version` **(FLAG: not in snapshot)**
-- [ ] Signed in to Azure and confirmed the correct subscription **(FLAG: not in snapshot)**
-- [ ] Installed and enabled the HashiCorp Terraform extension in VS Code **(FLAG: not in snapshot)**
+- [ ] Installed Terraform and verified it using `terraform version`
+- [ ] Installed Azure CLI and verified it using `az version`
+- [ ] Signed in to Azure and confirmed the correct subscription
+- [ ] Installed and enabled the HashiCorp Terraform extension in VS Code
 - [x] Created the `terraform-react-azure` project
 - [x] Created `main.tf`
-- [x] Defined the Terraform and AzureRM provider configuration **(FLAG: confirm)**
+- [x] Defined the Terraform and AzureRM provider configuration
 - [x] Defined the resource group
 - [x] Defined the virtual network and subnet
 - [x] Defined the Network Security Group
 - [x] Configured SSH and HTTP rules
 - [x] Defined the public IP and network interface
-- [ ] Created `cloud-init.sh` **(FLAG: current spec; your version used `setup-react.sh`)**
+- [ ] Created `cloud-init.sh`
 - [ ] Reviewed the React application repository instructions
-- [ ] Created the complete deployment workflow inside `cloud-init.sh` **(FLAG: new)**
-- [ ] Defined the Linux virtual machine **(FLAG: confirm `custom_data` is set)**
-- [ ] Connected `cloud-init.sh` to the VM using `custom_data` **(FLAG: new)**
-- [ ] Used `file()` and `base64encode()` correctly **(FLAG: new)**
-- [ ] Added the Terraform public IP output **(FLAG: confirm)**
+- [ ] Created the complete deployment workflow inside `cloud-init.sh`
+- [ ] Defined the Linux virtual machine
+- [ ] Connected `cloud-init.sh` to the VM using `custom_data`
+- [ ] Used `file()` and `base64encode()` correctly
+- [ ] Added the Terraform public IP output
 - [x] Completed `terraform init` successfully
-- [ ] Reviewed the Terraform execution plan **(FLAG: no plan screenshot)**
+- [ ] Reviewed the Terraform execution plan
 - [x] Completed `terraform apply` successfully
-- [ ] Recorded the VM public IP **(FLAG: IP field still empty)**
+- [ ] Recorded the VM public IP
 - [x] Connected to the VM through SSH
-- [ ] Verified that the automated deployment completed successfully **(FLAG: automated cloud-init evidence missing)**
+- [ ] Verified that the automated deployment completed successfully
 - [x] Verified that Nginx is running
 - [x] Verified the React application through the browser
-- [ ] Completed `terraform destroy` successfully **(FLAG: Screenshot 15 missing)**
-- [ ] Shared the React application deployment progress on LinkedIn by following Task 7 **(FLAG: new task)**
-- [ ] Captured all 16 required screenshots **(FLAG: 6 present, 10 missing)**
+- [ ] Completed `terraform destroy` successfully
+- [ ] Shared the React application deployment progress on LinkedIn by following Task 7
+- [ ] Captured all 16 required screenshots
 - [ ] Confirmed that my full name is visible in the required screenshots
-- [x] Checked that no passwords, keys, account IDs, access tokens, or other sensitive information are exposed **(FLAG: confirm)**
+- [x] Checked that no passwords, keys, account IDs, access tokens, or other sensitive information are exposed
 
 ---
 
@@ -360,22 +340,3 @@ It helps learners build strong DevOps foundations through hands-on experience.
 ---
 
 *This submission is part of the DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
-
----
-
-# My Earlier Notes (kept as written)
-
-## Notes
-
-Write a short summary of what you built and any issues you encountered and how you resolved them.
-
-What I built
-
-I added a Terraform configuration in terraform-react-azure/ that provisions an Ubuntu 22.04 VM on Azure. On first boot, setup-react.sh (passed as custom_data) installs Node.js 20 and Nginx, clones my-react-app, builds it, and serves it on port 80. The config also creates the resource group, VNet, subnet, static public IP, NIC and an NSG that allows SSH and HTTP. 
-
-Issues and fixes
-
-- SSH host key warning after recreating the VM. Re-running terraform apply created a new VM with a new host key, so SSH refused to connect because of the old entry in ~/.ssh/known_hosts. The fix is to confirm the new fingerprint against Azure and then run ssh-keygen -R <public_ip>. I documented this step in the README.
-- Password handling. The admin password is a sensitive variable with no default and is supplied through TF_VAR_admin_password, so it isn't stored in source control.
-
-**FLAG:** Your notes say Ubuntu 22.04, but your original purpose text said 20.04. Also, the setup script name differs (`setup-react.sh` vs `cloud-init.sh`).

@@ -154,8 +154,6 @@ Launch a private, Multi-AZ RDS database (MySQL) using the private DB Subnet Grou
 - Storage: 200 GiB with encryption enabled
 - Provisioned IOPS: 3000*
 
-**FLAG:** Upstream asks for MySQL in this task. Your deployment uses PostgreSQL (port 5432), which is kept here as you built it.
-
 ---
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group

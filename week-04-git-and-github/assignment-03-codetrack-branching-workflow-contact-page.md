@@ -199,7 +199,7 @@ Add your screenshot here.
 - [x] Feature branch merged and Contact page verified (Screenshots 11–13)
 - [x] Graph history reviewed (Screenshot 14)
 - [x] Cleanup completed (Screenshot 15)
-- [ ] LinkedIn post added **(FLAG: new required section — not yet done; Screenshot 16 and URL pending)**
+- [ ] LinkedIn post added
 - [x] No sensitive data exposed
 
 ---

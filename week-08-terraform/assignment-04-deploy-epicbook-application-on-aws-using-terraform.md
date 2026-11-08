@@ -12,8 +12,6 @@ You will use EC2 `user_data` to install the required software, initialize the Ep
 
 ---
 
-**FLAG (task change — please read first):** Your submitted version was a single flat Terraform configuration (13 screenshots, manual setup over SSH). The current upstream task requires a **modular** project (root + `network`, `ec2`, `rds` modules, `user_data.sh`) with 35 screenshots. None of your earlier screenshots map cleanly onto the modular slots, so every upstream slot below is left as a placeholder. Your earlier evidence and notes are kept in the **Appendix** at the bottom. Let's decide whether to rebuild in modular form or keep the flat version.
-
 ---
 
 # Task 0 — Set Up and Verify the Terraform and AWS CLI Environment
@@ -471,8 +469,6 @@ Add a screenshot of the published LinkedIn post showing the post and at least on
 
 ![Screenshot 13 - LinkedIn Post](screenshots/assignment-04/LinkedIn%20Post.png)
 
-**FLAG:** Your earlier LinkedIn post screenshot is kept here. Upstream asks for a post about the *modular* deployment, so please confirm whether this post satisfies Task 12.
-
 ## LinkedIn Post URL
 
 **LinkedIn Post URL:** https://www.linkedin.com/posts/maneetta-antony_terraform-aws-devops-share-7523605107209551873-00AX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAMKjaMBgVWqnGQ7U4godYqOh1rcqonVh74
@@ -496,22 +492,22 @@ Add a screenshot of the published LinkedIn post showing the post and at least on
 
 # Completion Checklist
 
-- [ ] Installed and verified Terraform **(FLAG: not in snapshot)**
-- [ ] Installed and verified AWS CLI **(FLAG: not in snapshot)**
-- [ ] Configured AWS CLI **(FLAG: not in snapshot)**
-- [ ] Confirmed the AWS Region **(FLAG: not in snapshot)**
-- [ ] Installed the HashiCorp Terraform extension **(FLAG: not in snapshot)**
-- [ ] Created the modular Terraform project **(FLAG: current spec; your version is flat)**
-- [ ] Created the root `main.tf`, `variables.tf`, and `outputs.tf` **(FLAG: current spec)**
-- [ ] Created the Network module **(FLAG: current spec)**
-- [ ] Created the EC2 module **(FLAG: current spec)**
-- [ ] Created the RDS module **(FLAG: current spec)**
-- [ ] Created the EC2 `user_data.sh` **(FLAG: current spec)**
+- [ ] Installed and verified Terraform
+- [ ] Installed and verified AWS CLI
+- [ ] Configured AWS CLI
+- [ ] Confirmed the AWS Region
+- [ ] Installed the HashiCorp Terraform extension
+- [ ] Created the modular Terraform project
+- [ ] Created the root `main.tf`, `variables.tf`, and `outputs.tf`
+- [ ] Created the Network module
+- [ ] Created the EC2 module
+- [ ] Created the RDS module
+- [ ] Created the EC2 `user_data.sh`
 - [ ] Created VPC `10.0.0.0/16`
 - [ ] Created public subnet `10.0.1.0/24`
-- [ ] Created private DB subnet A `10.0.2.0/24` **(FLAG: your flat version has a single private subnet `10.0.2.0/24`)**
-- [ ] Created private DB subnet B `10.0.3.0/24` **(FLAG: not in your version)**
-- [ ] Used different Availability Zones for the database subnets **(FLAG: not in your version)**
+- [ ] Created private DB subnet A `10.0.2.0/24`
+- [ ] Created private DB subnet B `10.0.3.0/24`
+- [ ] Used different Availability Zones for the database subnets
 - [ ] Created and attached the Internet Gateway
 - [ ] Created the public route table
 - [ ] Associated the public subnet with the public route table
@@ -522,24 +518,24 @@ Add a screenshot of the published LinkedIn post showing the post and at least on
 - [ ] Allowed MySQL port `3306` from the EC2 Security Group only
 - [ ] Exposed the required Network module outputs
 - [ ] Defined the EC2 instance
-- [ ] Connected `user_data.sh` using the EC2 `user_data` argument **(FLAG: current spec)**
+- [ ] Connected `user_data.sh` using the EC2 `user_data` argument
 - [ ] Configured EC2 with a public IP
-- [ ] Installed the required software using user data **(FLAG: current spec; your version installed it over SSH)**
+- [ ] Installed the required software using user data
 - [ ] Created the RDS DB subnet group
 - [ ] Created Amazon RDS for MySQL
 - [ ] Confirmed RDS is not publicly accessible
 - [ ] Configured sensitive database variables
 - [ ] Exposed the RDS endpoint
-- [ ] Connected all modules through the root module **(FLAG: current spec)**
-- [ ] Passed Network module outputs to EC2 and RDS **(FLAG: current spec)**
+- [ ] Connected all modules through the root module
+- [ ] Passed Network module outputs to EC2 and RDS
 - [ ] Added root EC2 public IP and RDS endpoint outputs
 - [ ] Completed `terraform init`
-- [ ] Completed `terraform validate` **(FLAG: not in snapshot)**
+- [ ] Completed `terraform validate`
 - [ ] Reviewed `terraform plan`
 - [ ] Completed `terraform apply`
 - [ ] Verified EC2 is running
 - [ ] Verified RDS is available
-- [ ] Verified user data installation **(FLAG: current spec)**
+- [ ] Verified user data installation
 - [ ] Connected to EC2 using SSH
 - [ ] Cloned EpicBook
 - [ ] Created the `bookstore` database
@@ -558,11 +554,11 @@ Add a screenshot of the published LinkedIn post showing the post and at least on
 - [ ] Verified the checkout or order workflow
 - [ ] Confirmed application actions in Amazon RDS
 - [ ] Completed `terraform destroy`
-- [x] Published the required LinkedIn post **(FLAG: confirm it meets Task 12)**
+- [x] Published the required LinkedIn post
 - [x] Added the LinkedIn post URL
-- [ ] Captured all 35 required screenshots **(FLAG: 13 earlier screenshots kept in Appendix; slots 1–35 are mostly not yet filled)**
+- [ ] Captured all 35 required screenshots
 - [ ] Confirmed that my full name is visible in the required screenshots
-- [x] Checked that no sensitive information is exposed **(FLAG: confirm for the earlier submission)**
+- [x] Checked that no sensitive information is exposed
 
 ---
 
@@ -589,77 +585,3 @@ It helps learners build strong DevOps foundations through hands-on experience.
 ---
 
 *This submission is part of the DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
-
----
-
-# Appendix — Earlier Submission (Flat Configuration, kept as written)
-
-These are your earlier evidence and notes from the flat (non-modular) version of this assignment. They are kept for reference and do not map to the current Tasks 1–11.
-
-### Earlier Screenshot 1 — Terraform configuration showing the VPC and both subnet CIDR ranges
-
-![Screenshot 1](screenshots/assignment-04/Screenshot%201.png)
-
-### Earlier Screenshot 2 — Internet Gateway, public route table, and both Security Groups
-
-![Screenshot 2A](screenshots/assignment-04/Screenshot%202A.png)
-
-![Screenshot 2B](screenshots/assignment-04/Screenshot%202B.png)
-
-![Screenshot 2C](screenshots/assignment-04/Screenshot%202C.png)
-
-### Earlier Screenshot 3 — Terraform apply output showing successful EC2 provisioning
-
-![Screenshot 3](screenshots/assignment-04/Screenshot%203.png)
-
-### Earlier Screenshot 4 — EC2 instance running in the AWS Console
-
-![Screenshot 4](screenshots/assignment-04/Screenshot%204.png)
-
-### Earlier Screenshot 5 — SSH access and installed software
-
-![Screenshot 5](screenshots/assignment-04/Screenshot%205.png)
-
-### Earlier Screenshot 6 — EpicBook application files and dependency installation
-
-![Screenshot 6](screenshots/assignment-04/Screenshot%206.png)
-
-### Earlier Screenshot 7 — Application and Nginx services running
-
-![Screenshot 7](screenshots/assignment-04/Screenshot%207.png)
-
-### Earlier Screenshot 8 — Terraform apply output showing successful RDS provisioning
-
-![Screenshot 8](screenshots/assignment-04/Screenshot%208.png)
-
-### Earlier Screenshot 9 — RDS instance showing Publicly accessible: No
-
-![Screenshot 9](screenshots/assignment-04/Screenshot%209.png)
-
-### Earlier Screenshot 10 — Database initialization or table verification from EC2
-
-![Screenshot 10](screenshots/assignment-04/Screenshot%2010.png)
-
-### Earlier Screenshot 11 — EpicBook through the EC2 public IP
-
-![Screenshot 11](screenshots/assignment-04/Screenshot%2011.png)
-
-### Earlier Screenshot 12 — Product, cart, order summary, or checkout flow
-
-![Screenshot 12](screenshots/assignment-04/Screenshot%2012.png)
-
-### Earlier Notes
-
-Write a short note describing any issue you faced, how you fixed it, and what you learned.
-
-Issues, fixes, and what I learned
-
-1. Terraform had no AWS credentials. The plan failed with "No valid credential sources found" and then tried the EC2 metadata service (169.254.169.254), which isn't reachable from a laptop. The aws provider block in main.tf doesn't set a profile, and AWS_PROFILE wasn't exported in the shell. Fix: export a named profile before running Terraform (export AWS_PROFILE=dmi-c3-g3-training). Learned: the provider reads credentials from the environment or a profile, and the metadata-service error only means no other source was found.
-
-2. The Ubuntu AMI lookup returned no results. The aws_ami data source in modules/compute filtered on ubuntu/images/hvm-ssd-gp3/ubuntu-jammy-22.04-amd64-server-*. Canonical publishes Jammy under hvm-ssd in us-east-1, so the filter matched nothing. Fix: changed the default ami_name_filter to ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-* and confirmed with aws ec2 describe-images that it returns current images. Learned: hard-coding a name pattern is fragile. Check it against the real catalog with the CLI before running a plan, and keep the owner ID (Canonical, 099720109477) fixed.
-
-3. The plan stopped on a missing sensitive variable. db_password has no default and must be at least 8 characters. Rather than store it in terraform.tfvars, the config expects TF_VAR_db_password in the environment. Learned: keep secrets out of committed files and pass them through environment variables or a secret store.
-
-4. RDS took several minutes to create. The EC2 instance finished in about 13 seconds, while aws_db_instance.mysql was still creating after 2+ minutes. This is normal for a new MySQL instance (roughly 5 to 15 minutes, and Terraform allows up to 40). Learned: the database config was correct; the wait is expected, and a failed creation shows up as an error in Terraform or as a status in the RDS console.
-
-5. Connecting to the instance over SSH. The key pair is epicbook-aws-key, and the public key comes from ~/.ssh/epicbook-aws-key.pub. The connection command is ssh -i ~/.ssh/epicbook-aws-key ubuntu@<ec2_public_ip>. The security group only allows SSH from ssh_allowed_cidr, so a changed IP will time out. Learned: match the private key to the registered public key, and remember that inbound access is limited to a single CIDR.

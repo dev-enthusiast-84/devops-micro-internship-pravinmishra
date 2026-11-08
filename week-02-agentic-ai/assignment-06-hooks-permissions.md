@@ -163,9 +163,9 @@ Your submission must include:
 - [x] Destructive prompt test shows UserPromptSubmit blocked the request
 - [x] Terraform destroy command test shows PreToolUse intercepted the command
 - [x] Terraform validate test shows PostToolUse created the log entry
-- [ ] AI safety achievement shared on X or LinkedIn **(FLAG: new Task 9 — not yet done)**
-- [ ] Screenshot of published post with leaderboard progress link visible **(FLAG: new Task 9)**
-- [ ] All required screenshots are captured **(FLAG: Screenshot 9 `deploy.log` and Screenshot 10 missing from your snapshot)**
+- [ ] AI safety achievement shared on X or LinkedIn
+- [ ] Screenshot of published post with leaderboard progress link visible
+- [ ] All required screenshots are captured
 
 ---
 

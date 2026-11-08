@@ -164,17 +164,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Ubuntu EC2 instance launched in a public subnet with a public IPv4 address and passed status checks (Screenshot 1) **(FLAG: no screenshot in your snapshot)**
-- [ ] Task 2: SSH allowed from my IP only and HTTP allowed publicly (Screenshot 2) **(FLAG: no screenshot in your snapshot)**
-- [ ] Task 3: Connected to the Ubuntu instance through SSH (Screenshot 3) **(FLAG: no screenshot in your snapshot)**
-- [ ] Task 4: Nginx and Git installed, Nginx active and enabled, and local HTTP response verified (Screenshot 4) **(FLAG: no screenshot in your snapshot)**
-- [ ] Task 5: Mini Finance repository cloned and website files inspected (Screenshot 5) **(FLAG: no screenshot in your snapshot)**
-- [ ] Task 6: Website files copied to `/var/www/html/` with ownership and permissions configured (Screenshot 6) **(FLAG: no screenshot in your snapshot)**
+- [ ] Task 1: Ubuntu EC2 instance launched in a public subnet with a public IPv4 address and passed status checks (Screenshot 1)
+- [ ] Task 2: SSH allowed from my IP only and HTTP allowed publicly (Screenshot 2)
+- [ ] Task 3: Connected to the Ubuntu instance through SSH (Screenshot 3)
+- [ ] Task 4: Nginx and Git installed, Nginx active and enabled, and local HTTP response verified (Screenshot 4)
+- [ ] Task 5: Mini Finance repository cloned and website files inspected (Screenshot 5)
+- [ ] Task 6: Website files copied to `/var/www/html/` with ownership and permissions configured (Screenshot 6)
 - [x] Task 7: Nginx configuration checked and live Mini Finance website verified (Screenshot 7)
 - [x] Complete EC2 Public IP URL included
-- [ ] LinkedIn post published with my website screenshot, website URL, and caption written in my own words **(FLAG: new required section — not yet done)**
-- [ ] Required hashtags, track credit note, and tags included **(FLAG: new required section)**
-- [ ] LinkedIn Post URL and LinkedIn Screenshot 8 included **(FLAG: new required section)**
+- [ ] LinkedIn post published with my website screenshot, website URL, and caption written in my own words
+- [ ] Required hashtags, track credit note, and tags included
+- [ ] LinkedIn Post URL and LinkedIn Screenshot 8 included
 - [x] No sensitive information exposed
 
 ---

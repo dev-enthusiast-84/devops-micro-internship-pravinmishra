@@ -281,10 +281,6 @@ Expose EpicBook through Nginx on port 80 and keep its Node.js process running af
   - Proper headers forwarded: Host, X-Real-IP, X-Forwarded-For
   - HTTP version 1.1 for proxying*
 
-**FLAG:** Your Screenshot 15 shows the backend on port 8080, but this Screenshot 18 shows the `/api/` proxy to port 3000. Please confirm which port your backend actually uses.
-
-**FLAG:** Upstream Task 8 also requires PM2 persistence (keeping Node running after SSH disconnects and reboots). No PM2 evidence is in your snapshot.
-
 ---
 
 # Task 9 — End-to-End Testing (Frontend ↔ Backend ↔ RDS)
@@ -386,11 +382,11 @@ Add your screenshot here.
 - [x] Task 4: Node.js, npm, Nginx, and MySQL client installed (Screenshots 8–10)
 - [x] Task 5: Private MySQL RDS created with no public access (Screenshots 11–12)
 - [x] Task 6: Database initialized from the SQL dump (Screenshot 13)
-- [x] Task 7: Backend deployed and responding (Screenshots 14–16) **(FLAG: port mismatch — see Task 8)**
-- [ ] Task 8: Nginx proxying requests to EpicBook, with PM2 persistence (Screenshots 17–18) **(FLAG: PM2 persistence evidence missing)**
+- [x] Task 7: Backend deployed and responding (Screenshots 14–16)
+- [ ] Task 8: Nginx proxying requests to EpicBook, with PM2 persistence (Screenshots 17–18)
 - [x] Task 9: Frontend, backend, and RDS verified end to end (Screenshots 19–21)
 - [x] No sensitive data exposed
-- [ ] LinkedIn post published **(FLAG: new required section — not yet done; URL and Screenshot 22 pending)**
+- [ ] LinkedIn post published
 
 ---
 

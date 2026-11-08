@@ -30,8 +30,6 @@ Add your screenshot here.
 
 Create `eb-demo-vnet` (`10.0.0.0/16`) in `vnet-demo-rg` with `web-subnet` (`10.0.2.0/24`), `app-subnet` (`10.0.3.0/25`), and `db-subnet` (`10.0.4.0/26`). Azure Bastion is optional.
 
-**FLAG:** Your subnet CIDRs are `10.0.1.0/24`, `10.0.2.0/25`, and `10.0.3.0/26`, which differ from the values above. Your Screenshot 3 shows your values. Confirm whether to keep your ranges or update them to match.
-
 ## Evidence
 
 #### Screenshot 2 — VNet address space showing `eb-demo-vnet` uses `10.0.0.0/16`
@@ -169,14 +167,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Resource Group created (Screenshot 1) **(FLAG: missing)**
-- [ ] Task 2: VNet and three required subnets created (Screenshots 2–3) **(FLAG: CIDR mismatch; Screenshot 2 missing)**
-- [ ] Task 3: Web VM deployed with the required networking configuration (Screenshots 4–5) **(FLAG: missing)**
-- [ ] Task 4: NGINX running and verified through the VM public IP (Screenshots 6–7) **(FLAG: missing)**
-- [ ] Task 5: Public Load Balancer configured (Screenshots 8–9) **(FLAG: Screenshot 9 missing)**
+- [ ] Task 1: Resource Group created (Screenshot 1)
+- [ ] Task 2: VNet and three required subnets created (Screenshots 2–3)
+- [ ] Task 3: Web VM deployed with the required networking configuration (Screenshots 4–5)
+- [ ] Task 4: NGINX running and verified through the VM public IP (Screenshots 6–7)
+- [ ] Task 5: Public Load Balancer configured (Screenshots 8–9)
 - [x] Task 6: NGINX reachable through the Load Balancer public IP (Screenshot 10)
-- [ ] Task 7: Resource Group deleted after saving deployment evidence (Screenshot 11) **(FLAG: missing)**
-- [ ] LinkedIn post published with the required hashtags (Screenshot 12) **(FLAG: new required section — not yet done)**
+- [ ] Task 7: Resource Group deleted after saving deployment evidence (Screenshot 11)
+- [ ] LinkedIn post published with the required hashtags (Screenshot 12)
 - [ ] LinkedIn post URL included
 - [ ] All required screenshots are readable and meet the full-name requirement
 - [x] No sensitive information exposed
