@@ -1,6 +1,6 @@
-# Assignment 5 — Deploy a Highly Available Two-Tier Application on AWS
+# Assignment 5 — Deploy a Highly Available Two-Tier Application on AWS (VPC + ALB + ASG + Multi-AZ RDS)
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -129,7 +129,7 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 ## Goal
 
-Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private DB Subnet Group and `ha-db-sg`.
+Launch a private, Multi-AZ RDS database (MySQL) using the private DB Subnet Group and `ha-db-sg`.
 
 ### Evidence
 
@@ -153,6 +153,8 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 - Secondary Zone: us-east-1b (different AZ from primary us-east-1a)
 - Storage: 200 GiB with encryption enabled
 - Provisioned IOPS: 3000*
+
+**FLAG:** Upstream asks for MySQL in this task. Your deployment uses PostgreSQL (port 5432), which is kept here as you built it.
 
 ---
 
@@ -326,7 +328,7 @@ Test A: terminate one web instance and confirm the Auto Scaling Group replaces i
 
 ### Evidence
 
-#### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
+#### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
 ![HA Test A - Instance Termination & Replacement](./screenshots/assignment-05/Screenshot%2019.png)
 
@@ -391,7 +393,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 ### Evidence
 
-#### Screenshot 23 — Architecture diagram showing all components
+#### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
 ![HA Two-Tier Application Architecture Diagram](./screenshots/assignment-05/Screenshot%2023.png)
 
@@ -412,18 +414,19 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 ### Notes
 
-**Architecture Summary: Highly Available Two-Tier AWS Application**
+**Summarize the VPC and subnets across the two Availability Zones.**
 
-**Network Foundation:**
 The deployment uses a VPC (10.0.0.0/16) spanning two Availability Zones (us-east-1a and us-east-1b) with four subnets: two public subnets (10.0.1.0/24, 10.0.2.0/24) for internet-facing resources, and two private subnets (10.0.3.0/24, 10.0.4.0/24) for protected resources. An Internet Gateway enables public internet access, while a NAT Gateway with an Elastic IP (184.192.90.137) provides secure outbound internet access for private subnet resources. Route tables segregate public and private traffic, with public subnets routing to the IGW and private subnets routing through the NAT Gateway.
 
-**Application & Load Balancing Tier:**
+**Summarize the ALB and Auto Scaling Group setup.**
+
 An internet-facing Application Load Balancer (ALB) spans both public subnets across two AZs, distributing incoming HTTP traffic on port 80 to healthy targets. The ALB security group (ha-alb-sg) allows public HTTP access from 0.0.0.0/0. An Auto Scaling Group (ASG) maintains exactly 2 EC2 instances (desired/minimum capacity) with a maximum of 4, deployed across both AZs from the HA-WEB-Launch-Template. Each instance runs Node.js backend and Nginx reverse proxy, automatically configured via user data script to connect to the RDS database. The EC2 security group (ha-web-sg) restricts HTTP access to ALB traffic only and SSH access to a specific administrator IP, implementing least-privilege access.
 
-**Database Tier:**
+**Summarize the private Multi-AZ RDS setup.**
+
 A Multi-AZ RDS PostgreSQL instance (port 5432) is deployed in the private subnets with the primary database in us-east-1a and an automatic standby replica in us-east-1b. The RDS security group (ha-db-sg) allows database port access only from the EC2 security group, ensuring no direct database exposure to the internet. This private, encrypted, replicated database design ensures data persistence and automatic failover capability without public internet exposure.
 
-**High-Availability Test Results:**
+**Summarize the results of both high-availability tests.**
 
 **Test A - Instance Failure & Auto-Recovery:**
 An EC2 instance (ha-tt-webserver1) was terminated to simulate instance failure. The Auto Scaling Group immediately detected the unhealthy instance and automatically launched a replacement instance. During this replacement, the ALB continued routing traffic to the remaining healthy instance without service interruption. The target group status confirmed all targets returned to healthy state post-replacement, demonstrating successful automatic recovery.

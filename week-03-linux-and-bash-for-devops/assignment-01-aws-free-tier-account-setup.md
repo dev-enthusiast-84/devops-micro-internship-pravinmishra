@@ -1,6 +1,6 @@
 # Assignment 1 — AWS Free Tier Account Setup (EpicReads Cloud Onboarding)
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -78,11 +78,26 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 ---
 
+# Task 4 — Share Your AWS Cloud Onboarding Progress
+
+## Goal
+
+Share your AWS cloud onboarding progress on WhatsApp Status and provide evidence of the published status.
+
+### Evidence
+
+#### Screenshot 2 — Published WhatsApp Status showing your AWS onboarding message and leaderboard progress link visible
+
+Add your screenshot here.
+
+---
+
 # Submission Instructions
 
 - Add all required screenshots in your GitHub repository submission
 - Full name must be visible in required screenshots
 - Do not expose sensitive information (keys, passwords, account IDs)
+- Share your AWS onboarding progress on WhatsApp Status (Task 4)
 
 ---
 
@@ -91,8 +106,10 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 - [x] Task 1 answers written in own words
 - [x] AWS Free Tier account created successfully
 - [x] Signed in to AWS Management Console
-- [x] Screenshot of AWS Account page captured (full name visible, no sensitive data)
-- [x] All required screenshots added to repository
+- [x] Screenshot 1 of AWS Account page captured (full name visible, no sensitive data)
+- [ ] Task 4: AWS onboarding progress shared on WhatsApp Status **(FLAG: new Task 4 — not yet done)**
+- [ ] Screenshot 2 of published WhatsApp Status captured with leaderboard progress link visible **(FLAG: new Task 4)**
+- [x] All required screenshots added to repository (Screenshot 1 only; Screenshot 2 pending Task 4)
 
 ---
 
@@ -116,4 +133,5 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+</content>

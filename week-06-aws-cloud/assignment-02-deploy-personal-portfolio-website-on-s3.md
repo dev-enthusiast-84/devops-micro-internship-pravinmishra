@@ -1,6 +1,6 @@
 # Assignment 2 — Deploy Personal Portfolio Website on S3
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -106,7 +106,7 @@ Load the site through the S3 website endpoint and confirm the homepage, images, 
 
 ---
 
-# Task 7 — (Optional) Update One Small Detail and Re-Upload
+# Task 7 — Update One Small Detail and Re-Upload
 
 ## Goal
 
@@ -114,11 +114,43 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 
 ### Evidence
 
-#### Screenshot 7 (optional) — Before/after view, or a browser view showing the updated text
+#### Screenshot 7 — Before/after views, or a browser view showing the updated text
 
 ![Live Website - Updated with DevOps Highlight](./screenshots/assignment-02/Screenshot%207.png)
 
 *Figure 7: Browser showing the updated portfolio website with a visible change - the word "DevOps" is now highlighted in green in the hero text "Start your DevOps Journey here". This demonstrates the successful re-upload and cache refresh of the updated content.*
+
+---
+
+# LinkedIn Post (Required)
+
+## Goal
+
+Publish a LinkedIn post sharing your experience deploying a portfolio website using Amazon S3 Static Website Hosting.
+
+Include:
+- A screenshot of your live portfolio website
+- Your live S3 Website Endpoint URL
+- A caption in your own words explaining what you deployed, what you learned about S3 hosting and public-read permissions, and any challenges you resolved
+- If you completed Task 7, describe how you updated and re-uploaded a website file
+
+Include the required hashtags, the credit note for your track, and the tags specified in the assignment guidelines.
+
+## Evidence
+
+#### LinkedIn Post URL
+
+Paste your LinkedIn post URL here:
+
+`Add your URL here`
+
+---
+
+#### Screenshot 8 — Published LinkedIn post showing your caption, live S3 website link, and portfolio screenshot
+
+Add your screenshot here.
+
+> **Privacy Note:** Do not expose credentials, billing details, or sensitive AWS account information.
 
 ---
 
@@ -144,9 +176,10 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 - [x] Task 4: Static website hosting enabled (Screenshot 4)
 - [x] Task 5: Public-read bucket policy saved (Screenshot 5)
 - [x] Task 6: Live website verified through the S3 website endpoint (Screenshot 6)
-- [x] Task 7: Optional small update re-uploaded and verified (Screenshot 7)
+- [x] Task 7: Small update re-uploaded and verified (Screenshot 7)
 - [x] S3 Website Endpoint URL included
 - [x] No sensitive account information exposed
+- [ ] LinkedIn post published **(FLAG: new required section — not yet done; URL and Screenshot 8 pending)**
 
 ---
 

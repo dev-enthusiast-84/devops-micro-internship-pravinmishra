@@ -1,6 +1,6 @@
 # Assignment 1 — CodeTrack: Initial Git Setup (Local Only)
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -74,6 +74,20 @@ Set a global Git username and email for this machine using `git config --global`
 
 ---
 
+# Task 4 — Share Your Git Setup Progress
+
+## Goal
+
+Share your Git setup progress on WhatsApp Status, including your generated DMI leaderboard progress link.
+
+### Evidence
+
+#### Screenshot 5 — Published WhatsApp Status showing your Git setup message and leaderboard progress link
+
+Add your screenshot here.
+
+---
+
 # Submission Instructions
 
 - Add all required screenshots in your submission
@@ -84,10 +98,18 @@ Set a global Git username and email for this machine using `git config --global`
 
 # Completion Checklist
 
-- [x] `CodeTrack` folder created and initialized as a Git repository (Screenshots 1–2)
-- [x] Explanation of the `.git` folder written in your own words
-- [x] Local `user.name` and `user.email` configured and verified (Screenshot 3)
-- [x] Global `user.name` and `user.email` configured and verified (Screenshot 4)
+Before submission, verify:
+
+- [x] All tasks completed in sequence **(Tasks 1–3 complete; Task 4 pending)**
+- [x] CodeTrack initialized as a Git repository
+- [x] .git folder visible in the required evidence
+- [x] Local user.name and user.email configured and verified
+- [x] Global user.name and user.email configured and verified
+- [ ] All four Git setup screenshots included and readable **(Screenshots 1–4 present; FLAG: Screenshot 5 pending Task 4)**
+- [x] Explanation of the .git folder written in your own words
+- [ ] WhatsApp Status shared for Task 4 **(FLAG: new Task 4 — not yet done)**
+- [ ] WhatsApp Status screenshot included and readable **(FLAG: new Task 4)**
+- [ ] Leaderboard progress link visible in the WhatsApp Status screenshot **(FLAG: new Task 4)**
 - [x] No sensitive data exposed
 
 ---
@@ -112,4 +134,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

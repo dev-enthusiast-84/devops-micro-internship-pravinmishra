@@ -1,6 +1,6 @@
 # Assignment 1 — Create and Set Up Your Azure Free Account
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -10,21 +10,21 @@ In this assignment, you will set up a fully functional Microsoft Azure Free Acco
 
 ---
 
-# Task 1 — Create Your Azure Free Account
+# Task 1 — 4 Create and Set Up Your Azure Free Account
 
 ## Goal
 
-Sign up at the official Azure Free Account page, complete identity and phone verification, provide payment verification, and accept the Microsoft Agreement and Offer Terms.
+Complete the Azure Free Account registration process, including Microsoft account sign-in, personal details, identity and phone verification, payment verification, and acceptance of the required terms.
 
 > No screenshot required for this task. Do not capture payment-card details. Completion is verified through Task 2.
 
 ---
 
-# Task 2 — Access and Explore the Azure Portal
+# Task 5 — Access and Explore the Azure Portal
 
 ## Goal
 
-Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machines, Storage, App Services), and confirm the Free Trial subscription is shown under Subscriptions.
+Confirm successful Azure Portal access and Locate the required services and subscription.
 
 ### Evidence
 
@@ -47,6 +47,22 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 **Virtual Machines (VMs)** — Think of this as renting a computer in the cloud. You get full control, install your own software, and manage everything like a physical server. This is the most basic compute service. **Azure App Services** — A simpler option for running web apps without managing servers—Microsoft handles the infrastructure. **Azure Storage** — Cloud storage for files, data, and backups (like Google Drive or OneDrive but for applications). **Resource Groups** — Folders/containers to organize and manage all your Azure resources together. **SQL Database** — Managed database service for storing structured data (no server management needed).
 
 **Which services to explore first and why:** I will start with Virtual Machines to understand core infrastructure concepts, then move to Azure Storage for data management, and finally App Services to learn managed deployment. This progression builds from foundational to advanced, similar to AWS learning paths, and enables end-to-end application development experience across compute, storage, and services.
+
+---
+
+# Share Your Progress on WhatsApp
+
+## Goal
+
+Share your Azure account setup achievement and DMI Leaderboard progress together in the same WhatsApp Status.
+
+### Evidence
+
+#### Screenshot 3 — Published WhatsApp Status showing your Azure account setup update, automatically generated DMI Leaderboard rank, and personal progress link
+
+Add your screenshot here.
+
+> **Privacy Note:** Do not include payment details, subscription IDs, private phone numbers, or other sensitive information.
 
 ---
 
@@ -88,4 +104,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

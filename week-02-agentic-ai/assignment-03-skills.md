@@ -38,7 +38,7 @@ Place all required skill files into their correct directories and verify their c
 
 ---
 
-#### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
+#### Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
 ![tf-plan/SKILL.md showing allowed-tools restrictions](./screenshots/assignment-03/Screenshot%203.png)
 
@@ -81,7 +81,6 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 #### Screenshot 6b — Claude's `/tf-plan` response showing successful execution result
 
 ![tf-plan execution successful](./screenshots/assignment-03/Screenshot%206b.png)
-
 
 ---
 
@@ -246,3 +245,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 ---
 
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+</content>

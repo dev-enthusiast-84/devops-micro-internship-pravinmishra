@@ -1,6 +1,6 @@
 # Assignment 1 — Create Your Jira Account & Setup Profile
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -34,7 +34,7 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
- “I signed up using Google, and Atlassian did not require separate email verification.”
+Not applicable. See the note below.
 
 ---
 
@@ -43,8 +43,6 @@ Confirm your email address if Atlassian requests verification.
 If you signed up with Google and no separate email verification was required, include the following statement instead of Screenshot 2:
 
 > I signed up using Google, and Atlassian did not require separate email verification.
-
-Add any additional notes here.
 
 ---
 
@@ -82,6 +80,20 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 ---
 
+# Task 5 — Share Your Jira Setup Progress on WhatsApp Status
+
+## Goal
+
+Share your Jira setup progress on WhatsApp Status, including your generated DMI leaderboard progress link.
+
+### Evidence
+
+#### Screenshot 6 — Published WhatsApp Status showing your Jira setup message and generated DMI leaderboard progress link
+
+Add your screenshot here.
+
+---
+
 # Submission Instructions
 
 - Add all five required screenshots, unless separate email verification was not required
@@ -98,6 +110,7 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 - [x] Task 2: Email verification completed, or a Google sign-in note included (Screenshot 2 or Notes)
 - [x] Task 3: Professional profile updated with full name, role/title, and bio (Screenshot 3)
 - [x] Task 4: Projects page and a Board or Backlog explored (Screenshots 4 & 5)
+- [ ] Task 5: WhatsApp Status shared with the Jira setup message and generated DMI leaderboard progress link (Screenshot 6) **(FLAG: new Task 5 — not yet done)**
 - [x] No Jira issues created
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed
@@ -124,4 +137,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

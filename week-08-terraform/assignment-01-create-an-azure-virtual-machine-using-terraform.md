@@ -1,12 +1,44 @@
 # Assignment 1 — Create an Azure Virtual Machine using Terraform
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
 ## Purpose
 
-In this assignment, you will use Terraform to provision a complete Azure Virtual Machine environment: a resource group, virtual network, subnet, public IP, network interface, and an Ubuntu 18.04 Linux VM. You will initialize, plan, and apply the configuration, verify the running VM via Azure CLI, and destroy the resources after testing.
+In this assignment, you will use Terraform to provision a complete Azure Virtual Machine environment, including a resource group, virtual network, subnet, public IP, network interface, and a Linux-based virtual machine. You will set up and verify the required local tools, define the infrastructure in Terraform, initialize the project, review and apply the plan, verify the running VM through Azure CLI, capture the public IP output, and destroy the resources after testing.
+
+---
+
+# Task 0 — Set Up and Verify the Terraform and Azure CLI Environment
+
+## Goal
+
+Prepare your local environment for Terraform deployment by installing Terraform, Azure CLI, and the HashiCorp Terraform extension in VS Code, signing in to your Azure account, and confirming that all required tools are working correctly.
+
+### Evidence
+
+#### Screenshot 1 — Terminal showing successful `terraform version` output
+
+Add your screenshot here.
+
+**FLAG:** New upstream task. Not in your snapshot.
+
+---
+
+#### Screenshot 2 — Terminal showing successful `az version` output
+
+Add your screenshot here.
+
+**FLAG:** New upstream task. Not in your snapshot.
+
+---
+
+#### Screenshot 3 — VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled
+
+Add your screenshot here.
+
+**FLAG:** New upstream task. Not in your snapshot.
 
 ---
 
@@ -14,21 +46,23 @@ In this assignment, you will use Terraform to provision a complete Azure Virtual
 
 ## Goal
 
-Create a `terraform-azure-vm` project and define the resource group, virtual network, subnet, public IP, network interface, and Ubuntu 18.04 VM (with username/password authentication and a public IP output) in `main.tf`.
+Create a new Terraform project and define the complete Azure Virtual Machine environment in `main.tf` by using the official Terraform Registry documentation.
 
 ### Evidence
 
-#### Screenshot 1 — VS Code showing `main.tf` and the required Azure resources
+#### Screenshot 4 — VS Code showing the AzureRM provider configuration and resource group configuration in `main.tf`
 
 ![Screenshot 1](screenshots/assignment-01/Screenshot%201.png)
 
-> **Note (deviation from spec):** The assignment asks for an Ubuntu 18.04 VM. This deployment uses Ubuntu 22.04 LTS (`Canonical` / `0001-com-ubuntu-server-jammy` / `22_04-lts`) instead. The 18.04 image (`Canonical:UbuntuServer:18_04-lts-gen2`) was confirmed available in East US, but the VM was kept on 22.04 for this submission.
-
 ---
 
-#### Screenshot 2 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
+#### Screenshot 5 — VS Code showing the Linux virtual machine configuration and public IP `output` block in `main.tf`. Ensure that the VM password is hidden or redacted
 
 ![Screenshot 2](screenshots/assignment-01/Screenshot%202.png)
+
+> **Note (deviation from spec):** The earlier version of this assignment asked for an Ubuntu 18.04 VM. This deployment uses Ubuntu 22.04 LTS (`Canonical` / `0001-com-ubuntu-server-jammy` / `22_04-lts`) instead. The 18.04 image (`Canonical:UbuntuServer:18_04-lts-gen2`) was confirmed available in East US, but the VM was kept on 22.04 for this submission.
+
+**FLAG:** The current upstream Task 1 no longer names a specific Ubuntu version (only "a Linux-based virtual machine"). Confirm whether 22.04 is acceptable under the updated spec.
 
 ---
 
@@ -36,11 +70,11 @@ Create a `terraform-azure-vm` project and define the resource group, virtual net
 
 ## Goal
 
-Run `terraform init` and confirm the working directory initializes successfully.
+Initialize the Terraform working directory and download the required provider components.
 
 ### Evidence
 
-#### Screenshot 3 — Terminal showing successful `terraform init` output
+#### Screenshot 6 — Terminal showing the successful `terraform init` output
 
 ![Screenshot 3](screenshots/assignment-01/Screenshot%203.png)
 
@@ -50,25 +84,31 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 ## Goal
 
-Review `terraform plan`, run `terraform apply`, and record the VM's public IP from the Terraform output.
+Review the Terraform execution plan and provision the Azure resources.
 
 ### Evidence
 
-#### Screenshot 4 — Terraform plan summary showing the proposed resources
+#### Screenshot 7 — Terraform plan summary showing the proposed resources
 
 ![Screenshot 4](screenshots/assignment-01/Screenshot%204.png)
 
 ---
 
-#### Screenshot 5 — Terraform apply output showing successful completion
+#### Screenshot 8 — Terraform apply output showing successful completion
 
 ![Screenshot 5](screenshots/assignment-01/Screenshot%205.png)
 
 ---
 
-#### Screenshot 6 — Terraform output showing the public IP of the VM
+#### Screenshot 9 — Terraform output showing the public IP address of the VM
 
 ![Screenshot 6](screenshots/assignment-01/Screenshot%206.png)
+
+### Question
+
+VM Public IP Address: [Enter the public IP shown by terraform output]
+
+**FLAG:** The IP is visible in your Screenshot 9, but the question line has not been filled in. Please enter it.
 
 ---
 
@@ -76,11 +116,11 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP fr
 
 ## Goal
 
-Use Azure CLI to confirm the VM was created and is running.
+Confirm through Azure CLI that the virtual machine was created successfully and is currently running.
 
 ### Evidence
 
-#### Screenshot 7 — Azure CLI output showing the VM name and running status
+#### Screenshot 10 — Azure CLI output showing the deployed VM name and `VM running` status
 
 ![Screenshot 7](screenshots/assignment-01/Screenshot%207.png)
 
@@ -90,11 +130,11 @@ Use Azure CLI to confirm the VM was created and is running.
 
 ## Goal
 
-Run `terraform destroy` to clean up the Azure resources after testing.
+Remove all Azure resources created by Terraform after completing the deployment and verification.
 
 ### Evidence
 
-#### Screenshot 8 — Terminal showing successful `terraform destroy` completion
+#### Screenshot 11 — Terminal showing successful `terraform destroy` completion
 
 ![Screenshot 8](screenshots/assignment-01/Screenshot%208.png)
 
@@ -108,23 +148,53 @@ Three Azure errors blocked the deployment, and each had a different fix. The fir
 
 ---
 
+# Task 6 — Share Your Terraform Progress on WhatsApp
+
+## Goal
+
+Share your Terraform deployment progress on WhatsApp by using Screenshot 8, the provided Terraform caption, and your generated DMI Leaderboard progress link.
+
+### Evidence
+
+#### Screenshot 12 — Published WhatsApp Status showing your Terraform deployment progress and DMI Leaderboard progress link
+
+Add your screenshot here.
+
+> Ensure that no passwords, account IDs, subscription IDs, private phone numbers, or personal messages are visible.
+
+**FLAG:** New upstream task. Not in your snapshot.
+
+---
+
 # Submission Instructions
 
-- Add all required screenshots in your submission
-- Include the VM public IP from the Terraform output
-- Do not expose Azure credentials, subscription details, or passwords
+- Complete all tasks in sequence and include all required screenshots specified in Tasks 0–6.
+- Do not expose passwords, keys, account IDs, or other sensitive information in screenshots.
 
 ---
 
 # Completion Checklist
 
-- [x] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2; Ubuntu 22.04 used instead of 18.04, see note under Screenshot 1)
-- [x] Task 2: `terraform init` completed successfully (Screenshot 3)
-- [x] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
-- [x] Task 4: VM verified as running via Azure CLI (Screenshot 7)
-- [x] Task 5: `terraform destroy` completed successfully (Screenshot 8)
-- [x] Learning/issues paragraph written (Notes)
-- [x] No sensitive information exposed
+- [ ] Installed Terraform and verified it using `terraform version` (Task 0) **(FLAG: not in snapshot)**
+- [ ] Installed Azure CLI and verified it using `az version` (Task 0) **(FLAG: not in snapshot)**
+- [ ] Signed in to Azure using `az login` (Task 0) **(FLAG: not in snapshot)**
+- [ ] Confirmed the correct Azure subscription (Task 0) **(FLAG: not in snapshot)**
+- [ ] Installed and enabled the HashiCorp Terraform extension in VS Code (Task 0) **(FLAG: not in snapshot)**
+- [x] Created the `terraform-azure-vm` project directory and `main.tf`
+- [x] Added the Terraform and AzureRM provider configuration
+- [x] Defined the resource group, virtual network, subnet, public IP, and network interface
+- [x] Defined the Linux virtual machine with username and password-based authentication
+- [x] Added the Terraform output for the VM public IP address
+- [x] Completed `terraform init` successfully
+- [x] Reviewed the Terraform execution plan using `terraform plan`
+- [x] Completed `terraform apply` successfully
+- [x] Captured and recorded the VM public IP using `terraform output`
+- [x] Verified that the VM is running using Azure CLI
+- [x] Completed `terraform destroy` successfully
+- [ ] Shared Terraform deployment progress on WhatsApp by following Task 6 **(FLAG: new task — not yet done)**
+- [ ] Captured a screenshot of the published WhatsApp Status **(FLAG: new task)**
+- [x] Captured all required screenshots for Tasks 1–5
+- [x] Checked that no passwords, keys, account IDs, or other sensitive information are visible in the screenshots
 
 ---
 
@@ -138,14 +208,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

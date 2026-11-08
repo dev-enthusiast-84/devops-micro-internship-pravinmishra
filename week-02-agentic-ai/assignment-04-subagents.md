@@ -1,6 +1,6 @@
 # Assignment 4 — Building Your AI Team
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) Cohort with Agentic AI
 
 ---
 
@@ -180,6 +180,31 @@ Demonstrate the complete dynamic workflow orchestration where multiple specializ
 
 ---
 
+# Task 5 — Share Your AI Team Achievement on LinkedIn
+
+## Goal
+
+Share your AI subagents learning progress on LinkedIn and provide evidence of your published post.
+
+### LinkedIn Post
+
+Use the LinkedIn post template provided in the assignment guideline.
+
+Make sure your published post includes:
+
+- Your AI team achievement
+- The three specialized subagents you created
+- Your GitHub repository URL
+- Your DMI Leaderboard progress link
+
+### Evidence
+
+#### Screenshot 7 — Published LinkedIn post showing your post content and leaderboard progress link visible
+
+Add your screenshot here.
+
+---
+
 # Submission Instructions
 
 - Ensure all agent files are committed in `.claude/agents/`
@@ -235,6 +260,7 @@ Demonstrate the complete dynamic workflow orchestration where multiple specializ
 - [x] GitHub Repository URL included: https://github.com/dev-enthusiast-84/Ultimate-Agentic-DevOps-with-Claude-Code
 - [x] Documentation audited for accuracy (agent names, timing, phases)
 
+
 ---
 
 ## 📌 About DMI & CloudAdvisory
@@ -257,4 +283,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

@@ -1,6 +1,6 @@
-# Assignment 6 — Capstone: Deploy Book Review App (Three-Tier Architecture) on AWS
+# Assignment 6 — Capstone Assignment — Deploy Book Review App (Three-Tier Architecture) on AWS
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -38,7 +38,7 @@ us-east-1
 
 ---
 
-**Services used:**
+**Services:**
 
 **Networking:**
 - Amazon VPC (Virtual Private Cloud)
@@ -89,19 +89,19 @@ Capture visual proof of every tier and load balancer.
 
 ### Evidence
 
-#### Screenshot 1 — Web Tier EC2 instance in a public subnet
+#### Web EC2
 
 ![Screenshot 1 - Web Tier EC2](./screenshots/assignment-06/Screenshot%201.png)
 
 ---
 
-#### Screenshot 2 — App Tier EC2 instance in a private subnet
+#### App EC2
 
 ![Screenshot 2 - App Tier EC2](./screenshots/assignment-06/Screenshot%202.png)
 
 ---
 
-#### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
+#### Public ALB
 
 ![Screenshot 3a - Public ALB](./screenshots/assignment-06/Screenshot%203a.png)
 
@@ -109,7 +109,7 @@ Capture visual proof of every tier and load balancer.
 
 ---
 
-#### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
+#### Internal ALB
 
 ![Screenshot 4a - Internal ALB](./screenshots/assignment-06/Screenshot%204a.png)
 
@@ -117,13 +117,13 @@ Capture visual proof of every tier and load balancer.
 
 ---
 
-#### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
+#### RDS + Replica
 
 ![Screenshot 5 - RDS Multi-AZ and Read Replica](./screenshots/assignment-06/Screenshot%205.png)
 
 ---
 
-#### Screenshot 6 — Book Review App UI working through the public ALB
+#### App UI proof
 
 ![Screenshot 6a - Book Review App UI](./screenshots/assignment-06/Screenshot%206a.png)
 
@@ -149,7 +149,7 @@ Component creation and infrastructure setup were smooth due to clear solution do
 
 ---
 
-**Issues encountered and fixes:**
+**Issues + fixes:**
 
 1. **Application Deployment & PM2 Troubleshooting** — Application deployment initially failed. PM2 (process manager) was new, requiring exploration and troubleshooting of application logs and process status to identify failures.
 
@@ -191,7 +191,7 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 ![LinkedIn Post Screenshot](./screenshots/assignment-06/Linkedin-Post.png)
 
@@ -237,4 +237,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
