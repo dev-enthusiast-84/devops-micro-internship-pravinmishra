@@ -697,3 +697,10 @@ Method: every image link was opened and compared with its task text. Split scree
 - **w03 a03** Tasks 5–7 and LinkedIn; **w03 a04**; **w03 a05**.
 - **w08 a01** Tasks 1–5 (except S4); **w08 a02**; **w08 a03** (remaining slots).
 - Re-run these in small batches once the image limit resets.
+
+## Redaction status (commit abbbdf6)
+
+- Done: account IDs blurred in week-02 a03 (6b, 7, 12), week-02 a04 (5, 7), week-06 a05 (7). Personal email local part hidden (up to @gmail.com) in week-02 a01 (Screeshot 2) and week-05 a05 (Screenshot 4).
+- Kept by rule: week-05 a05 Screenshot 3 (task explicitly asks for the account email in settings.local.json).
+- Still to check: other week-06 a05 screenshots that may show account 822426641667 (audit said "several"; only Screenshot 7 checked so far).
+- Git history: old commits still contain the unredacted images. Removing them needs a history rewrite and force-push to origin/main, which is not done yet. Needs your confirmation.
